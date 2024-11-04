@@ -1,0 +1,2101 @@
+area_name,date,cause_of_death,deaths
+Barking and Dagenham,2022-01-01,COVID 19,0
+Barking and Dagenham,2022-01-01,Non COVID 19,0
+Barking and Dagenham,2022-01-02,COVID 19,0
+Barking and Dagenham,2022-01-02,Non COVID 19,0
+Barking and Dagenham,2022-01-03,COVID 19,0
+Barking and Dagenham,2022-01-03,Non COVID 19,1
+Barking and Dagenham,2022-01-04,COVID 19,0
+Barking and Dagenham,2022-01-04,Non COVID 19,1
+Barking and Dagenham,2022-01-05,COVID 19,0
+Barking and Dagenham,2022-01-05,Non COVID 19,2
+Barking and Dagenham,2022-01-06,COVID 19,0
+Barking and Dagenham,2022-01-06,Non COVID 19,1
+Barking and Dagenham,2022-01-07,COVID 19,0
+Barking and Dagenham,2022-01-07,Non COVID 19,0
+Barnet,2022-01-01,COVID 19,0
+Barnet,2022-01-01,Non COVID 19,0
+Barnet,2022-01-02,COVID 19,0
+Barnet,2022-01-02,Non COVID 19,0
+Barnet,2022-01-03,COVID 19,0
+Barnet,2022-01-03,Non COVID 19,0
+Barnet,2022-01-04,COVID 19,1
+Barnet,2022-01-04,Non COVID 19,1
+Barnet,2022-01-05,COVID 19,0
+Barnet,2022-01-05,Non COVID 19,2
+Barnet,2022-01-06,COVID 19,0
+Barnet,2022-01-06,Non COVID 19,1
+Barnet,2022-01-07,COVID 19,0
+Barnet,2022-01-07,Non COVID 19,3
+Barnsley,2022-01-01,COVID 19,0
+Barnsley,2022-01-01,Non COVID 19,0
+Barnsley,2022-01-02,COVID 19,0
+Barnsley,2022-01-02,Non COVID 19,0
+Barnsley,2022-01-03,COVID 19,0
+Barnsley,2022-01-03,Non COVID 19,3
+Barnsley,2022-01-04,COVID 19,0
+Barnsley,2022-01-04,Non COVID 19,4
+Barnsley,2022-01-05,COVID 19,0
+Barnsley,2022-01-05,Non COVID 19,3
+Barnsley,2022-01-06,COVID 19,0
+Barnsley,2022-01-06,Non COVID 19,3
+Barnsley,2022-01-07,COVID 19,0
+Barnsley,2022-01-07,Non COVID 19,2
+Bath and North East Somerset,2022-01-01,COVID 19,0
+Bath and North East Somerset,2022-01-01,Non COVID 19,0
+Bath and North East Somerset,2022-01-02,COVID 19,0
+Bath and North East Somerset,2022-01-02,Non COVID 19,0
+Bath and North East Somerset,2022-01-03,COVID 19,0
+Bath and North East Somerset,2022-01-03,Non COVID 19,0
+Bath and North East Somerset,2022-01-04,COVID 19,0
+Bath and North East Somerset,2022-01-04,Non COVID 19,3
+Bath and North East Somerset,2022-01-05,COVID 19,0
+Bath and North East Somerset,2022-01-05,Non COVID 19,3
+Bath and North East Somerset,2022-01-06,COVID 19,0
+Bath and North East Somerset,2022-01-06,Non COVID 19,1
+Bath and North East Somerset,2022-01-07,COVID 19,0
+Bath and North East Somerset,2022-01-07,Non COVID 19,2
+Bedford,2022-01-01,COVID 19,0
+Bedford,2022-01-01,Non COVID 19,0
+Bedford,2022-01-02,COVID 19,0
+Bedford,2022-01-02,Non COVID 19,0
+Bedford,2022-01-03,COVID 19,0
+Bedford,2022-01-03,Non COVID 19,3
+Bedford,2022-01-04,COVID 19,0
+Bedford,2022-01-04,Non COVID 19,0
+Bedford,2022-01-05,COVID 19,0
+Bedford,2022-01-05,Non COVID 19,1
+Bedford,2022-01-06,COVID 19,0
+Bedford,2022-01-06,Non COVID 19,0
+Bedford,2022-01-07,COVID 19,0
+Bedford,2022-01-07,Non COVID 19,1
+Bexley,2022-01-01,COVID 19,0
+Bexley,2022-01-01,Non COVID 19,0
+Bexley,2022-01-02,COVID 19,0
+Bexley,2022-01-02,Non COVID 19,1
+Bexley,2022-01-03,COVID 19,0
+Bexley,2022-01-03,Non COVID 19,0
+Bexley,2022-01-04,COVID 19,0
+Bexley,2022-01-04,Non COVID 19,1
+Bexley,2022-01-05,COVID 19,0
+Bexley,2022-01-05,Non COVID 19,2
+Bexley,2022-01-06,COVID 19,1
+Bexley,2022-01-06,Non COVID 19,1
+Bexley,2022-01-07,COVID 19,0
+Bexley,2022-01-07,Non COVID 19,0
+Birmingham,2022-01-01,COVID 19,0
+Birmingham,2022-01-01,Non COVID 19,2
+Birmingham,2022-01-02,COVID 19,0
+Birmingham,2022-01-02,Non COVID 19,1
+Birmingham,2022-01-03,COVID 19,0
+Birmingham,2022-01-03,Non COVID 19,1
+Birmingham,2022-01-04,COVID 19,0
+Birmingham,2022-01-04,Non COVID 19,4
+Birmingham,2022-01-05,COVID 19,2
+Birmingham,2022-01-05,Non COVID 19,9
+Birmingham,2022-01-06,COVID 19,0
+Birmingham,2022-01-06,Non COVID 19,2
+Birmingham,2022-01-07,COVID 19,0
+Birmingham,2022-01-07,Non COVID 19,3
+Blackburn with Darwen,2022-01-01,COVID 19,0
+Blackburn with Darwen,2022-01-01,Non COVID 19,0
+Blackburn with Darwen,2022-01-02,COVID 19,0
+Blackburn with Darwen,2022-01-02,Non COVID 19,0
+Blackburn with Darwen,2022-01-03,COVID 19,0
+Blackburn with Darwen,2022-01-03,Non COVID 19,0
+Blackburn with Darwen,2022-01-04,COVID 19,0
+Blackburn with Darwen,2022-01-04,Non COVID 19,0
+Blackburn with Darwen,2022-01-05,COVID 19,0
+Blackburn with Darwen,2022-01-05,Non COVID 19,1
+Blackburn with Darwen,2022-01-06,COVID 19,0
+Blackburn with Darwen,2022-01-06,Non COVID 19,1
+Blackburn with Darwen,2022-01-07,COVID 19,1
+Blackburn with Darwen,2022-01-07,Non COVID 19,1
+Blackpool,2022-01-01,COVID 19,0
+Blackpool,2022-01-01,Non COVID 19,0
+Blackpool,2022-01-02,COVID 19,0
+Blackpool,2022-01-02,Non COVID 19,1
+Blackpool,2022-01-03,COVID 19,0
+Blackpool,2022-01-03,Non COVID 19,4
+Blackpool,2022-01-04,COVID 19,0
+Blackpool,2022-01-04,Non COVID 19,1
+Blackpool,2022-01-05,COVID 19,0
+Blackpool,2022-01-05,Non COVID 19,2
+Blackpool,2022-01-06,COVID 19,0
+Blackpool,2022-01-06,Non COVID 19,1
+Blackpool,2022-01-07,COVID 19,1
+Blackpool,2022-01-07,Non COVID 19,2
+Bolton,2022-01-01,COVID 19,0
+Bolton,2022-01-01,Non COVID 19,0
+Bolton,2022-01-02,COVID 19,0
+Bolton,2022-01-02,Non COVID 19,0
+Bolton,2022-01-03,COVID 19,0
+Bolton,2022-01-03,Non COVID 19,1
+Bolton,2022-01-04,COVID 19,0
+Bolton,2022-01-04,Non COVID 19,7
+Bolton,2022-01-05,COVID 19,0
+Bolton,2022-01-05,Non COVID 19,4
+Bolton,2022-01-06,COVID 19,0
+Bolton,2022-01-06,Non COVID 19,1
+Bolton,2022-01-07,COVID 19,0
+Bolton,2022-01-07,Non COVID 19,1
+"Bournemouth, Christchurch and Poole",2022-01-01,COVID 19,0
+"Bournemouth, Christchurch and Poole",2022-01-01,Non COVID 19,0
+"Bournemouth, Christchurch and Poole",2022-01-02,COVID 19,0
+"Bournemouth, Christchurch and Poole",2022-01-02,Non COVID 19,1
+"Bournemouth, Christchurch and Poole",2022-01-03,COVID 19,1
+"Bournemouth, Christchurch and Poole",2022-01-03,Non COVID 19,2
+"Bournemouth, Christchurch and Poole",2022-01-04,COVID 19,0
+"Bournemouth, Christchurch and Poole",2022-01-04,Non COVID 19,3
+"Bournemouth, Christchurch and Poole",2022-01-05,COVID 19,0
+"Bournemouth, Christchurch and Poole",2022-01-05,Non COVID 19,2
+"Bournemouth, Christchurch and Poole",2022-01-06,COVID 19,0
+"Bournemouth, Christchurch and Poole",2022-01-06,Non COVID 19,4
+"Bournemouth, Christchurch and Poole",2022-01-07,COVID 19,0
+"Bournemouth, Christchurch and Poole",2022-01-07,Non COVID 19,4
+Bracknell Forest,2022-01-01,COVID 19,0
+Bracknell Forest,2022-01-01,Non COVID 19,0
+Bracknell Forest,2022-01-02,COVID 19,0
+Bracknell Forest,2022-01-02,Non COVID 19,0
+Bracknell Forest,2022-01-03,COVID 19,0
+Bracknell Forest,2022-01-03,Non COVID 19,0
+Bracknell Forest,2022-01-04,COVID 19,0
+Bracknell Forest,2022-01-04,Non COVID 19,0
+Bracknell Forest,2022-01-05,COVID 19,0
+Bracknell Forest,2022-01-05,Non COVID 19,0
+Bracknell Forest,2022-01-06,COVID 19,0
+Bracknell Forest,2022-01-06,Non COVID 19,0
+Bracknell Forest,2022-01-07,COVID 19,0
+Bracknell Forest,2022-01-07,Non COVID 19,0
+Bradford,2022-01-01,COVID 19,0
+Bradford,2022-01-01,Non COVID 19,0
+Bradford,2022-01-02,COVID 19,0
+Bradford,2022-01-02,Non COVID 19,0
+Bradford,2022-01-03,COVID 19,0
+Bradford,2022-01-03,Non COVID 19,3
+Bradford,2022-01-04,COVID 19,0
+Bradford,2022-01-04,Non COVID 19,6
+Bradford,2022-01-05,COVID 19,0
+Bradford,2022-01-05,Non COVID 19,7
+Bradford,2022-01-06,COVID 19,0
+Bradford,2022-01-06,Non COVID 19,10
+Bradford,2022-01-07,COVID 19,0
+Bradford,2022-01-07,Non COVID 19,3
+Brent,2022-01-01,COVID 19,0
+Brent,2022-01-01,Non COVID 19,0
+Brent,2022-01-02,COVID 19,0
+Brent,2022-01-02,Non COVID 19,1
+Brent,2022-01-03,COVID 19,0
+Brent,2022-01-03,Non COVID 19,1
+Brent,2022-01-04,COVID 19,0
+Brent,2022-01-04,Non COVID 19,1
+Brent,2022-01-05,COVID 19,0
+Brent,2022-01-05,Non COVID 19,0
+Brent,2022-01-06,COVID 19,0
+Brent,2022-01-06,Non COVID 19,0
+Brent,2022-01-07,COVID 19,0
+Brent,2022-01-07,Non COVID 19,1
+Brighton and Hove,2022-01-01,COVID 19,0
+Brighton and Hove,2022-01-01,Non COVID 19,1
+Brighton and Hove,2022-01-02,COVID 19,0
+Brighton and Hove,2022-01-02,Non COVID 19,0
+Brighton and Hove,2022-01-03,COVID 19,0
+Brighton and Hove,2022-01-03,Non COVID 19,0
+Brighton and Hove,2022-01-04,COVID 19,0
+Brighton and Hove,2022-01-04,Non COVID 19,2
+Brighton and Hove,2022-01-05,COVID 19,0
+Brighton and Hove,2022-01-05,Non COVID 19,2
+Brighton and Hove,2022-01-06,COVID 19,0
+Brighton and Hove,2022-01-06,Non COVID 19,2
+Brighton and Hove,2022-01-07,COVID 19,0
+Brighton and Hove,2022-01-07,Non COVID 19,1
+"Bristol, City of",2022-01-01,COVID 19,0
+"Bristol, City of",2022-01-01,Non COVID 19,1
+"Bristol, City of",2022-01-02,COVID 19,0
+"Bristol, City of",2022-01-02,Non COVID 19,0
+"Bristol, City of",2022-01-03,COVID 19,0
+"Bristol, City of",2022-01-03,Non COVID 19,2
+"Bristol, City of",2022-01-04,COVID 19,0
+"Bristol, City of",2022-01-04,Non COVID 19,3
+"Bristol, City of",2022-01-05,COVID 19,1
+"Bristol, City of",2022-01-05,Non COVID 19,2
+"Bristol, City of",2022-01-06,COVID 19,0
+"Bristol, City of",2022-01-06,Non COVID 19,3
+"Bristol, City of",2022-01-07,COVID 19,0
+"Bristol, City of",2022-01-07,Non COVID 19,3
+Bromley,2022-01-01,COVID 19,0
+Bromley,2022-01-01,Non COVID 19,1
+Bromley,2022-01-02,COVID 19,0
+Bromley,2022-01-02,Non COVID 19,0
+Bromley,2022-01-03,COVID 19,0
+Bromley,2022-01-03,Non COVID 19,0
+Bromley,2022-01-04,COVID 19,0
+Bromley,2022-01-04,Non COVID 19,5
+Bromley,2022-01-05,COVID 19,0
+Bromley,2022-01-05,Non COVID 19,1
+Bromley,2022-01-06,COVID 19,0
+Bromley,2022-01-06,Non COVID 19,0
+Bromley,2022-01-07,COVID 19,0
+Bromley,2022-01-07,Non COVID 19,1
+Buckinghamshire,2022-01-01,COVID 19,0
+Buckinghamshire,2022-01-01,Non COVID 19,0
+Buckinghamshire,2022-01-02,COVID 19,0
+Buckinghamshire,2022-01-02,Non COVID 19,0
+Buckinghamshire,2022-01-03,COVID 19,1
+Buckinghamshire,2022-01-03,Non COVID 19,1
+Buckinghamshire,2022-01-04,COVID 19,1
+Buckinghamshire,2022-01-04,Non COVID 19,5
+Buckinghamshire,2022-01-05,COVID 19,2
+Buckinghamshire,2022-01-05,Non COVID 19,5
+Buckinghamshire,2022-01-06,COVID 19,0
+Buckinghamshire,2022-01-06,Non COVID 19,2
+Buckinghamshire,2022-01-07,COVID 19,0
+Buckinghamshire,2022-01-07,Non COVID 19,5
+Bury,2022-01-01,COVID 19,0
+Bury,2022-01-01,Non COVID 19,0
+Bury,2022-01-02,COVID 19,0
+Bury,2022-01-02,Non COVID 19,1
+Bury,2022-01-03,COVID 19,0
+Bury,2022-01-03,Non COVID 19,0
+Bury,2022-01-04,COVID 19,0
+Bury,2022-01-04,Non COVID 19,3
+Bury,2022-01-05,COVID 19,0
+Bury,2022-01-05,Non COVID 19,2
+Bury,2022-01-06,COVID 19,0
+Bury,2022-01-06,Non COVID 19,0
+Bury,2022-01-07,COVID 19,1
+Bury,2022-01-07,Non COVID 19,2
+Calderdale,2022-01-01,COVID 19,0
+Calderdale,2022-01-01,Non COVID 19,0
+Calderdale,2022-01-02,COVID 19,0
+Calderdale,2022-01-02,Non COVID 19,0
+Calderdale,2022-01-03,COVID 19,0
+Calderdale,2022-01-03,Non COVID 19,0
+Calderdale,2022-01-04,COVID 19,0
+Calderdale,2022-01-04,Non COVID 19,1
+Calderdale,2022-01-05,COVID 19,0
+Calderdale,2022-01-05,Non COVID 19,2
+Calderdale,2022-01-06,COVID 19,0
+Calderdale,2022-01-06,Non COVID 19,1
+Calderdale,2022-01-07,COVID 19,0
+Calderdale,2022-01-07,Non COVID 19,0
+Cambridgeshire,2022-01-01,COVID 19,0
+Cambridgeshire,2022-01-01,Non COVID 19,1
+Cambridgeshire,2022-01-02,COVID 19,0
+Cambridgeshire,2022-01-02,Non COVID 19,0
+Cambridgeshire,2022-01-03,COVID 19,0
+Cambridgeshire,2022-01-03,Non COVID 19,2
+Cambridgeshire,2022-01-04,COVID 19,0
+Cambridgeshire,2022-01-04,Non COVID 19,5
+Cambridgeshire,2022-01-05,COVID 19,0
+Cambridgeshire,2022-01-05,Non COVID 19,5
+Cambridgeshire,2022-01-06,COVID 19,0
+Cambridgeshire,2022-01-06,Non COVID 19,3
+Cambridgeshire,2022-01-07,COVID 19,0
+Cambridgeshire,2022-01-07,Non COVID 19,5
+Camden,2022-01-01,COVID 19,0
+Camden,2022-01-01,Non COVID 19,0
+Camden,2022-01-02,COVID 19,0
+Camden,2022-01-02,Non COVID 19,0
+Camden,2022-01-03,COVID 19,0
+Camden,2022-01-03,Non COVID 19,0
+Camden,2022-01-04,COVID 19,0
+Camden,2022-01-04,Non COVID 19,2
+Camden,2022-01-05,COVID 19,0
+Camden,2022-01-05,Non COVID 19,1
+Camden,2022-01-06,COVID 19,0
+Camden,2022-01-06,Non COVID 19,0
+Camden,2022-01-07,COVID 19,0
+Camden,2022-01-07,Non COVID 19,3
+Central Bedfordshire,2022-01-01,COVID 19,0
+Central Bedfordshire,2022-01-01,Non COVID 19,0
+Central Bedfordshire,2022-01-02,COVID 19,0
+Central Bedfordshire,2022-01-02,Non COVID 19,0
+Central Bedfordshire,2022-01-03,COVID 19,0
+Central Bedfordshire,2022-01-03,Non COVID 19,3
+Central Bedfordshire,2022-01-04,COVID 19,1
+Central Bedfordshire,2022-01-04,Non COVID 19,2
+Central Bedfordshire,2022-01-05,COVID 19,0
+Central Bedfordshire,2022-01-05,Non COVID 19,0
+Central Bedfordshire,2022-01-06,COVID 19,0
+Central Bedfordshire,2022-01-06,Non COVID 19,3
+Central Bedfordshire,2022-01-07,COVID 19,0
+Central Bedfordshire,2022-01-07,Non COVID 19,0
+Cheshire East,2022-01-01,COVID 19,0
+Cheshire East,2022-01-01,Non COVID 19,2
+Cheshire East,2022-01-02,COVID 19,0
+Cheshire East,2022-01-02,Non COVID 19,0
+Cheshire East,2022-01-03,COVID 19,0
+Cheshire East,2022-01-03,Non COVID 19,1
+Cheshire East,2022-01-04,COVID 19,0
+Cheshire East,2022-01-04,Non COVID 19,7
+Cheshire East,2022-01-05,COVID 19,0
+Cheshire East,2022-01-05,Non COVID 19,6
+Cheshire East,2022-01-06,COVID 19,1
+Cheshire East,2022-01-06,Non COVID 19,1
+Cheshire East,2022-01-07,COVID 19,1
+Cheshire East,2022-01-07,Non COVID 19,3
+Cheshire West and Chester,2022-01-01,COVID 19,0
+Cheshire West and Chester,2022-01-01,Non COVID 19,0
+Cheshire West and Chester,2022-01-02,COVID 19,0
+Cheshire West and Chester,2022-01-02,Non COVID 19,0
+Cheshire West and Chester,2022-01-03,COVID 19,0
+Cheshire West and Chester,2022-01-03,Non COVID 19,1
+Cheshire West and Chester,2022-01-04,COVID 19,0
+Cheshire West and Chester,2022-01-04,Non COVID 19,7
+Cheshire West and Chester,2022-01-05,COVID 19,0
+Cheshire West and Chester,2022-01-05,Non COVID 19,4
+Cheshire West and Chester,2022-01-06,COVID 19,0
+Cheshire West and Chester,2022-01-06,Non COVID 19,3
+Cheshire West and Chester,2022-01-07,COVID 19,0
+Cheshire West and Chester,2022-01-07,Non COVID 19,3
+Cornwall,2022-01-01,COVID 19,0
+Cornwall,2022-01-01,Non COVID 19,0
+Cornwall,2022-01-02,COVID 19,0
+Cornwall,2022-01-02,Non COVID 19,1
+Cornwall,2022-01-03,COVID 19,0
+Cornwall,2022-01-03,Non COVID 19,2
+Cornwall,2022-01-04,COVID 19,1
+Cornwall,2022-01-04,Non COVID 19,9
+Cornwall,2022-01-05,COVID 19,0
+Cornwall,2022-01-05,Non COVID 19,9
+Cornwall,2022-01-06,COVID 19,0
+Cornwall,2022-01-06,Non COVID 19,4
+Cornwall,2022-01-07,COVID 19,0
+Cornwall,2022-01-07,Non COVID 19,4
+County Durham,2022-01-01,COVID 19,0
+County Durham,2022-01-01,Non COVID 19,1
+County Durham,2022-01-02,COVID 19,0
+County Durham,2022-01-02,Non COVID 19,1
+County Durham,2022-01-03,COVID 19,0
+County Durham,2022-01-03,Non COVID 19,2
+County Durham,2022-01-04,COVID 19,1
+County Durham,2022-01-04,Non COVID 19,7
+County Durham,2022-01-05,COVID 19,1
+County Durham,2022-01-05,Non COVID 19,7
+County Durham,2022-01-06,COVID 19,0
+County Durham,2022-01-06,Non COVID 19,4
+County Durham,2022-01-07,COVID 19,0
+County Durham,2022-01-07,Non COVID 19,2
+Coventry,2022-01-01,COVID 19,0
+Coventry,2022-01-01,Non COVID 19,0
+Coventry,2022-01-02,COVID 19,0
+Coventry,2022-01-02,Non COVID 19,0
+Coventry,2022-01-03,COVID 19,0
+Coventry,2022-01-03,Non COVID 19,2
+Coventry,2022-01-04,COVID 19,0
+Coventry,2022-01-04,Non COVID 19,0
+Coventry,2022-01-05,COVID 19,0
+Coventry,2022-01-05,Non COVID 19,3
+Coventry,2022-01-06,COVID 19,0
+Coventry,2022-01-06,Non COVID 19,1
+Coventry,2022-01-07,COVID 19,0
+Coventry,2022-01-07,Non COVID 19,1
+Croydon,2022-01-01,COVID 19,0
+Croydon,2022-01-01,Non COVID 19,0
+Croydon,2022-01-02,COVID 19,0
+Croydon,2022-01-02,Non COVID 19,2
+Croydon,2022-01-03,COVID 19,0
+Croydon,2022-01-03,Non COVID 19,0
+Croydon,2022-01-04,COVID 19,2
+Croydon,2022-01-04,Non COVID 19,0
+Croydon,2022-01-05,COVID 19,0
+Croydon,2022-01-05,Non COVID 19,0
+Croydon,2022-01-06,COVID 19,0
+Croydon,2022-01-06,Non COVID 19,2
+Croydon,2022-01-07,COVID 19,1
+Croydon,2022-01-07,Non COVID 19,0
+Cumbria,2022-01-01,COVID 19,0
+Cumbria,2022-01-01,Non COVID 19,0
+Cumbria,2022-01-02,COVID 19,0
+Cumbria,2022-01-02,Non COVID 19,0
+Cumbria,2022-01-03,COVID 19,0
+Cumbria,2022-01-03,Non COVID 19,2
+Cumbria,2022-01-04,COVID 19,0
+Cumbria,2022-01-04,Non COVID 19,4
+Cumbria,2022-01-05,COVID 19,1
+Cumbria,2022-01-05,Non COVID 19,2
+Cumbria,2022-01-06,COVID 19,1
+Cumbria,2022-01-06,Non COVID 19,4
+Cumbria,2022-01-07,COVID 19,1
+Cumbria,2022-01-07,Non COVID 19,1
+Darlington,2022-01-01,COVID 19,0
+Darlington,2022-01-01,Non COVID 19,0
+Darlington,2022-01-02,COVID 19,0
+Darlington,2022-01-02,Non COVID 19,0
+Darlington,2022-01-03,COVID 19,0
+Darlington,2022-01-03,Non COVID 19,0
+Darlington,2022-01-04,COVID 19,0
+Darlington,2022-01-04,Non COVID 19,0
+Darlington,2022-01-05,COVID 19,0
+Darlington,2022-01-05,Non COVID 19,1
+Darlington,2022-01-06,COVID 19,1
+Darlington,2022-01-06,Non COVID 19,1
+Darlington,2022-01-07,COVID 19,0
+Darlington,2022-01-07,Non COVID 19,2
+Derby,2022-01-01,COVID 19,0
+Derby,2022-01-01,Non COVID 19,0
+Derby,2022-01-02,COVID 19,0
+Derby,2022-01-02,Non COVID 19,0
+Derby,2022-01-03,COVID 19,0
+Derby,2022-01-03,Non COVID 19,0
+Derby,2022-01-04,COVID 19,0
+Derby,2022-01-04,Non COVID 19,5
+Derby,2022-01-05,COVID 19,0
+Derby,2022-01-05,Non COVID 19,1
+Derby,2022-01-06,COVID 19,0
+Derby,2022-01-06,Non COVID 19,2
+Derby,2022-01-07,COVID 19,0
+Derby,2022-01-07,Non COVID 19,1
+Derbyshire,2022-01-01,COVID 19,0
+Derbyshire,2022-01-01,Non COVID 19,0
+Derbyshire,2022-01-02,COVID 19,0
+Derbyshire,2022-01-02,Non COVID 19,1
+Derbyshire,2022-01-03,COVID 19,0
+Derbyshire,2022-01-03,Non COVID 19,7
+Derbyshire,2022-01-04,COVID 19,0
+Derbyshire,2022-01-04,Non COVID 19,5
+Derbyshire,2022-01-05,COVID 19,0
+Derbyshire,2022-01-05,Non COVID 19,9
+Derbyshire,2022-01-06,COVID 19,0
+Derbyshire,2022-01-06,Non COVID 19,2
+Derbyshire,2022-01-07,COVID 19,0
+Derbyshire,2022-01-07,Non COVID 19,6
+Devon,2022-01-01,COVID 19,2
+Devon,2022-01-01,Non COVID 19,1
+Devon,2022-01-02,COVID 19,0
+Devon,2022-01-02,Non COVID 19,1
+Devon,2022-01-03,COVID 19,0
+Devon,2022-01-03,Non COVID 19,9
+Devon,2022-01-04,COVID 19,0
+Devon,2022-01-04,Non COVID 19,9
+Devon,2022-01-05,COVID 19,0
+Devon,2022-01-05,Non COVID 19,7
+Devon,2022-01-06,COVID 19,0
+Devon,2022-01-06,Non COVID 19,8
+Devon,2022-01-07,COVID 19,1
+Devon,2022-01-07,Non COVID 19,11
+Doncaster,2022-01-01,COVID 19,0
+Doncaster,2022-01-01,Non COVID 19,1
+Doncaster,2022-01-02,COVID 19,0
+Doncaster,2022-01-02,Non COVID 19,2
+Doncaster,2022-01-03,COVID 19,0
+Doncaster,2022-01-03,Non COVID 19,1
+Doncaster,2022-01-04,COVID 19,0
+Doncaster,2022-01-04,Non COVID 19,5
+Doncaster,2022-01-05,COVID 19,0
+Doncaster,2022-01-05,Non COVID 19,7
+Doncaster,2022-01-06,COVID 19,0
+Doncaster,2022-01-06,Non COVID 19,1
+Doncaster,2022-01-07,COVID 19,0
+Doncaster,2022-01-07,Non COVID 19,2
+Dorset,2022-01-01,COVID 19,0
+Dorset,2022-01-01,Non COVID 19,0
+Dorset,2022-01-02,COVID 19,0
+Dorset,2022-01-02,Non COVID 19,1
+Dorset,2022-01-03,COVID 19,0
+Dorset,2022-01-03,Non COVID 19,2
+Dorset,2022-01-04,COVID 19,0
+Dorset,2022-01-04,Non COVID 19,2
+Dorset,2022-01-05,COVID 19,0
+Dorset,2022-01-05,Non COVID 19,0
+Dorset,2022-01-06,COVID 19,0
+Dorset,2022-01-06,Non COVID 19,3
+Dorset,2022-01-07,COVID 19,0
+Dorset,2022-01-07,Non COVID 19,7
+Dudley,2022-01-01,COVID 19,0
+Dudley,2022-01-01,Non COVID 19,0
+Dudley,2022-01-02,COVID 19,0
+Dudley,2022-01-02,Non COVID 19,0
+Dudley,2022-01-03,COVID 19,0
+Dudley,2022-01-03,Non COVID 19,0
+Dudley,2022-01-04,COVID 19,0
+Dudley,2022-01-04,Non COVID 19,7
+Dudley,2022-01-05,COVID 19,0
+Dudley,2022-01-05,Non COVID 19,2
+Dudley,2022-01-06,COVID 19,1
+Dudley,2022-01-06,Non COVID 19,3
+Dudley,2022-01-07,COVID 19,0
+Dudley,2022-01-07,Non COVID 19,2
+Ealing,2022-01-01,COVID 19,0
+Ealing,2022-01-01,Non COVID 19,0
+Ealing,2022-01-02,COVID 19,0
+Ealing,2022-01-02,Non COVID 19,0
+Ealing,2022-01-03,COVID 19,0
+Ealing,2022-01-03,Non COVID 19,0
+Ealing,2022-01-04,COVID 19,0
+Ealing,2022-01-04,Non COVID 19,0
+Ealing,2022-01-05,COVID 19,0
+Ealing,2022-01-05,Non COVID 19,0
+Ealing,2022-01-06,COVID 19,1
+Ealing,2022-01-06,Non COVID 19,0
+Ealing,2022-01-07,COVID 19,0
+Ealing,2022-01-07,Non COVID 19,3
+East Riding of Yorkshire,2022-01-01,COVID 19,0
+East Riding of Yorkshire,2022-01-01,Non COVID 19,0
+East Riding of Yorkshire,2022-01-02,COVID 19,0
+East Riding of Yorkshire,2022-01-02,Non COVID 19,1
+East Riding of Yorkshire,2022-01-03,COVID 19,0
+East Riding of Yorkshire,2022-01-03,Non COVID 19,4
+East Riding of Yorkshire,2022-01-04,COVID 19,0
+East Riding of Yorkshire,2022-01-04,Non COVID 19,6
+East Riding of Yorkshire,2022-01-05,COVID 19,0
+East Riding of Yorkshire,2022-01-05,Non COVID 19,4
+East Riding of Yorkshire,2022-01-06,COVID 19,0
+East Riding of Yorkshire,2022-01-06,Non COVID 19,2
+East Riding of Yorkshire,2022-01-07,COVID 19,0
+East Riding of Yorkshire,2022-01-07,Non COVID 19,2
+East Sussex,2022-01-01,COVID 19,0
+East Sussex,2022-01-01,Non COVID 19,0
+East Sussex,2022-01-02,COVID 19,0
+East Sussex,2022-01-02,Non COVID 19,0
+East Sussex,2022-01-03,COVID 19,0
+East Sussex,2022-01-03,Non COVID 19,4
+East Sussex,2022-01-04,COVID 19,0
+East Sussex,2022-01-04,Non COVID 19,13
+East Sussex,2022-01-05,COVID 19,0
+East Sussex,2022-01-05,Non COVID 19,7
+East Sussex,2022-01-06,COVID 19,0
+East Sussex,2022-01-06,Non COVID 19,3
+East Sussex,2022-01-07,COVID 19,0
+East Sussex,2022-01-07,Non COVID 19,7
+Enfield,2022-01-01,COVID 19,0
+Enfield,2022-01-01,Non COVID 19,0
+Enfield,2022-01-02,COVID 19,0
+Enfield,2022-01-02,Non COVID 19,0
+Enfield,2022-01-03,COVID 19,0
+Enfield,2022-01-03,Non COVID 19,0
+Enfield,2022-01-04,COVID 19,0
+Enfield,2022-01-04,Non COVID 19,1
+Enfield,2022-01-05,COVID 19,0
+Enfield,2022-01-05,Non COVID 19,2
+Enfield,2022-01-06,COVID 19,1
+Enfield,2022-01-06,Non COVID 19,1
+Enfield,2022-01-07,COVID 19,0
+Enfield,2022-01-07,Non COVID 19,2
+Essex,2022-01-01,COVID 19,0
+Essex,2022-01-01,Non COVID 19,2
+Essex,2022-01-02,COVID 19,0
+Essex,2022-01-02,Non COVID 19,0
+Essex,2022-01-03,COVID 19,0
+Essex,2022-01-03,Non COVID 19,3
+Essex,2022-01-04,COVID 19,1
+Essex,2022-01-04,Non COVID 19,14
+Essex,2022-01-05,COVID 19,0
+Essex,2022-01-05,Non COVID 19,8
+Essex,2022-01-06,COVID 19,2
+Essex,2022-01-06,Non COVID 19,8
+Essex,2022-01-07,COVID 19,1
+Essex,2022-01-07,Non COVID 19,5
+Gateshead,2022-01-01,COVID 19,0
+Gateshead,2022-01-01,Non COVID 19,0
+Gateshead,2022-01-02,COVID 19,0
+Gateshead,2022-01-02,Non COVID 19,0
+Gateshead,2022-01-03,COVID 19,0
+Gateshead,2022-01-03,Non COVID 19,0
+Gateshead,2022-01-04,COVID 19,0
+Gateshead,2022-01-04,Non COVID 19,3
+Gateshead,2022-01-05,COVID 19,0
+Gateshead,2022-01-05,Non COVID 19,0
+Gateshead,2022-01-06,COVID 19,0
+Gateshead,2022-01-06,Non COVID 19,0
+Gateshead,2022-01-07,COVID 19,0
+Gateshead,2022-01-07,Non COVID 19,2
+Gloucestershire,2022-01-01,COVID 19,0
+Gloucestershire,2022-01-01,Non COVID 19,0
+Gloucestershire,2022-01-02,COVID 19,0
+Gloucestershire,2022-01-02,Non COVID 19,0
+Gloucestershire,2022-01-03,COVID 19,1
+Gloucestershire,2022-01-03,Non COVID 19,1
+Gloucestershire,2022-01-04,COVID 19,0
+Gloucestershire,2022-01-04,Non COVID 19,8
+Gloucestershire,2022-01-05,COVID 19,0
+Gloucestershire,2022-01-05,Non COVID 19,6
+Gloucestershire,2022-01-06,COVID 19,0
+Gloucestershire,2022-01-06,Non COVID 19,3
+Gloucestershire,2022-01-07,COVID 19,0
+Gloucestershire,2022-01-07,Non COVID 19,4
+Greenwich,2022-01-01,COVID 19,0
+Greenwich,2022-01-01,Non COVID 19,0
+Greenwich,2022-01-02,COVID 19,0
+Greenwich,2022-01-02,Non COVID 19,0
+Greenwich,2022-01-03,COVID 19,0
+Greenwich,2022-01-03,Non COVID 19,0
+Greenwich,2022-01-04,COVID 19,0
+Greenwich,2022-01-04,Non COVID 19,0
+Greenwich,2022-01-05,COVID 19,0
+Greenwich,2022-01-05,Non COVID 19,0
+Greenwich,2022-01-06,COVID 19,0
+Greenwich,2022-01-06,Non COVID 19,1
+Greenwich,2022-01-07,COVID 19,0
+Greenwich,2022-01-07,Non COVID 19,0
+Hackney,2022-01-01,COVID 19,0
+Hackney,2022-01-01,Non COVID 19,0
+Hackney,2022-01-02,COVID 19,0
+Hackney,2022-01-02,Non COVID 19,0
+Hackney,2022-01-03,COVID 19,0
+Hackney,2022-01-03,Non COVID 19,0
+Hackney,2022-01-04,COVID 19,0
+Hackney,2022-01-04,Non COVID 19,0
+Hackney,2022-01-05,COVID 19,0
+Hackney,2022-01-05,Non COVID 19,0
+Hackney,2022-01-06,COVID 19,0
+Hackney,2022-01-06,Non COVID 19,0
+Hackney,2022-01-07,COVID 19,0
+Hackney,2022-01-07,Non COVID 19,0
+Halton,2022-01-01,COVID 19,0
+Halton,2022-01-01,Non COVID 19,0
+Halton,2022-01-02,COVID 19,0
+Halton,2022-01-02,Non COVID 19,0
+Halton,2022-01-03,COVID 19,0
+Halton,2022-01-03,Non COVID 19,1
+Halton,2022-01-04,COVID 19,0
+Halton,2022-01-04,Non COVID 19,0
+Halton,2022-01-05,COVID 19,0
+Halton,2022-01-05,Non COVID 19,0
+Halton,2022-01-06,COVID 19,0
+Halton,2022-01-06,Non COVID 19,1
+Halton,2022-01-07,COVID 19,0
+Halton,2022-01-07,Non COVID 19,1
+Hammersmith and Fulham,2022-01-01,COVID 19,0
+Hammersmith and Fulham,2022-01-01,Non COVID 19,0
+Hammersmith and Fulham,2022-01-02,COVID 19,0
+Hammersmith and Fulham,2022-01-02,Non COVID 19,0
+Hammersmith and Fulham,2022-01-03,COVID 19,0
+Hammersmith and Fulham,2022-01-03,Non COVID 19,0
+Hammersmith and Fulham,2022-01-04,COVID 19,0
+Hammersmith and Fulham,2022-01-04,Non COVID 19,0
+Hammersmith and Fulham,2022-01-05,COVID 19,0
+Hammersmith and Fulham,2022-01-05,Non COVID 19,0
+Hammersmith and Fulham,2022-01-06,COVID 19,0
+Hammersmith and Fulham,2022-01-06,Non COVID 19,0
+Hammersmith and Fulham,2022-01-07,COVID 19,0
+Hammersmith and Fulham,2022-01-07,Non COVID 19,1
+Hampshire,2022-01-01,COVID 19,0
+Hampshire,2022-01-01,Non COVID 19,2
+Hampshire,2022-01-02,COVID 19,0
+Hampshire,2022-01-02,Non COVID 19,8
+Hampshire,2022-01-03,COVID 19,1
+Hampshire,2022-01-03,Non COVID 19,11
+Hampshire,2022-01-04,COVID 19,2
+Hampshire,2022-01-04,Non COVID 19,18
+Hampshire,2022-01-05,COVID 19,0
+Hampshire,2022-01-05,Non COVID 19,11
+Hampshire,2022-01-06,COVID 19,0
+Hampshire,2022-01-06,Non COVID 19,11
+Hampshire,2022-01-07,COVID 19,1
+Hampshire,2022-01-07,Non COVID 19,15
+Haringey,2022-01-01,COVID 19,0
+Haringey,2022-01-01,Non COVID 19,0
+Haringey,2022-01-02,COVID 19,0
+Haringey,2022-01-02,Non COVID 19,0
+Haringey,2022-01-03,COVID 19,0
+Haringey,2022-01-03,Non COVID 19,0
+Haringey,2022-01-04,COVID 19,0
+Haringey,2022-01-04,Non COVID 19,1
+Haringey,2022-01-05,COVID 19,0
+Haringey,2022-01-05,Non COVID 19,0
+Haringey,2022-01-06,COVID 19,0
+Haringey,2022-01-06,Non COVID 19,0
+Haringey,2022-01-07,COVID 19,0
+Haringey,2022-01-07,Non COVID 19,0
+Harrow,2022-01-01,COVID 19,0
+Harrow,2022-01-01,Non COVID 19,0
+Harrow,2022-01-02,COVID 19,0
+Harrow,2022-01-02,Non COVID 19,0
+Harrow,2022-01-03,COVID 19,0
+Harrow,2022-01-03,Non COVID 19,0
+Harrow,2022-01-04,COVID 19,0
+Harrow,2022-01-04,Non COVID 19,3
+Harrow,2022-01-05,COVID 19,0
+Harrow,2022-01-05,Non COVID 19,3
+Harrow,2022-01-06,COVID 19,0
+Harrow,2022-01-06,Non COVID 19,0
+Harrow,2022-01-07,COVID 19,0
+Harrow,2022-01-07,Non COVID 19,1
+Hartlepool,2022-01-01,COVID 19,0
+Hartlepool,2022-01-01,Non COVID 19,0
+Hartlepool,2022-01-02,COVID 19,0
+Hartlepool,2022-01-02,Non COVID 19,0
+Hartlepool,2022-01-03,COVID 19,0
+Hartlepool,2022-01-03,Non COVID 19,1
+Hartlepool,2022-01-04,COVID 19,0
+Hartlepool,2022-01-04,Non COVID 19,2
+Hartlepool,2022-01-05,COVID 19,0
+Hartlepool,2022-01-05,Non COVID 19,1
+Hartlepool,2022-01-06,COVID 19,0
+Hartlepool,2022-01-06,Non COVID 19,0
+Hartlepool,2022-01-07,COVID 19,0
+Hartlepool,2022-01-07,Non COVID 19,0
+Havering,2022-01-01,COVID 19,0
+Havering,2022-01-01,Non COVID 19,0
+Havering,2022-01-02,COVID 19,0
+Havering,2022-01-02,Non COVID 19,2
+Havering,2022-01-03,COVID 19,0
+Havering,2022-01-03,Non COVID 19,4
+Havering,2022-01-04,COVID 19,0
+Havering,2022-01-04,Non COVID 19,5
+Havering,2022-01-05,COVID 19,0
+Havering,2022-01-05,Non COVID 19,2
+Havering,2022-01-06,COVID 19,0
+Havering,2022-01-06,Non COVID 19,2
+Havering,2022-01-07,COVID 19,0
+Havering,2022-01-07,Non COVID 19,0
+"Herefordshire, County of",2022-01-01,COVID 19,0
+"Herefordshire, County of",2022-01-01,Non COVID 19,0
+"Herefordshire, County of",2022-01-02,COVID 19,0
+"Herefordshire, County of",2022-01-02,Non COVID 19,0
+"Herefordshire, County of",2022-01-03,COVID 19,0
+"Herefordshire, County of",2022-01-03,Non COVID 19,5
+"Herefordshire, County of",2022-01-04,COVID 19,0
+"Herefordshire, County of",2022-01-04,Non COVID 19,1
+"Herefordshire, County of",2022-01-05,COVID 19,0
+"Herefordshire, County of",2022-01-05,Non COVID 19,0
+"Herefordshire, County of",2022-01-06,COVID 19,0
+"Herefordshire, County of",2022-01-06,Non COVID 19,0
+"Herefordshire, County of",2022-01-07,COVID 19,0
+"Herefordshire, County of",2022-01-07,Non COVID 19,1
+Hertfordshire,2022-01-01,COVID 19,0
+Hertfordshire,2022-01-01,Non COVID 19,1
+Hertfordshire,2022-01-02,COVID 19,0
+Hertfordshire,2022-01-02,Non COVID 19,5
+Hertfordshire,2022-01-03,COVID 19,0
+Hertfordshire,2022-01-03,Non COVID 19,6
+Hertfordshire,2022-01-04,COVID 19,1
+Hertfordshire,2022-01-04,Non COVID 19,15
+Hertfordshire,2022-01-05,COVID 19,1
+Hertfordshire,2022-01-05,Non COVID 19,6
+Hertfordshire,2022-01-06,COVID 19,0
+Hertfordshire,2022-01-06,Non COVID 19,9
+Hertfordshire,2022-01-07,COVID 19,1
+Hertfordshire,2022-01-07,Non COVID 19,6
+Hillingdon,2022-01-01,COVID 19,0
+Hillingdon,2022-01-01,Non COVID 19,0
+Hillingdon,2022-01-02,COVID 19,0
+Hillingdon,2022-01-02,Non COVID 19,0
+Hillingdon,2022-01-03,COVID 19,0
+Hillingdon,2022-01-03,Non COVID 19,1
+Hillingdon,2022-01-04,COVID 19,0
+Hillingdon,2022-01-04,Non COVID 19,3
+Hillingdon,2022-01-05,COVID 19,0
+Hillingdon,2022-01-05,Non COVID 19,0
+Hillingdon,2022-01-06,COVID 19,0
+Hillingdon,2022-01-06,Non COVID 19,1
+Hillingdon,2022-01-07,COVID 19,0
+Hillingdon,2022-01-07,Non COVID 19,1
+Hounslow,2022-01-01,COVID 19,0
+Hounslow,2022-01-01,Non COVID 19,0
+Hounslow,2022-01-02,COVID 19,0
+Hounslow,2022-01-02,Non COVID 19,0
+Hounslow,2022-01-03,COVID 19,0
+Hounslow,2022-01-03,Non COVID 19,0
+Hounslow,2022-01-04,COVID 19,2
+Hounslow,2022-01-04,Non COVID 19,1
+Hounslow,2022-01-05,COVID 19,0
+Hounslow,2022-01-05,Non COVID 19,1
+Hounslow,2022-01-06,COVID 19,0
+Hounslow,2022-01-06,Non COVID 19,1
+Hounslow,2022-01-07,COVID 19,0
+Hounslow,2022-01-07,Non COVID 19,0
+Isle of Wight,2022-01-01,COVID 19,0
+Isle of Wight,2022-01-01,Non COVID 19,0
+Isle of Wight,2022-01-02,COVID 19,0
+Isle of Wight,2022-01-02,Non COVID 19,0
+Isle of Wight,2022-01-03,COVID 19,0
+Isle of Wight,2022-01-03,Non COVID 19,1
+Isle of Wight,2022-01-04,COVID 19,0
+Isle of Wight,2022-01-04,Non COVID 19,3
+Isle of Wight,2022-01-05,COVID 19,0
+Isle of Wight,2022-01-05,Non COVID 19,1
+Isle of Wight,2022-01-06,COVID 19,0
+Isle of Wight,2022-01-06,Non COVID 19,0
+Isle of Wight,2022-01-07,COVID 19,0
+Isle of Wight,2022-01-07,Non COVID 19,2
+Islington,2022-01-01,COVID 19,0
+Islington,2022-01-01,Non COVID 19,0
+Islington,2022-01-02,COVID 19,0
+Islington,2022-01-02,Non COVID 19,1
+Islington,2022-01-03,COVID 19,0
+Islington,2022-01-03,Non COVID 19,0
+Islington,2022-01-04,COVID 19,0
+Islington,2022-01-04,Non COVID 19,0
+Islington,2022-01-05,COVID 19,0
+Islington,2022-01-05,Non COVID 19,0
+Islington,2022-01-06,COVID 19,0
+Islington,2022-01-06,Non COVID 19,2
+Islington,2022-01-07,COVID 19,0
+Islington,2022-01-07,Non COVID 19,0
+Kensington and Chelsea,2022-01-01,COVID 19,0
+Kensington and Chelsea,2022-01-01,Non COVID 19,0
+Kensington and Chelsea,2022-01-02,COVID 19,0
+Kensington and Chelsea,2022-01-02,Non COVID 19,0
+Kensington and Chelsea,2022-01-03,COVID 19,0
+Kensington and Chelsea,2022-01-03,Non COVID 19,0
+Kensington and Chelsea,2022-01-04,COVID 19,0
+Kensington and Chelsea,2022-01-04,Non COVID 19,0
+Kensington and Chelsea,2022-01-05,COVID 19,0
+Kensington and Chelsea,2022-01-05,Non COVID 19,0
+Kensington and Chelsea,2022-01-06,COVID 19,1
+Kensington and Chelsea,2022-01-06,Non COVID 19,0
+Kensington and Chelsea,2022-01-07,COVID 19,0
+Kensington and Chelsea,2022-01-07,Non COVID 19,0
+Kent,2022-01-01,COVID 19,0
+Kent,2022-01-01,Non COVID 19,2
+Kent,2022-01-02,COVID 19,0
+Kent,2022-01-02,Non COVID 19,9
+Kent,2022-01-03,COVID 19,0
+Kent,2022-01-03,Non COVID 19,5
+Kent,2022-01-04,COVID 19,0
+Kent,2022-01-04,Non COVID 19,22
+Kent,2022-01-05,COVID 19,1
+Kent,2022-01-05,Non COVID 19,14
+Kent,2022-01-06,COVID 19,0
+Kent,2022-01-06,Non COVID 19,7
+Kent,2022-01-07,COVID 19,0
+Kent,2022-01-07,Non COVID 19,10
+"Kingston upon Hull, City of",2022-01-01,COVID 19,0
+"Kingston upon Hull, City of",2022-01-01,Non COVID 19,0
+"Kingston upon Hull, City of",2022-01-02,COVID 19,0
+"Kingston upon Hull, City of",2022-01-02,Non COVID 19,0
+"Kingston upon Hull, City of",2022-01-03,COVID 19,0
+"Kingston upon Hull, City of",2022-01-03,Non COVID 19,1
+"Kingston upon Hull, City of",2022-01-04,COVID 19,0
+"Kingston upon Hull, City of",2022-01-04,Non COVID 19,6
+"Kingston upon Hull, City of",2022-01-05,COVID 19,0
+"Kingston upon Hull, City of",2022-01-05,Non COVID 19,3
+"Kingston upon Hull, City of",2022-01-06,COVID 19,0
+"Kingston upon Hull, City of",2022-01-06,Non COVID 19,4
+"Kingston upon Hull, City of",2022-01-07,COVID 19,0
+"Kingston upon Hull, City of",2022-01-07,Non COVID 19,1
+Kingston upon Thames,2022-01-01,COVID 19,0
+Kingston upon Thames,2022-01-01,Non COVID 19,2
+Kingston upon Thames,2022-01-02,COVID 19,0
+Kingston upon Thames,2022-01-02,Non COVID 19,0
+Kingston upon Thames,2022-01-03,COVID 19,0
+Kingston upon Thames,2022-01-03,Non COVID 19,1
+Kingston upon Thames,2022-01-04,COVID 19,0
+Kingston upon Thames,2022-01-04,Non COVID 19,4
+Kingston upon Thames,2022-01-05,COVID 19,0
+Kingston upon Thames,2022-01-05,Non COVID 19,0
+Kingston upon Thames,2022-01-06,COVID 19,0
+Kingston upon Thames,2022-01-06,Non COVID 19,1
+Kingston upon Thames,2022-01-07,COVID 19,0
+Kingston upon Thames,2022-01-07,Non COVID 19,0
+Kirklees,2022-01-01,COVID 19,0
+Kirklees,2022-01-01,Non COVID 19,1
+Kirklees,2022-01-02,COVID 19,0
+Kirklees,2022-01-02,Non COVID 19,1
+Kirklees,2022-01-03,COVID 19,0
+Kirklees,2022-01-03,Non COVID 19,0
+Kirklees,2022-01-04,COVID 19,0
+Kirklees,2022-01-04,Non COVID 19,4
+Kirklees,2022-01-05,COVID 19,1
+Kirklees,2022-01-05,Non COVID 19,4
+Kirklees,2022-01-06,COVID 19,1
+Kirklees,2022-01-06,Non COVID 19,2
+Kirklees,2022-01-07,COVID 19,0
+Kirklees,2022-01-07,Non COVID 19,2
+Knowsley,2022-01-01,COVID 19,0
+Knowsley,2022-01-01,Non COVID 19,0
+Knowsley,2022-01-02,COVID 19,0
+Knowsley,2022-01-02,Non COVID 19,0
+Knowsley,2022-01-03,COVID 19,0
+Knowsley,2022-01-03,Non COVID 19,0
+Knowsley,2022-01-04,COVID 19,0
+Knowsley,2022-01-04,Non COVID 19,0
+Knowsley,2022-01-05,COVID 19,0
+Knowsley,2022-01-05,Non COVID 19,0
+Knowsley,2022-01-06,COVID 19,0
+Knowsley,2022-01-06,Non COVID 19,0
+Knowsley,2022-01-07,COVID 19,0
+Knowsley,2022-01-07,Non COVID 19,0
+Lambeth,2022-01-01,COVID 19,0
+Lambeth,2022-01-01,Non COVID 19,0
+Lambeth,2022-01-02,COVID 19,0
+Lambeth,2022-01-02,Non COVID 19,0
+Lambeth,2022-01-03,COVID 19,0
+Lambeth,2022-01-03,Non COVID 19,1
+Lambeth,2022-01-04,COVID 19,0
+Lambeth,2022-01-04,Non COVID 19,0
+Lambeth,2022-01-05,COVID 19,0
+Lambeth,2022-01-05,Non COVID 19,1
+Lambeth,2022-01-06,COVID 19,0
+Lambeth,2022-01-06,Non COVID 19,0
+Lambeth,2022-01-07,COVID 19,0
+Lambeth,2022-01-07,Non COVID 19,1
+Lancashire,2022-01-01,COVID 19,0
+Lancashire,2022-01-01,Non COVID 19,1
+Lancashire,2022-01-02,COVID 19,2
+Lancashire,2022-01-02,Non COVID 19,0
+Lancashire,2022-01-03,COVID 19,0
+Lancashire,2022-01-03,Non COVID 19,10
+Lancashire,2022-01-04,COVID 19,1
+Lancashire,2022-01-04,Non COVID 19,12
+Lancashire,2022-01-05,COVID 19,1
+Lancashire,2022-01-05,Non COVID 19,11
+Lancashire,2022-01-06,COVID 19,3
+Lancashire,2022-01-06,Non COVID 19,7
+Lancashire,2022-01-07,COVID 19,0
+Lancashire,2022-01-07,Non COVID 19,10
+Leeds,2022-01-01,COVID 19,0
+Leeds,2022-01-01,Non COVID 19,1
+Leeds,2022-01-02,COVID 19,0
+Leeds,2022-01-02,Non COVID 19,2
+Leeds,2022-01-03,COVID 19,0
+Leeds,2022-01-03,Non COVID 19,3
+Leeds,2022-01-04,COVID 19,1
+Leeds,2022-01-04,Non COVID 19,8
+Leeds,2022-01-05,COVID 19,0
+Leeds,2022-01-05,Non COVID 19,6
+Leeds,2022-01-06,COVID 19,1
+Leeds,2022-01-06,Non COVID 19,4
+Leeds,2022-01-07,COVID 19,0
+Leeds,2022-01-07,Non COVID 19,2
+Leicester,2022-01-01,COVID 19,0
+Leicester,2022-01-01,Non COVID 19,0
+Leicester,2022-01-02,COVID 19,0
+Leicester,2022-01-02,Non COVID 19,0
+Leicester,2022-01-03,COVID 19,0
+Leicester,2022-01-03,Non COVID 19,2
+Leicester,2022-01-04,COVID 19,0
+Leicester,2022-01-04,Non COVID 19,2
+Leicester,2022-01-05,COVID 19,0
+Leicester,2022-01-05,Non COVID 19,1
+Leicester,2022-01-06,COVID 19,1
+Leicester,2022-01-06,Non COVID 19,3
+Leicester,2022-01-07,COVID 19,0
+Leicester,2022-01-07,Non COVID 19,2
+Leicestershire,2022-01-01,COVID 19,0
+Leicestershire,2022-01-01,Non COVID 19,1
+Leicestershire,2022-01-02,COVID 19,0
+Leicestershire,2022-01-02,Non COVID 19,1
+Leicestershire,2022-01-03,COVID 19,0
+Leicestershire,2022-01-03,Non COVID 19,3
+Leicestershire,2022-01-04,COVID 19,3
+Leicestershire,2022-01-04,Non COVID 19,5
+Leicestershire,2022-01-05,COVID 19,0
+Leicestershire,2022-01-05,Non COVID 19,7
+Leicestershire,2022-01-06,COVID 19,0
+Leicestershire,2022-01-06,Non COVID 19,9
+Leicestershire,2022-01-07,COVID 19,0
+Leicestershire,2022-01-07,Non COVID 19,3
+Lewisham,2022-01-01,COVID 19,0
+Lewisham,2022-01-01,Non COVID 19,0
+Lewisham,2022-01-02,COVID 19,0
+Lewisham,2022-01-02,Non COVID 19,0
+Lewisham,2022-01-03,COVID 19,0
+Lewisham,2022-01-03,Non COVID 19,0
+Lewisham,2022-01-04,COVID 19,0
+Lewisham,2022-01-04,Non COVID 19,3
+Lewisham,2022-01-05,COVID 19,0
+Lewisham,2022-01-05,Non COVID 19,1
+Lewisham,2022-01-06,COVID 19,0
+Lewisham,2022-01-06,Non COVID 19,0
+Lewisham,2022-01-07,COVID 19,0
+Lewisham,2022-01-07,Non COVID 19,0
+Lincolnshire,2022-01-01,COVID 19,0
+Lincolnshire,2022-01-01,Non COVID 19,1
+Lincolnshire,2022-01-02,COVID 19,0
+Lincolnshire,2022-01-02,Non COVID 19,1
+Lincolnshire,2022-01-03,COVID 19,0
+Lincolnshire,2022-01-03,Non COVID 19,3
+Lincolnshire,2022-01-04,COVID 19,0
+Lincolnshire,2022-01-04,Non COVID 19,18
+Lincolnshire,2022-01-05,COVID 19,0
+Lincolnshire,2022-01-05,Non COVID 19,8
+Lincolnshire,2022-01-06,COVID 19,0
+Lincolnshire,2022-01-06,Non COVID 19,6
+Lincolnshire,2022-01-07,COVID 19,0
+Lincolnshire,2022-01-07,Non COVID 19,4
+Liverpool,2022-01-01,COVID 19,0
+Liverpool,2022-01-01,Non COVID 19,0
+Liverpool,2022-01-02,COVID 19,0
+Liverpool,2022-01-02,Non COVID 19,0
+Liverpool,2022-01-03,COVID 19,0
+Liverpool,2022-01-03,Non COVID 19,2
+Liverpool,2022-01-04,COVID 19,0
+Liverpool,2022-01-04,Non COVID 19,2
+Liverpool,2022-01-05,COVID 19,0
+Liverpool,2022-01-05,Non COVID 19,3
+Liverpool,2022-01-06,COVID 19,1
+Liverpool,2022-01-06,Non COVID 19,3
+Liverpool,2022-01-07,COVID 19,0
+Liverpool,2022-01-07,Non COVID 19,3
+Luton,2022-01-01,COVID 19,0
+Luton,2022-01-01,Non COVID 19,0
+Luton,2022-01-02,COVID 19,0
+Luton,2022-01-02,Non COVID 19,0
+Luton,2022-01-03,COVID 19,0
+Luton,2022-01-03,Non COVID 19,0
+Luton,2022-01-04,COVID 19,0
+Luton,2022-01-04,Non COVID 19,2
+Luton,2022-01-05,COVID 19,0
+Luton,2022-01-05,Non COVID 19,0
+Luton,2022-01-06,COVID 19,0
+Luton,2022-01-06,Non COVID 19,0
+Luton,2022-01-07,COVID 19,0
+Luton,2022-01-07,Non COVID 19,3
+Manchester,2022-01-01,COVID 19,0
+Manchester,2022-01-01,Non COVID 19,0
+Manchester,2022-01-02,COVID 19,0
+Manchester,2022-01-02,Non COVID 19,0
+Manchester,2022-01-03,COVID 19,0
+Manchester,2022-01-03,Non COVID 19,2
+Manchester,2022-01-04,COVID 19,0
+Manchester,2022-01-04,Non COVID 19,1
+Manchester,2022-01-05,COVID 19,0
+Manchester,2022-01-05,Non COVID 19,2
+Manchester,2022-01-06,COVID 19,1
+Manchester,2022-01-06,Non COVID 19,1
+Manchester,2022-01-07,COVID 19,0
+Manchester,2022-01-07,Non COVID 19,0
+Medway,2022-01-01,COVID 19,0
+Medway,2022-01-01,Non COVID 19,2
+Medway,2022-01-02,COVID 19,0
+Medway,2022-01-02,Non COVID 19,2
+Medway,2022-01-03,COVID 19,0
+Medway,2022-01-03,Non COVID 19,1
+Medway,2022-01-04,COVID 19,0
+Medway,2022-01-04,Non COVID 19,1
+Medway,2022-01-05,COVID 19,0
+Medway,2022-01-05,Non COVID 19,1
+Medway,2022-01-06,COVID 19,0
+Medway,2022-01-06,Non COVID 19,1
+Medway,2022-01-07,COVID 19,0
+Medway,2022-01-07,Non COVID 19,0
+Merton,2022-01-01,COVID 19,0
+Merton,2022-01-01,Non COVID 19,0
+Merton,2022-01-02,COVID 19,0
+Merton,2022-01-02,Non COVID 19,0
+Merton,2022-01-03,COVID 19,0
+Merton,2022-01-03,Non COVID 19,1
+Merton,2022-01-04,COVID 19,0
+Merton,2022-01-04,Non COVID 19,1
+Merton,2022-01-05,COVID 19,0
+Merton,2022-01-05,Non COVID 19,2
+Merton,2022-01-06,COVID 19,0
+Merton,2022-01-06,Non COVID 19,0
+Merton,2022-01-07,COVID 19,0
+Merton,2022-01-07,Non COVID 19,0
+Middlesbrough,2022-01-01,COVID 19,0
+Middlesbrough,2022-01-01,Non COVID 19,1
+Middlesbrough,2022-01-02,COVID 19,0
+Middlesbrough,2022-01-02,Non COVID 19,0
+Middlesbrough,2022-01-03,COVID 19,0
+Middlesbrough,2022-01-03,Non COVID 19,0
+Middlesbrough,2022-01-04,COVID 19,0
+Middlesbrough,2022-01-04,Non COVID 19,4
+Middlesbrough,2022-01-05,COVID 19,0
+Middlesbrough,2022-01-05,Non COVID 19,1
+Middlesbrough,2022-01-06,COVID 19,0
+Middlesbrough,2022-01-06,Non COVID 19,2
+Middlesbrough,2022-01-07,COVID 19,0
+Middlesbrough,2022-01-07,Non COVID 19,3
+Milton Keynes,2022-01-01,COVID 19,0
+Milton Keynes,2022-01-01,Non COVID 19,1
+Milton Keynes,2022-01-02,COVID 19,0
+Milton Keynes,2022-01-02,Non COVID 19,0
+Milton Keynes,2022-01-03,COVID 19,1
+Milton Keynes,2022-01-03,Non COVID 19,0
+Milton Keynes,2022-01-04,COVID 19,0
+Milton Keynes,2022-01-04,Non COVID 19,3
+Milton Keynes,2022-01-05,COVID 19,1
+Milton Keynes,2022-01-05,Non COVID 19,1
+Milton Keynes,2022-01-06,COVID 19,0
+Milton Keynes,2022-01-06,Non COVID 19,0
+Milton Keynes,2022-01-07,COVID 19,0
+Milton Keynes,2022-01-07,Non COVID 19,1
+Newcastle upon Tyne,2022-01-01,COVID 19,0
+Newcastle upon Tyne,2022-01-01,Non COVID 19,0
+Newcastle upon Tyne,2022-01-02,COVID 19,0
+Newcastle upon Tyne,2022-01-02,Non COVID 19,0
+Newcastle upon Tyne,2022-01-03,COVID 19,0
+Newcastle upon Tyne,2022-01-03,Non COVID 19,0
+Newcastle upon Tyne,2022-01-04,COVID 19,0
+Newcastle upon Tyne,2022-01-04,Non COVID 19,2
+Newcastle upon Tyne,2022-01-05,COVID 19,0
+Newcastle upon Tyne,2022-01-05,Non COVID 19,2
+Newcastle upon Tyne,2022-01-06,COVID 19,0
+Newcastle upon Tyne,2022-01-06,Non COVID 19,1
+Newcastle upon Tyne,2022-01-07,COVID 19,2
+Newcastle upon Tyne,2022-01-07,Non COVID 19,1
+Newham,2022-01-01,COVID 19,0
+Newham,2022-01-01,Non COVID 19,0
+Newham,2022-01-02,COVID 19,0
+Newham,2022-01-02,Non COVID 19,0
+Newham,2022-01-03,COVID 19,0
+Newham,2022-01-03,Non COVID 19,0
+Newham,2022-01-04,COVID 19,0
+Newham,2022-01-04,Non COVID 19,1
+Newham,2022-01-05,COVID 19,0
+Newham,2022-01-05,Non COVID 19,1
+Newham,2022-01-06,COVID 19,0
+Newham,2022-01-06,Non COVID 19,0
+Newham,2022-01-07,COVID 19,0
+Newham,2022-01-07,Non COVID 19,0
+Norfolk,2022-01-01,COVID 19,0
+Norfolk,2022-01-01,Non COVID 19,1
+Norfolk,2022-01-02,COVID 19,0
+Norfolk,2022-01-02,Non COVID 19,4
+Norfolk,2022-01-03,COVID 19,0
+Norfolk,2022-01-03,Non COVID 19,6
+Norfolk,2022-01-04,COVID 19,0
+Norfolk,2022-01-04,Non COVID 19,11
+Norfolk,2022-01-05,COVID 19,0
+Norfolk,2022-01-05,Non COVID 19,8
+Norfolk,2022-01-06,COVID 19,0
+Norfolk,2022-01-06,Non COVID 19,12
+Norfolk,2022-01-07,COVID 19,0
+Norfolk,2022-01-07,Non COVID 19,6
+North East Lincolnshire,2022-01-01,COVID 19,0
+North East Lincolnshire,2022-01-01,Non COVID 19,0
+North East Lincolnshire,2022-01-02,COVID 19,0
+North East Lincolnshire,2022-01-02,Non COVID 19,1
+North East Lincolnshire,2022-01-03,COVID 19,0
+North East Lincolnshire,2022-01-03,Non COVID 19,0
+North East Lincolnshire,2022-01-04,COVID 19,0
+North East Lincolnshire,2022-01-04,Non COVID 19,7
+North East Lincolnshire,2022-01-05,COVID 19,0
+North East Lincolnshire,2022-01-05,Non COVID 19,1
+North East Lincolnshire,2022-01-06,COVID 19,0
+North East Lincolnshire,2022-01-06,Non COVID 19,1
+North East Lincolnshire,2022-01-07,COVID 19,0
+North East Lincolnshire,2022-01-07,Non COVID 19,1
+North Lincolnshire,2022-01-01,COVID 19,0
+North Lincolnshire,2022-01-01,Non COVID 19,0
+North Lincolnshire,2022-01-02,COVID 19,0
+North Lincolnshire,2022-01-02,Non COVID 19,0
+North Lincolnshire,2022-01-03,COVID 19,0
+North Lincolnshire,2022-01-03,Non COVID 19,0
+North Lincolnshire,2022-01-04,COVID 19,0
+North Lincolnshire,2022-01-04,Non COVID 19,2
+North Lincolnshire,2022-01-05,COVID 19,0
+North Lincolnshire,2022-01-05,Non COVID 19,1
+North Lincolnshire,2022-01-06,COVID 19,0
+North Lincolnshire,2022-01-06,Non COVID 19,2
+North Lincolnshire,2022-01-07,COVID 19,0
+North Lincolnshire,2022-01-07,Non COVID 19,3
+North Northamptonshire,2022-01-01,COVID 19,0
+North Northamptonshire,2022-01-01,Non COVID 19,1
+North Northamptonshire,2022-01-02,COVID 19,0
+North Northamptonshire,2022-01-02,Non COVID 19,1
+North Northamptonshire,2022-01-03,COVID 19,0
+North Northamptonshire,2022-01-03,Non COVID 19,0
+North Northamptonshire,2022-01-04,COVID 19,0
+North Northamptonshire,2022-01-04,Non COVID 19,2
+North Northamptonshire,2022-01-05,COVID 19,0
+North Northamptonshire,2022-01-05,Non COVID 19,1
+North Northamptonshire,2022-01-06,COVID 19,0
+North Northamptonshire,2022-01-06,Non COVID 19,2
+North Northamptonshire,2022-01-07,COVID 19,0
+North Northamptonshire,2022-01-07,Non COVID 19,3
+North Somerset,2022-01-01,COVID 19,0
+North Somerset,2022-01-01,Non COVID 19,0
+North Somerset,2022-01-02,COVID 19,0
+North Somerset,2022-01-02,Non COVID 19,0
+North Somerset,2022-01-03,COVID 19,0
+North Somerset,2022-01-03,Non COVID 19,3
+North Somerset,2022-01-04,COVID 19,0
+North Somerset,2022-01-04,Non COVID 19,4
+North Somerset,2022-01-05,COVID 19,0
+North Somerset,2022-01-05,Non COVID 19,1
+North Somerset,2022-01-06,COVID 19,1
+North Somerset,2022-01-06,Non COVID 19,2
+North Somerset,2022-01-07,COVID 19,0
+North Somerset,2022-01-07,Non COVID 19,1
+North Tyneside,2022-01-01,COVID 19,0
+North Tyneside,2022-01-01,Non COVID 19,0
+North Tyneside,2022-01-02,COVID 19,0
+North Tyneside,2022-01-02,Non COVID 19,0
+North Tyneside,2022-01-03,COVID 19,0
+North Tyneside,2022-01-03,Non COVID 19,0
+North Tyneside,2022-01-04,COVID 19,0
+North Tyneside,2022-01-04,Non COVID 19,1
+North Tyneside,2022-01-05,COVID 19,0
+North Tyneside,2022-01-05,Non COVID 19,1
+North Tyneside,2022-01-06,COVID 19,0
+North Tyneside,2022-01-06,Non COVID 19,1
+North Tyneside,2022-01-07,COVID 19,0
+North Tyneside,2022-01-07,Non COVID 19,0
+North Yorkshire,2022-01-01,COVID 19,0
+North Yorkshire,2022-01-01,Non COVID 19,1
+North Yorkshire,2022-01-02,COVID 19,0
+North Yorkshire,2022-01-02,Non COVID 19,1
+North Yorkshire,2022-01-03,COVID 19,0
+North Yorkshire,2022-01-03,Non COVID 19,6
+North Yorkshire,2022-01-04,COVID 19,0
+North Yorkshire,2022-01-04,Non COVID 19,7
+North Yorkshire,2022-01-05,COVID 19,0
+North Yorkshire,2022-01-05,Non COVID 19,6
+North Yorkshire,2022-01-06,COVID 19,0
+North Yorkshire,2022-01-06,Non COVID 19,6
+North Yorkshire,2022-01-07,COVID 19,0
+North Yorkshire,2022-01-07,Non COVID 19,4
+Northumberland,2022-01-01,COVID 19,0
+Northumberland,2022-01-01,Non COVID 19,2
+Northumberland,2022-01-02,COVID 19,0
+Northumberland,2022-01-02,Non COVID 19,0
+Northumberland,2022-01-03,COVID 19,0
+Northumberland,2022-01-03,Non COVID 19,1
+Northumberland,2022-01-04,COVID 19,1
+Northumberland,2022-01-04,Non COVID 19,1
+Northumberland,2022-01-05,COVID 19,0
+Northumberland,2022-01-05,Non COVID 19,3
+Northumberland,2022-01-06,COVID 19,0
+Northumberland,2022-01-06,Non COVID 19,2
+Northumberland,2022-01-07,COVID 19,0
+Northumberland,2022-01-07,Non COVID 19,3
+Nottingham,2022-01-01,COVID 19,0
+Nottingham,2022-01-01,Non COVID 19,0
+Nottingham,2022-01-02,COVID 19,0
+Nottingham,2022-01-02,Non COVID 19,0
+Nottingham,2022-01-03,COVID 19,0
+Nottingham,2022-01-03,Non COVID 19,0
+Nottingham,2022-01-04,COVID 19,0
+Nottingham,2022-01-04,Non COVID 19,4
+Nottingham,2022-01-05,COVID 19,1
+Nottingham,2022-01-05,Non COVID 19,2
+Nottingham,2022-01-06,COVID 19,1
+Nottingham,2022-01-06,Non COVID 19,3
+Nottingham,2022-01-07,COVID 19,0
+Nottingham,2022-01-07,Non COVID 19,1
+Nottinghamshire,2022-01-01,COVID 19,0
+Nottinghamshire,2022-01-01,Non COVID 19,1
+Nottinghamshire,2022-01-02,COVID 19,0
+Nottinghamshire,2022-01-02,Non COVID 19,3
+Nottinghamshire,2022-01-03,COVID 19,0
+Nottinghamshire,2022-01-03,Non COVID 19,6
+Nottinghamshire,2022-01-04,COVID 19,1
+Nottinghamshire,2022-01-04,Non COVID 19,13
+Nottinghamshire,2022-01-05,COVID 19,0
+Nottinghamshire,2022-01-05,Non COVID 19,4
+Nottinghamshire,2022-01-06,COVID 19,0
+Nottinghamshire,2022-01-06,Non COVID 19,4
+Nottinghamshire,2022-01-07,COVID 19,1
+Nottinghamshire,2022-01-07,Non COVID 19,7
+Oldham,2022-01-01,COVID 19,0
+Oldham,2022-01-01,Non COVID 19,0
+Oldham,2022-01-02,COVID 19,0
+Oldham,2022-01-02,Non COVID 19,0
+Oldham,2022-01-03,COVID 19,0
+Oldham,2022-01-03,Non COVID 19,0
+Oldham,2022-01-04,COVID 19,0
+Oldham,2022-01-04,Non COVID 19,2
+Oldham,2022-01-05,COVID 19,1
+Oldham,2022-01-05,Non COVID 19,0
+Oldham,2022-01-06,COVID 19,0
+Oldham,2022-01-06,Non COVID 19,1
+Oldham,2022-01-07,COVID 19,0
+Oldham,2022-01-07,Non COVID 19,3
+Oxfordshire,2022-01-01,COVID 19,0
+Oxfordshire,2022-01-01,Non COVID 19,0
+Oxfordshire,2022-01-02,COVID 19,0
+Oxfordshire,2022-01-02,Non COVID 19,0
+Oxfordshire,2022-01-03,COVID 19,0
+Oxfordshire,2022-01-03,Non COVID 19,1
+Oxfordshire,2022-01-04,COVID 19,0
+Oxfordshire,2022-01-04,Non COVID 19,7
+Oxfordshire,2022-01-05,COVID 19,0
+Oxfordshire,2022-01-05,Non COVID 19,3
+Oxfordshire,2022-01-06,COVID 19,0
+Oxfordshire,2022-01-06,Non COVID 19,6
+Oxfordshire,2022-01-07,COVID 19,3
+Oxfordshire,2022-01-07,Non COVID 19,8
+Peterborough,2022-01-01,COVID 19,0
+Peterborough,2022-01-01,Non COVID 19,0
+Peterborough,2022-01-02,COVID 19,0
+Peterborough,2022-01-02,Non COVID 19,0
+Peterborough,2022-01-03,COVID 19,0
+Peterborough,2022-01-03,Non COVID 19,1
+Peterborough,2022-01-04,COVID 19,0
+Peterborough,2022-01-04,Non COVID 19,2
+Peterborough,2022-01-05,COVID 19,0
+Peterborough,2022-01-05,Non COVID 19,1
+Peterborough,2022-01-06,COVID 19,0
+Peterborough,2022-01-06,Non COVID 19,2
+Peterborough,2022-01-07,COVID 19,0
+Peterborough,2022-01-07,Non COVID 19,3
+Plymouth,2022-01-01,COVID 19,0
+Plymouth,2022-01-01,Non COVID 19,2
+Plymouth,2022-01-02,COVID 19,0
+Plymouth,2022-01-02,Non COVID 19,6
+Plymouth,2022-01-03,COVID 19,0
+Plymouth,2022-01-03,Non COVID 19,3
+Plymouth,2022-01-04,COVID 19,0
+Plymouth,2022-01-04,Non COVID 19,2
+Plymouth,2022-01-05,COVID 19,0
+Plymouth,2022-01-05,Non COVID 19,1
+Plymouth,2022-01-06,COVID 19,0
+Plymouth,2022-01-06,Non COVID 19,3
+Plymouth,2022-01-07,COVID 19,1
+Plymouth,2022-01-07,Non COVID 19,3
+Portsmouth,2022-01-01,COVID 19,0
+Portsmouth,2022-01-01,Non COVID 19,2
+Portsmouth,2022-01-02,COVID 19,0
+Portsmouth,2022-01-02,Non COVID 19,0
+Portsmouth,2022-01-03,COVID 19,0
+Portsmouth,2022-01-03,Non COVID 19,0
+Portsmouth,2022-01-04,COVID 19,0
+Portsmouth,2022-01-04,Non COVID 19,2
+Portsmouth,2022-01-05,COVID 19,0
+Portsmouth,2022-01-05,Non COVID 19,0
+Portsmouth,2022-01-06,COVID 19,0
+Portsmouth,2022-01-06,Non COVID 19,2
+Portsmouth,2022-01-07,COVID 19,0
+Portsmouth,2022-01-07,Non COVID 19,0
+Reading,2022-01-01,COVID 19,0
+Reading,2022-01-01,Non COVID 19,0
+Reading,2022-01-02,COVID 19,0
+Reading,2022-01-02,Non COVID 19,0
+Reading,2022-01-03,COVID 19,0
+Reading,2022-01-03,Non COVID 19,0
+Reading,2022-01-04,COVID 19,0
+Reading,2022-01-04,Non COVID 19,6
+Reading,2022-01-05,COVID 19,0
+Reading,2022-01-05,Non COVID 19,2
+Reading,2022-01-06,COVID 19,0
+Reading,2022-01-06,Non COVID 19,0
+Reading,2022-01-07,COVID 19,0
+Reading,2022-01-07,Non COVID 19,0
+Redbridge,2022-01-01,COVID 19,0
+Redbridge,2022-01-01,Non COVID 19,0
+Redbridge,2022-01-02,COVID 19,0
+Redbridge,2022-01-02,Non COVID 19,0
+Redbridge,2022-01-03,COVID 19,0
+Redbridge,2022-01-03,Non COVID 19,1
+Redbridge,2022-01-04,COVID 19,1
+Redbridge,2022-01-04,Non COVID 19,2
+Redbridge,2022-01-05,COVID 19,0
+Redbridge,2022-01-05,Non COVID 19,0
+Redbridge,2022-01-06,COVID 19,0
+Redbridge,2022-01-06,Non COVID 19,0
+Redbridge,2022-01-07,COVID 19,0
+Redbridge,2022-01-07,Non COVID 19,0
+Redcar and Cleveland,2022-01-01,COVID 19,0
+Redcar and Cleveland,2022-01-01,Non COVID 19,0
+Redcar and Cleveland,2022-01-02,COVID 19,0
+Redcar and Cleveland,2022-01-02,Non COVID 19,1
+Redcar and Cleveland,2022-01-03,COVID 19,0
+Redcar and Cleveland,2022-01-03,Non COVID 19,0
+Redcar and Cleveland,2022-01-04,COVID 19,0
+Redcar and Cleveland,2022-01-04,Non COVID 19,0
+Redcar and Cleveland,2022-01-05,COVID 19,0
+Redcar and Cleveland,2022-01-05,Non COVID 19,0
+Redcar and Cleveland,2022-01-06,COVID 19,0
+Redcar and Cleveland,2022-01-06,Non COVID 19,0
+Redcar and Cleveland,2022-01-07,COVID 19,1
+Redcar and Cleveland,2022-01-07,Non COVID 19,0
+Richmond upon Thames,2022-01-01,COVID 19,1
+Richmond upon Thames,2022-01-01,Non COVID 19,1
+Richmond upon Thames,2022-01-02,COVID 19,1
+Richmond upon Thames,2022-01-02,Non COVID 19,2
+Richmond upon Thames,2022-01-03,COVID 19,0
+Richmond upon Thames,2022-01-03,Non COVID 19,2
+Richmond upon Thames,2022-01-04,COVID 19,0
+Richmond upon Thames,2022-01-04,Non COVID 19,0
+Richmond upon Thames,2022-01-05,COVID 19,0
+Richmond upon Thames,2022-01-05,Non COVID 19,0
+Richmond upon Thames,2022-01-06,COVID 19,0
+Richmond upon Thames,2022-01-06,Non COVID 19,1
+Richmond upon Thames,2022-01-07,COVID 19,0
+Richmond upon Thames,2022-01-07,Non COVID 19,0
+Rochdale,2022-01-01,COVID 19,0
+Rochdale,2022-01-01,Non COVID 19,1
+Rochdale,2022-01-02,COVID 19,0
+Rochdale,2022-01-02,Non COVID 19,0
+Rochdale,2022-01-03,COVID 19,0
+Rochdale,2022-01-03,Non COVID 19,1
+Rochdale,2022-01-04,COVID 19,0
+Rochdale,2022-01-04,Non COVID 19,1
+Rochdale,2022-01-05,COVID 19,0
+Rochdale,2022-01-05,Non COVID 19,1
+Rochdale,2022-01-06,COVID 19,0
+Rochdale,2022-01-06,Non COVID 19,0
+Rochdale,2022-01-07,COVID 19,0
+Rochdale,2022-01-07,Non COVID 19,1
+Rotherham,2022-01-01,COVID 19,0
+Rotherham,2022-01-01,Non COVID 19,0
+Rotherham,2022-01-02,COVID 19,1
+Rotherham,2022-01-02,Non COVID 19,0
+Rotherham,2022-01-03,COVID 19,0
+Rotherham,2022-01-03,Non COVID 19,0
+Rotherham,2022-01-04,COVID 19,0
+Rotherham,2022-01-04,Non COVID 19,5
+Rotherham,2022-01-05,COVID 19,0
+Rotherham,2022-01-05,Non COVID 19,2
+Rotherham,2022-01-06,COVID 19,1
+Rotherham,2022-01-06,Non COVID 19,6
+Rotherham,2022-01-07,COVID 19,1
+Rotherham,2022-01-07,Non COVID 19,1
+Rutland,2022-01-01,COVID 19,0
+Rutland,2022-01-01,Non COVID 19,0
+Rutland,2022-01-02,COVID 19,0
+Rutland,2022-01-02,Non COVID 19,0
+Rutland,2022-01-03,COVID 19,0
+Rutland,2022-01-03,Non COVID 19,0
+Rutland,2022-01-04,COVID 19,0
+Rutland,2022-01-04,Non COVID 19,1
+Rutland,2022-01-05,COVID 19,0
+Rutland,2022-01-05,Non COVID 19,0
+Rutland,2022-01-06,COVID 19,0
+Rutland,2022-01-06,Non COVID 19,1
+Rutland,2022-01-07,COVID 19,0
+Rutland,2022-01-07,Non COVID 19,2
+Salford,2022-01-01,COVID 19,0
+Salford,2022-01-01,Non COVID 19,0
+Salford,2022-01-02,COVID 19,0
+Salford,2022-01-02,Non COVID 19,0
+Salford,2022-01-03,COVID 19,1
+Salford,2022-01-03,Non COVID 19,0
+Salford,2022-01-04,COVID 19,0
+Salford,2022-01-04,Non COVID 19,2
+Salford,2022-01-05,COVID 19,0
+Salford,2022-01-05,Non COVID 19,1
+Salford,2022-01-06,COVID 19,0
+Salford,2022-01-06,Non COVID 19,2
+Salford,2022-01-07,COVID 19,0
+Salford,2022-01-07,Non COVID 19,0
+Sandwell,2022-01-01,COVID 19,0
+Sandwell,2022-01-01,Non COVID 19,0
+Sandwell,2022-01-02,COVID 19,0
+Sandwell,2022-01-02,Non COVID 19,0
+Sandwell,2022-01-03,COVID 19,0
+Sandwell,2022-01-03,Non COVID 19,2
+Sandwell,2022-01-04,COVID 19,0
+Sandwell,2022-01-04,Non COVID 19,3
+Sandwell,2022-01-05,COVID 19,0
+Sandwell,2022-01-05,Non COVID 19,3
+Sandwell,2022-01-06,COVID 19,1
+Sandwell,2022-01-06,Non COVID 19,2
+Sandwell,2022-01-07,COVID 19,0
+Sandwell,2022-01-07,Non COVID 19,2
+Sefton,2022-01-01,COVID 19,0
+Sefton,2022-01-01,Non COVID 19,0
+Sefton,2022-01-02,COVID 19,0
+Sefton,2022-01-02,Non COVID 19,0
+Sefton,2022-01-03,COVID 19,0
+Sefton,2022-01-03,Non COVID 19,0
+Sefton,2022-01-04,COVID 19,1
+Sefton,2022-01-04,Non COVID 19,2
+Sefton,2022-01-05,COVID 19,0
+Sefton,2022-01-05,Non COVID 19,3
+Sefton,2022-01-06,COVID 19,1
+Sefton,2022-01-06,Non COVID 19,1
+Sefton,2022-01-07,COVID 19,0
+Sefton,2022-01-07,Non COVID 19,1
+Sheffield,2022-01-01,COVID 19,0
+Sheffield,2022-01-01,Non COVID 19,0
+Sheffield,2022-01-02,COVID 19,0
+Sheffield,2022-01-02,Non COVID 19,0
+Sheffield,2022-01-03,COVID 19,0
+Sheffield,2022-01-03,Non COVID 19,0
+Sheffield,2022-01-04,COVID 19,0
+Sheffield,2022-01-04,Non COVID 19,6
+Sheffield,2022-01-05,COVID 19,0
+Sheffield,2022-01-05,Non COVID 19,4
+Sheffield,2022-01-06,COVID 19,0
+Sheffield,2022-01-06,Non COVID 19,2
+Sheffield,2022-01-07,COVID 19,1
+Sheffield,2022-01-07,Non COVID 19,5
+Shropshire,2022-01-01,COVID 19,0
+Shropshire,2022-01-01,Non COVID 19,1
+Shropshire,2022-01-02,COVID 19,0
+Shropshire,2022-01-02,Non COVID 19,1
+Shropshire,2022-01-03,COVID 19,0
+Shropshire,2022-01-03,Non COVID 19,4
+Shropshire,2022-01-04,COVID 19,0
+Shropshire,2022-01-04,Non COVID 19,6
+Shropshire,2022-01-05,COVID 19,0
+Shropshire,2022-01-05,Non COVID 19,5
+Shropshire,2022-01-06,COVID 19,0
+Shropshire,2022-01-06,Non COVID 19,5
+Shropshire,2022-01-07,COVID 19,0
+Shropshire,2022-01-07,Non COVID 19,3
+Slough,2022-01-01,COVID 19,0
+Slough,2022-01-01,Non COVID 19,0
+Slough,2022-01-02,COVID 19,0
+Slough,2022-01-02,Non COVID 19,0
+Slough,2022-01-03,COVID 19,0
+Slough,2022-01-03,Non COVID 19,0
+Slough,2022-01-04,COVID 19,0
+Slough,2022-01-04,Non COVID 19,1
+Slough,2022-01-05,COVID 19,0
+Slough,2022-01-05,Non COVID 19,0
+Slough,2022-01-06,COVID 19,0
+Slough,2022-01-06,Non COVID 19,0
+Slough,2022-01-07,COVID 19,0
+Slough,2022-01-07,Non COVID 19,0
+Solihull,2022-01-01,COVID 19,0
+Solihull,2022-01-01,Non COVID 19,0
+Solihull,2022-01-02,COVID 19,0
+Solihull,2022-01-02,Non COVID 19,0
+Solihull,2022-01-03,COVID 19,0
+Solihull,2022-01-03,Non COVID 19,0
+Solihull,2022-01-04,COVID 19,0
+Solihull,2022-01-04,Non COVID 19,1
+Solihull,2022-01-05,COVID 19,0
+Solihull,2022-01-05,Non COVID 19,3
+Solihull,2022-01-06,COVID 19,0
+Solihull,2022-01-06,Non COVID 19,0
+Solihull,2022-01-07,COVID 19,0
+Solihull,2022-01-07,Non COVID 19,2
+Somerset,2022-01-01,COVID 19,0
+Somerset,2022-01-01,Non COVID 19,4
+Somerset,2022-01-02,COVID 19,0
+Somerset,2022-01-02,Non COVID 19,2
+Somerset,2022-01-03,COVID 19,0
+Somerset,2022-01-03,Non COVID 19,3
+Somerset,2022-01-04,COVID 19,0
+Somerset,2022-01-04,Non COVID 19,7
+Somerset,2022-01-05,COVID 19,0
+Somerset,2022-01-05,Non COVID 19,6
+Somerset,2022-01-06,COVID 19,0
+Somerset,2022-01-06,Non COVID 19,2
+Somerset,2022-01-07,COVID 19,0
+Somerset,2022-01-07,Non COVID 19,9
+South Gloucestershire,2022-01-01,COVID 19,0
+South Gloucestershire,2022-01-01,Non COVID 19,0
+South Gloucestershire,2022-01-02,COVID 19,0
+South Gloucestershire,2022-01-02,Non COVID 19,1
+South Gloucestershire,2022-01-03,COVID 19,0
+South Gloucestershire,2022-01-03,Non COVID 19,0
+South Gloucestershire,2022-01-04,COVID 19,0
+South Gloucestershire,2022-01-04,Non COVID 19,3
+South Gloucestershire,2022-01-05,COVID 19,1
+South Gloucestershire,2022-01-05,Non COVID 19,2
+South Gloucestershire,2022-01-06,COVID 19,0
+South Gloucestershire,2022-01-06,Non COVID 19,0
+South Gloucestershire,2022-01-07,COVID 19,0
+South Gloucestershire,2022-01-07,Non COVID 19,3
+South Tyneside,2022-01-01,COVID 19,0
+South Tyneside,2022-01-01,Non COVID 19,0
+South Tyneside,2022-01-02,COVID 19,0
+South Tyneside,2022-01-02,Non COVID 19,0
+South Tyneside,2022-01-03,COVID 19,0
+South Tyneside,2022-01-03,Non COVID 19,2
+South Tyneside,2022-01-04,COVID 19,0
+South Tyneside,2022-01-04,Non COVID 19,3
+South Tyneside,2022-01-05,COVID 19,0
+South Tyneside,2022-01-05,Non COVID 19,0
+South Tyneside,2022-01-06,COVID 19,0
+South Tyneside,2022-01-06,Non COVID 19,2
+South Tyneside,2022-01-07,COVID 19,0
+South Tyneside,2022-01-07,Non COVID 19,1
+Southampton,2022-01-01,COVID 19,0
+Southampton,2022-01-01,Non COVID 19,0
+Southampton,2022-01-02,COVID 19,0
+Southampton,2022-01-02,Non COVID 19,1
+Southampton,2022-01-03,COVID 19,0
+Southampton,2022-01-03,Non COVID 19,1
+Southampton,2022-01-04,COVID 19,0
+Southampton,2022-01-04,Non COVID 19,1
+Southampton,2022-01-05,COVID 19,0
+Southampton,2022-01-05,Non COVID 19,0
+Southampton,2022-01-06,COVID 19,0
+Southampton,2022-01-06,Non COVID 19,0
+Southampton,2022-01-07,COVID 19,0
+Southampton,2022-01-07,Non COVID 19,2
+Southend-on-Sea,2022-01-01,COVID 19,0
+Southend-on-Sea,2022-01-01,Non COVID 19,1
+Southend-on-Sea,2022-01-02,COVID 19,0
+Southend-on-Sea,2022-01-02,Non COVID 19,0
+Southend-on-Sea,2022-01-03,COVID 19,0
+Southend-on-Sea,2022-01-03,Non COVID 19,1
+Southend-on-Sea,2022-01-04,COVID 19,1
+Southend-on-Sea,2022-01-04,Non COVID 19,0
+Southend-on-Sea,2022-01-05,COVID 19,0
+Southend-on-Sea,2022-01-05,Non COVID 19,3
+Southend-on-Sea,2022-01-06,COVID 19,0
+Southend-on-Sea,2022-01-06,Non COVID 19,0
+Southend-on-Sea,2022-01-07,COVID 19,0
+Southend-on-Sea,2022-01-07,Non COVID 19,0
+Southwark,2022-01-01,COVID 19,0
+Southwark,2022-01-01,Non COVID 19,0
+Southwark,2022-01-02,COVID 19,0
+Southwark,2022-01-02,Non COVID 19,0
+Southwark,2022-01-03,COVID 19,0
+Southwark,2022-01-03,Non COVID 19,0
+Southwark,2022-01-04,COVID 19,0
+Southwark,2022-01-04,Non COVID 19,1
+Southwark,2022-01-05,COVID 19,0
+Southwark,2022-01-05,Non COVID 19,1
+Southwark,2022-01-06,COVID 19,0
+Southwark,2022-01-06,Non COVID 19,0
+Southwark,2022-01-07,COVID 19,0
+Southwark,2022-01-07,Non COVID 19,0
+St. Helens,2022-01-01,COVID 19,0
+St. Helens,2022-01-01,Non COVID 19,0
+St. Helens,2022-01-02,COVID 19,0
+St. Helens,2022-01-02,Non COVID 19,0
+St. Helens,2022-01-03,COVID 19,0
+St. Helens,2022-01-03,Non COVID 19,0
+St. Helens,2022-01-04,COVID 19,0
+St. Helens,2022-01-04,Non COVID 19,0
+St. Helens,2022-01-05,COVID 19,1
+St. Helens,2022-01-05,Non COVID 19,1
+St. Helens,2022-01-06,COVID 19,0
+St. Helens,2022-01-06,Non COVID 19,4
+St. Helens,2022-01-07,COVID 19,0
+St. Helens,2022-01-07,Non COVID 19,0
+Staffordshire,2022-01-01,COVID 19,0
+Staffordshire,2022-01-01,Non COVID 19,0
+Staffordshire,2022-01-02,COVID 19,0
+Staffordshire,2022-01-02,Non COVID 19,2
+Staffordshire,2022-01-03,COVID 19,0
+Staffordshire,2022-01-03,Non COVID 19,2
+Staffordshire,2022-01-04,COVID 19,1
+Staffordshire,2022-01-04,Non COVID 19,11
+Staffordshire,2022-01-05,COVID 19,0
+Staffordshire,2022-01-05,Non COVID 19,7
+Staffordshire,2022-01-06,COVID 19,0
+Staffordshire,2022-01-06,Non COVID 19,5
+Staffordshire,2022-01-07,COVID 19,1
+Staffordshire,2022-01-07,Non COVID 19,7
+Stockport,2022-01-01,COVID 19,0
+Stockport,2022-01-01,Non COVID 19,0
+Stockport,2022-01-02,COVID 19,0
+Stockport,2022-01-02,Non COVID 19,0
+Stockport,2022-01-03,COVID 19,0
+Stockport,2022-01-03,Non COVID 19,1
+Stockport,2022-01-04,COVID 19,0
+Stockport,2022-01-04,Non COVID 19,2
+Stockport,2022-01-05,COVID 19,0
+Stockport,2022-01-05,Non COVID 19,0
+Stockport,2022-01-06,COVID 19,1
+Stockport,2022-01-06,Non COVID 19,1
+Stockport,2022-01-07,COVID 19,1
+Stockport,2022-01-07,Non COVID 19,3
+Stockton-on-Tees,2022-01-01,COVID 19,0
+Stockton-on-Tees,2022-01-01,Non COVID 19,2
+Stockton-on-Tees,2022-01-02,COVID 19,0
+Stockton-on-Tees,2022-01-02,Non COVID 19,2
+Stockton-on-Tees,2022-01-03,COVID 19,1
+Stockton-on-Tees,2022-01-03,Non COVID 19,0
+Stockton-on-Tees,2022-01-04,COVID 19,0
+Stockton-on-Tees,2022-01-04,Non COVID 19,5
+Stockton-on-Tees,2022-01-05,COVID 19,0
+Stockton-on-Tees,2022-01-05,Non COVID 19,3
+Stockton-on-Tees,2022-01-06,COVID 19,0
+Stockton-on-Tees,2022-01-06,Non COVID 19,2
+Stockton-on-Tees,2022-01-07,COVID 19,0
+Stockton-on-Tees,2022-01-07,Non COVID 19,2
+Stoke-on-Trent,2022-01-01,COVID 19,0
+Stoke-on-Trent,2022-01-01,Non COVID 19,0
+Stoke-on-Trent,2022-01-02,COVID 19,0
+Stoke-on-Trent,2022-01-02,Non COVID 19,0
+Stoke-on-Trent,2022-01-03,COVID 19,0
+Stoke-on-Trent,2022-01-03,Non COVID 19,0
+Stoke-on-Trent,2022-01-04,COVID 19,0
+Stoke-on-Trent,2022-01-04,Non COVID 19,1
+Stoke-on-Trent,2022-01-05,COVID 19,0
+Stoke-on-Trent,2022-01-05,Non COVID 19,2
+Stoke-on-Trent,2022-01-06,COVID 19,0
+Stoke-on-Trent,2022-01-06,Non COVID 19,1
+Stoke-on-Trent,2022-01-07,COVID 19,0
+Stoke-on-Trent,2022-01-07,Non COVID 19,0
+Suffolk,2022-01-01,COVID 19,0
+Suffolk,2022-01-01,Non COVID 19,0
+Suffolk,2022-01-02,COVID 19,0
+Suffolk,2022-01-02,Non COVID 19,0
+Suffolk,2022-01-03,COVID 19,0
+Suffolk,2022-01-03,Non COVID 19,3
+Suffolk,2022-01-04,COVID 19,1
+Suffolk,2022-01-04,Non COVID 19,10
+Suffolk,2022-01-05,COVID 19,0
+Suffolk,2022-01-05,Non COVID 19,8
+Suffolk,2022-01-06,COVID 19,1
+Suffolk,2022-01-06,Non COVID 19,2
+Suffolk,2022-01-07,COVID 19,0
+Suffolk,2022-01-07,Non COVID 19,8
+Sunderland,2022-01-01,COVID 19,0
+Sunderland,2022-01-01,Non COVID 19,0
+Sunderland,2022-01-02,COVID 19,0
+Sunderland,2022-01-02,Non COVID 19,0
+Sunderland,2022-01-03,COVID 19,0
+Sunderland,2022-01-03,Non COVID 19,2
+Sunderland,2022-01-04,COVID 19,0
+Sunderland,2022-01-04,Non COVID 19,6
+Sunderland,2022-01-05,COVID 19,0
+Sunderland,2022-01-05,Non COVID 19,2
+Sunderland,2022-01-06,COVID 19,0
+Sunderland,2022-01-06,Non COVID 19,0
+Sunderland,2022-01-07,COVID 19,0
+Sunderland,2022-01-07,Non COVID 19,2
+Surrey,2022-01-01,COVID 19,0
+Surrey,2022-01-01,Non COVID 19,0
+Surrey,2022-01-02,COVID 19,0
+Surrey,2022-01-02,Non COVID 19,1
+Surrey,2022-01-03,COVID 19,0
+Surrey,2022-01-03,Non COVID 19,6
+Surrey,2022-01-04,COVID 19,0
+Surrey,2022-01-04,Non COVID 19,23
+Surrey,2022-01-05,COVID 19,1
+Surrey,2022-01-05,Non COVID 19,11
+Surrey,2022-01-06,COVID 19,0
+Surrey,2022-01-06,Non COVID 19,9
+Surrey,2022-01-07,COVID 19,0
+Surrey,2022-01-07,Non COVID 19,10
+Sutton,2022-01-01,COVID 19,0
+Sutton,2022-01-01,Non COVID 19,0
+Sutton,2022-01-02,COVID 19,0
+Sutton,2022-01-02,Non COVID 19,0
+Sutton,2022-01-03,COVID 19,0
+Sutton,2022-01-03,Non COVID 19,0
+Sutton,2022-01-04,COVID 19,0
+Sutton,2022-01-04,Non COVID 19,3
+Sutton,2022-01-05,COVID 19,0
+Sutton,2022-01-05,Non COVID 19,1
+Sutton,2022-01-06,COVID 19,1
+Sutton,2022-01-06,Non COVID 19,0
+Sutton,2022-01-07,COVID 19,0
+Sutton,2022-01-07,Non COVID 19,1
+Swindon,2022-01-01,COVID 19,0
+Swindon,2022-01-01,Non COVID 19,0
+Swindon,2022-01-02,COVID 19,0
+Swindon,2022-01-02,Non COVID 19,0
+Swindon,2022-01-03,COVID 19,0
+Swindon,2022-01-03,Non COVID 19,1
+Swindon,2022-01-04,COVID 19,0
+Swindon,2022-01-04,Non COVID 19,1
+Swindon,2022-01-05,COVID 19,0
+Swindon,2022-01-05,Non COVID 19,0
+Swindon,2022-01-06,COVID 19,0
+Swindon,2022-01-06,Non COVID 19,2
+Swindon,2022-01-07,COVID 19,0
+Swindon,2022-01-07,Non COVID 19,1
+Tameside,2022-01-01,COVID 19,0
+Tameside,2022-01-01,Non COVID 19,0
+Tameside,2022-01-02,COVID 19,0
+Tameside,2022-01-02,Non COVID 19,0
+Tameside,2022-01-03,COVID 19,0
+Tameside,2022-01-03,Non COVID 19,0
+Tameside,2022-01-04,COVID 19,0
+Tameside,2022-01-04,Non COVID 19,2
+Tameside,2022-01-05,COVID 19,0
+Tameside,2022-01-05,Non COVID 19,0
+Tameside,2022-01-06,COVID 19,0
+Tameside,2022-01-06,Non COVID 19,0
+Tameside,2022-01-07,COVID 19,0
+Tameside,2022-01-07,Non COVID 19,0
+Telford and Wrekin,2022-01-01,COVID 19,0
+Telford and Wrekin,2022-01-01,Non COVID 19,0
+Telford and Wrekin,2022-01-02,COVID 19,0
+Telford and Wrekin,2022-01-02,Non COVID 19,0
+Telford and Wrekin,2022-01-03,COVID 19,0
+Telford and Wrekin,2022-01-03,Non COVID 19,2
+Telford and Wrekin,2022-01-04,COVID 19,0
+Telford and Wrekin,2022-01-04,Non COVID 19,1
+Telford and Wrekin,2022-01-05,COVID 19,0
+Telford and Wrekin,2022-01-05,Non COVID 19,0
+Telford and Wrekin,2022-01-06,COVID 19,0
+Telford and Wrekin,2022-01-06,Non COVID 19,0
+Telford and Wrekin,2022-01-07,COVID 19,0
+Telford and Wrekin,2022-01-07,Non COVID 19,1
+Thurrock,2022-01-01,COVID 19,0
+Thurrock,2022-01-01,Non COVID 19,0
+Thurrock,2022-01-02,COVID 19,0
+Thurrock,2022-01-02,Non COVID 19,0
+Thurrock,2022-01-03,COVID 19,0
+Thurrock,2022-01-03,Non COVID 19,0
+Thurrock,2022-01-04,COVID 19,0
+Thurrock,2022-01-04,Non COVID 19,3
+Thurrock,2022-01-05,COVID 19,0
+Thurrock,2022-01-05,Non COVID 19,0
+Thurrock,2022-01-06,COVID 19,0
+Thurrock,2022-01-06,Non COVID 19,0
+Thurrock,2022-01-07,COVID 19,0
+Thurrock,2022-01-07,Non COVID 19,1
+Torbay,2022-01-01,COVID 19,0
+Torbay,2022-01-01,Non COVID 19,0
+Torbay,2022-01-02,COVID 19,0
+Torbay,2022-01-02,Non COVID 19,1
+Torbay,2022-01-03,COVID 19,0
+Torbay,2022-01-03,Non COVID 19,2
+Torbay,2022-01-04,COVID 19,0
+Torbay,2022-01-04,Non COVID 19,2
+Torbay,2022-01-05,COVID 19,0
+Torbay,2022-01-05,Non COVID 19,1
+Torbay,2022-01-06,COVID 19,0
+Torbay,2022-01-06,Non COVID 19,1
+Torbay,2022-01-07,COVID 19,1
+Torbay,2022-01-07,Non COVID 19,1
+Tower Hamlets,2022-01-01,COVID 19,0
+Tower Hamlets,2022-01-01,Non COVID 19,0
+Tower Hamlets,2022-01-02,COVID 19,0
+Tower Hamlets,2022-01-02,Non COVID 19,0
+Tower Hamlets,2022-01-03,COVID 19,0
+Tower Hamlets,2022-01-03,Non COVID 19,0
+Tower Hamlets,2022-01-04,COVID 19,0
+Tower Hamlets,2022-01-04,Non COVID 19,2
+Tower Hamlets,2022-01-05,COVID 19,0
+Tower Hamlets,2022-01-05,Non COVID 19,0
+Tower Hamlets,2022-01-06,COVID 19,0
+Tower Hamlets,2022-01-06,Non COVID 19,0
+Tower Hamlets,2022-01-07,COVID 19,0
+Tower Hamlets,2022-01-07,Non COVID 19,1
+Trafford,2022-01-01,COVID 19,0
+Trafford,2022-01-01,Non COVID 19,0
+Trafford,2022-01-02,COVID 19,0
+Trafford,2022-01-02,Non COVID 19,0
+Trafford,2022-01-03,COVID 19,0
+Trafford,2022-01-03,Non COVID 19,0
+Trafford,2022-01-04,COVID 19,0
+Trafford,2022-01-04,Non COVID 19,1
+Trafford,2022-01-05,COVID 19,0
+Trafford,2022-01-05,Non COVID 19,2
+Trafford,2022-01-06,COVID 19,0
+Trafford,2022-01-06,Non COVID 19,0
+Trafford,2022-01-07,COVID 19,0
+Trafford,2022-01-07,Non COVID 19,1
+Wakefield,2022-01-01,COVID 19,0
+Wakefield,2022-01-01,Non COVID 19,1
+Wakefield,2022-01-02,COVID 19,0
+Wakefield,2022-01-02,Non COVID 19,0
+Wakefield,2022-01-03,COVID 19,0
+Wakefield,2022-01-03,Non COVID 19,4
+Wakefield,2022-01-04,COVID 19,0
+Wakefield,2022-01-04,Non COVID 19,4
+Wakefield,2022-01-05,COVID 19,0
+Wakefield,2022-01-05,Non COVID 19,4
+Wakefield,2022-01-06,COVID 19,0
+Wakefield,2022-01-06,Non COVID 19,0
+Wakefield,2022-01-07,COVID 19,0
+Wakefield,2022-01-07,Non COVID 19,2
+Walsall,2022-01-01,COVID 19,0
+Walsall,2022-01-01,Non COVID 19,0
+Walsall,2022-01-02,COVID 19,0
+Walsall,2022-01-02,Non COVID 19,0
+Walsall,2022-01-03,COVID 19,1
+Walsall,2022-01-03,Non COVID 19,1
+Walsall,2022-01-04,COVID 19,0
+Walsall,2022-01-04,Non COVID 19,1
+Walsall,2022-01-05,COVID 19,0
+Walsall,2022-01-05,Non COVID 19,2
+Walsall,2022-01-06,COVID 19,0
+Walsall,2022-01-06,Non COVID 19,0
+Walsall,2022-01-07,COVID 19,0
+Walsall,2022-01-07,Non COVID 19,1
+Waltham Forest,2022-01-01,COVID 19,0
+Waltham Forest,2022-01-01,Non COVID 19,0
+Waltham Forest,2022-01-02,COVID 19,0
+Waltham Forest,2022-01-02,Non COVID 19,0
+Waltham Forest,2022-01-03,COVID 19,0
+Waltham Forest,2022-01-03,Non COVID 19,0
+Waltham Forest,2022-01-04,COVID 19,0
+Waltham Forest,2022-01-04,Non COVID 19,0
+Waltham Forest,2022-01-05,COVID 19,0
+Waltham Forest,2022-01-05,Non COVID 19,0
+Waltham Forest,2022-01-06,COVID 19,0
+Waltham Forest,2022-01-06,Non COVID 19,1
+Waltham Forest,2022-01-07,COVID 19,0
+Waltham Forest,2022-01-07,Non COVID 19,0
+Wandsworth,2022-01-01,COVID 19,0
+Wandsworth,2022-01-01,Non COVID 19,0
+Wandsworth,2022-01-02,COVID 19,0
+Wandsworth,2022-01-02,Non COVID 19,0
+Wandsworth,2022-01-03,COVID 19,0
+Wandsworth,2022-01-03,Non COVID 19,0
+Wandsworth,2022-01-04,COVID 19,0
+Wandsworth,2022-01-04,Non COVID 19,0
+Wandsworth,2022-01-05,COVID 19,2
+Wandsworth,2022-01-05,Non COVID 19,1
+Wandsworth,2022-01-06,COVID 19,1
+Wandsworth,2022-01-06,Non COVID 19,2
+Wandsworth,2022-01-07,COVID 19,0
+Wandsworth,2022-01-07,Non COVID 19,1
+Warrington,2022-01-01,COVID 19,0
+Warrington,2022-01-01,Non COVID 19,0
+Warrington,2022-01-02,COVID 19,0
+Warrington,2022-01-02,Non COVID 19,0
+Warrington,2022-01-03,COVID 19,0
+Warrington,2022-01-03,Non COVID 19,1
+Warrington,2022-01-04,COVID 19,0
+Warrington,2022-01-04,Non COVID 19,0
+Warrington,2022-01-05,COVID 19,0
+Warrington,2022-01-05,Non COVID 19,0
+Warrington,2022-01-06,COVID 19,0
+Warrington,2022-01-06,Non COVID 19,2
+Warrington,2022-01-07,COVID 19,0
+Warrington,2022-01-07,Non COVID 19,0
+Warwickshire,2022-01-01,COVID 19,0
+Warwickshire,2022-01-01,Non COVID 19,0
+Warwickshire,2022-01-02,COVID 19,0
+Warwickshire,2022-01-02,Non COVID 19,0
+Warwickshire,2022-01-03,COVID 19,0
+Warwickshire,2022-01-03,Non COVID 19,2
+Warwickshire,2022-01-04,COVID 19,1
+Warwickshire,2022-01-04,Non COVID 19,6
+Warwickshire,2022-01-05,COVID 19,0
+Warwickshire,2022-01-05,Non COVID 19,3
+Warwickshire,2022-01-06,COVID 19,0
+Warwickshire,2022-01-06,Non COVID 19,5
+Warwickshire,2022-01-07,COVID 19,0
+Warwickshire,2022-01-07,Non COVID 19,3
+West Berkshire,2022-01-01,COVID 19,0
+West Berkshire,2022-01-01,Non COVID 19,0
+West Berkshire,2022-01-02,COVID 19,0
+West Berkshire,2022-01-02,Non COVID 19,0
+West Berkshire,2022-01-03,COVID 19,0
+West Berkshire,2022-01-03,Non COVID 19,0
+West Berkshire,2022-01-04,COVID 19,0
+West Berkshire,2022-01-04,Non COVID 19,2
+West Berkshire,2022-01-05,COVID 19,0
+West Berkshire,2022-01-05,Non COVID 19,1
+West Berkshire,2022-01-06,COVID 19,0
+West Berkshire,2022-01-06,Non COVID 19,1
+West Berkshire,2022-01-07,COVID 19,0
+West Berkshire,2022-01-07,Non COVID 19,0
+West Northamptonshire,2022-01-01,COVID 19,0
+West Northamptonshire,2022-01-01,Non COVID 19,0
+West Northamptonshire,2022-01-02,COVID 19,0
+West Northamptonshire,2022-01-02,Non COVID 19,0
+West Northamptonshire,2022-01-03,COVID 19,0
+West Northamptonshire,2022-01-03,Non COVID 19,4
+West Northamptonshire,2022-01-04,COVID 19,0
+West Northamptonshire,2022-01-04,Non COVID 19,4
+West Northamptonshire,2022-01-05,COVID 19,0
+West Northamptonshire,2022-01-05,Non COVID 19,3
+West Northamptonshire,2022-01-06,COVID 19,0
+West Northamptonshire,2022-01-06,Non COVID 19,3
+West Northamptonshire,2022-01-07,COVID 19,0
+West Northamptonshire,2022-01-07,Non COVID 19,1
+West Sussex,2022-01-01,COVID 19,0
+West Sussex,2022-01-01,Non COVID 19,0
+West Sussex,2022-01-02,COVID 19,0
+West Sussex,2022-01-02,Non COVID 19,7
+West Sussex,2022-01-03,COVID 19,0
+West Sussex,2022-01-03,Non COVID 19,8
+West Sussex,2022-01-04,COVID 19,0
+West Sussex,2022-01-04,Non COVID 19,12
+West Sussex,2022-01-05,COVID 19,0
+West Sussex,2022-01-05,Non COVID 19,14
+West Sussex,2022-01-06,COVID 19,0
+West Sussex,2022-01-06,Non COVID 19,9
+West Sussex,2022-01-07,COVID 19,1
+West Sussex,2022-01-07,Non COVID 19,13
+Westminster,2022-01-01,COVID 19,0
+Westminster,2022-01-01,Non COVID 19,1
+Westminster,2022-01-02,COVID 19,0
+Westminster,2022-01-02,Non COVID 19,0
+Westminster,2022-01-03,COVID 19,0
+Westminster,2022-01-03,Non COVID 19,0
+Westminster,2022-01-04,COVID 19,0
+Westminster,2022-01-04,Non COVID 19,0
+Westminster,2022-01-05,COVID 19,3
+Westminster,2022-01-05,Non COVID 19,1
+Westminster,2022-01-06,COVID 19,0
+Westminster,2022-01-06,Non COVID 19,0
+Westminster,2022-01-07,COVID 19,0
+Westminster,2022-01-07,Non COVID 19,1
+Wigan,2022-01-01,COVID 19,0
+Wigan,2022-01-01,Non COVID 19,1
+Wigan,2022-01-02,COVID 19,0
+Wigan,2022-01-02,Non COVID 19,0
+Wigan,2022-01-03,COVID 19,0
+Wigan,2022-01-03,Non COVID 19,0
+Wigan,2022-01-04,COVID 19,0
+Wigan,2022-01-04,Non COVID 19,2
+Wigan,2022-01-05,COVID 19,0
+Wigan,2022-01-05,Non COVID 19,2
+Wigan,2022-01-06,COVID 19,0
+Wigan,2022-01-06,Non COVID 19,0
+Wigan,2022-01-07,COVID 19,0
+Wigan,2022-01-07,Non COVID 19,0
+Wiltshire,2022-01-01,COVID 19,0
+Wiltshire,2022-01-01,Non COVID 19,0
+Wiltshire,2022-01-02,COVID 19,0
+Wiltshire,2022-01-02,Non COVID 19,2
+Wiltshire,2022-01-03,COVID 19,0
+Wiltshire,2022-01-03,Non COVID 19,1
+Wiltshire,2022-01-04,COVID 19,0
+Wiltshire,2022-01-04,Non COVID 19,11
+Wiltshire,2022-01-05,COVID 19,0
+Wiltshire,2022-01-05,Non COVID 19,2
+Wiltshire,2022-01-06,COVID 19,0
+Wiltshire,2022-01-06,Non COVID 19,9
+Wiltshire,2022-01-07,COVID 19,1
+Wiltshire,2022-01-07,Non COVID 19,6
+Windsor and Maidenhead,2022-01-01,COVID 19,0
+Windsor and Maidenhead,2022-01-01,Non COVID 19,1
+Windsor and Maidenhead,2022-01-02,COVID 19,0
+Windsor and Maidenhead,2022-01-02,Non COVID 19,0
+Windsor and Maidenhead,2022-01-03,COVID 19,0
+Windsor and Maidenhead,2022-01-03,Non COVID 19,1
+Windsor and Maidenhead,2022-01-04,COVID 19,0
+Windsor and Maidenhead,2022-01-04,Non COVID 19,5
+Windsor and Maidenhead,2022-01-05,COVID 19,2
+Windsor and Maidenhead,2022-01-05,Non COVID 19,1
+Windsor and Maidenhead,2022-01-06,COVID 19,0
+Windsor and Maidenhead,2022-01-06,Non COVID 19,1
+Windsor and Maidenhead,2022-01-07,COVID 19,0
+Windsor and Maidenhead,2022-01-07,Non COVID 19,4
+Wirral,2022-01-01,COVID 19,0
+Wirral,2022-01-01,Non COVID 19,0
+Wirral,2022-01-02,COVID 19,0
+Wirral,2022-01-02,Non COVID 19,0
+Wirral,2022-01-03,COVID 19,0
+Wirral,2022-01-03,Non COVID 19,2
+Wirral,2022-01-04,COVID 19,1
+Wirral,2022-01-04,Non COVID 19,2
+Wirral,2022-01-05,COVID 19,0
+Wirral,2022-01-05,Non COVID 19,5
+Wirral,2022-01-06,COVID 19,1
+Wirral,2022-01-06,Non COVID 19,6
+Wirral,2022-01-07,COVID 19,0
+Wirral,2022-01-07,Non COVID 19,6
+Wokingham,2022-01-01,COVID 19,0
+Wokingham,2022-01-01,Non COVID 19,0
+Wokingham,2022-01-02,COVID 19,0
+Wokingham,2022-01-02,Non COVID 19,1
+Wokingham,2022-01-03,COVID 19,0
+Wokingham,2022-01-03,Non COVID 19,0
+Wokingham,2022-01-04,COVID 19,0
+Wokingham,2022-01-04,Non COVID 19,0
+Wokingham,2022-01-05,COVID 19,0
+Wokingham,2022-01-05,Non COVID 19,1
+Wokingham,2022-01-06,COVID 19,0
+Wokingham,2022-01-06,Non COVID 19,1
+Wokingham,2022-01-07,COVID 19,0
+Wokingham,2022-01-07,Non COVID 19,0
+Wolverhampton,2022-01-01,COVID 19,0
+Wolverhampton,2022-01-01,Non COVID 19,0
+Wolverhampton,2022-01-02,COVID 19,0
+Wolverhampton,2022-01-02,Non COVID 19,1
+Wolverhampton,2022-01-03,COVID 19,0
+Wolverhampton,2022-01-03,Non COVID 19,4
+Wolverhampton,2022-01-04,COVID 19,0
+Wolverhampton,2022-01-04,Non COVID 19,3
+Wolverhampton,2022-01-05,COVID 19,0
+Wolverhampton,2022-01-05,Non COVID 19,2
+Wolverhampton,2022-01-06,COVID 19,0
+Wolverhampton,2022-01-06,Non COVID 19,1
+Wolverhampton,2022-01-07,COVID 19,1
+Wolverhampton,2022-01-07,Non COVID 19,3
+Worcestershire,2022-01-01,COVID 19,0
+Worcestershire,2022-01-01,Non COVID 19,3
+Worcestershire,2022-01-02,COVID 19,0
+Worcestershire,2022-01-02,Non COVID 19,1
+Worcestershire,2022-01-03,COVID 19,0
+Worcestershire,2022-01-03,Non COVID 19,3
+Worcestershire,2022-01-04,COVID 19,1
+Worcestershire,2022-01-04,Non COVID 19,15
+Worcestershire,2022-01-05,COVID 19,0
+Worcestershire,2022-01-05,Non COVID 19,3
+Worcestershire,2022-01-06,COVID 19,0
+Worcestershire,2022-01-06,Non COVID 19,11
+Worcestershire,2022-01-07,COVID 19,0
+Worcestershire,2022-01-07,Non COVID 19,4
+York,2022-01-01,COVID 19,0
+York,2022-01-01,Non COVID 19,1
+York,2022-01-02,COVID 19,0
+York,2022-01-02,Non COVID 19,1
+York,2022-01-03,COVID 19,0
+York,2022-01-03,Non COVID 19,3
+York,2022-01-04,COVID 19,1
+York,2022-01-04,Non COVID 19,2
+York,2022-01-05,COVID 19,0
+York,2022-01-05,Non COVID 19,2
+York,2022-01-06,COVID 19,0
+York,2022-01-06,Non COVID 19,2
+York,2022-01-07,COVID 19,0
+York,2022-01-07,Non COVID 19,6
