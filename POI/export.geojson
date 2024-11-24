@@ -1,0 +1,1429 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2024-11-24T13:32:44Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/8044159",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0313972,
+          51.6855686
+        ]
+      },
+      "id": "way/8044159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/15705264",
+        "amenity": "bus_station",
+        "building": "office",
+        "building:levels": "4",
+        "building:min_level": "1",
+        "bus": "yes",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1324926,
+          51.5275901
+        ]
+      },
+      "id": "way/15705264"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/24906481",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Crystal Palace Bus Station",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0778177,
+          51.4207685
+        ]
+      },
+      "id": "way/24906481"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/25649631",
+        "amenity": "bus_station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0375768,
+          51.632223
+        ]
+      },
+      "id": "node/25649631"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/26704618",
+        "access": "private",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "construction": "yes",
+        "name": "Cromwell Road Bus Station",
+        "network": "Transport for London",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.298833,
+          51.4124887
+        ]
+      },
+      "id": "way/26704618"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/29997559",
+        "amenity": "bus_station",
+        "name": "Walthamstow bus station",
+        "wikidata": "Q7966641",
+        "wikipedia": "en:Walthamstow bus station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0201931,
+          51.5837798
+        ]
+      },
+      "id": "way/29997559"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/30906718",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Wells Terrace Bus Station",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1071455,
+          51.5655577
+        ]
+      },
+      "id": "way/30906718"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31804181",
+        "addr:city": "London",
+        "addr:housename": "North Greenwich Transport Interchange",
+        "addr:housenumber": "5",
+        "addr:postcode": "SE10 0PH",
+        "addr:street": "Millennium Way",
+        "amenity": "bus_station",
+        "building": "bus_station",
+        "building:levels": "1",
+        "bus": "yes",
+        "layer": "1",
+        "name": "North Greenwich",
+        "public_transport": "station",
+        "roof:levels": "0",
+        "wheelchair": "yes",
+        "wikidata": "Q7055510",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0037697,
+          51.5003691
+        ]
+      },
+      "id": "way/31804181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/32345538",
+        "addr:city": "London",
+        "addr:housenumber": "164-200",
+        "addr:postcode": "SW1W 9TP",
+        "addr:street": "Buckingham Palace Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Victoria Coach Station (Departures)",
+        "operator": "Victoria Coach Station Ltd",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "wikidata": "Q279459",
+        "wikipedia": "en:Victoria Coach Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1492276,
+          51.492275
+        ]
+      },
+      "id": "way/32345538"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/38665314",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Chingford Bus Station",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0102665,
+          51.6335799
+        ]
+      },
+      "id": "way/38665314"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/49632080",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Addington Village Interchange",
+        "public_transport": "station",
+        "wikidata": "Q4681193",
+        "wikipedia": "en:Addington Village Interchange",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0325355,
+          51.3563702
+        ]
+      },
+      "id": "way/49632080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/87524437",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Fairfield Bus Station",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2998335,
+          51.4103126
+        ]
+      },
+      "id": "way/87524437"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/107025614",
+        "amenity": "bus_station",
+        "building": "roof",
+        "bus": "yes",
+        "layer": "1",
+        "name": "Stratford Bus Station",
+        "public_transport": "station",
+        "roof:colour": "white",
+        "roof:shape": "tent",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0018513,
+          51.5410259
+        ]
+      },
+      "id": "way/107025614"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/107278484",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Aldgate Station",
+        "network": "TfL",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0751609,
+          51.5134688
+        ]
+      },
+      "id": "way/107278484"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/140147695",
+        "amenity": "bus_station",
+        "building": "yes",
+        "bus": "yes",
+        "name": "Canada Water Bus Station",
+        "public_transport": "station",
+        "wikidata": "Q5029446",
+        "wikipedia": "en:Canada Water bus station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0501977,
+          51.4980813
+        ]
+      },
+      "id": "way/140147695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/158853069",
+        "amenity": "bus_station",
+        "name": "Walthamstow Bus Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0203779,
+          51.5837612
+        ]
+      },
+      "id": "way/158853069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/162966528",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "layer": "1",
+        "name": "Heathrow Central Bus station",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4534722,
+          51.4711796
+        ]
+      },
+      "id": "way/162966528"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/164380537",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "West Croydon Bus Station",
+        "note": "Closed until 2016.",
+        "public_transport": "station",
+        "wikidata": "Q113631378",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1011523,
+          51.3790731
+        ]
+      },
+      "id": "way/164380537"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/186976330",
+        "amenity": "bus_station",
+        "building": "transportation",
+        "building:levels": "1",
+        "check_date": "2023-07-11",
+        "name": "Edgware Bus Station",
+        "operator": "Transport for London",
+        "roof:levels": "0",
+        "wheelchair": "yes",
+        "wikidata": "Q5337961",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2745653,
+          51.6128936
+        ]
+      },
+      "id": "way/186976330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/190522082",
+        "amenity": "bus_station",
+        "building": "yes",
+        "bus": "yes",
+        "internet_access": "wlan",
+        "name": "Turnpike Lane Bus Station",
+        "operator": "TFL",
+        "public_transport": "station",
+        "wikidata": "Q7856098",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1023701,
+          51.5900154
+        ]
+      },
+      "id": "way/190522082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/195008378",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Mile End Station",
+        "operator": "Transport for London",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0354729,
+          51.5258048
+        ]
+      },
+      "id": "way/195008378"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/200652376",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "motor_vehicle": "no",
+        "name": "Brent Cross bus station",
+        "psv": "yes",
+        "public_transport": "station",
+        "wikidata": "Q4961358",
+        "wikipedia": "en:Brent Cross bus station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2229419,
+          51.5756067
+        ]
+      },
+      "id": "way/200652376"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/207554833",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Peckham Bus Station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0672539,
+          51.4736067
+        ]
+      },
+      "id": "node/207554833"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/208722170",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Romford Station Terminus",
+        "operator": "Transport for London",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1822301,
+          51.5739816
+        ]
+      },
+      "id": "way/208722170"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/213924761",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Harrow Bus Station",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "wikidata": "Q5666609",
+        "wikipedia": "en:Harrow bus station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3377357,
+          51.5800282
+        ]
+      },
+      "id": "node/213924761"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/215645188",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "East Croydon Bus Station",
+        "public_transport": "station",
+        "wheelchair": "limited",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0917547,
+          51.374845
+        ]
+      },
+      "id": "way/215645188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/238548541",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Eltham Station",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0521338,
+          51.4552855
+        ]
+      },
+      "id": "way/238548541"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/242166163",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Tottenham Hale Bus Station",
+        "network": "London Buses",
+        "operator": "Transport for London",
+        "public_transport": "station",
+        "start_date": "2014-11-08",
+        "wikidata": "Q7828447",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0610349,
+          51.5885514
+        ]
+      },
+      "id": "way/242166163"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/282348817",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "layer": "1",
+        "name": "London Bridge Bus Station",
+        "network": "London Buses",
+        "operator": "Transport for London",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "wikidata": "Q6669895",
+        "wikipedia": "en:London Bridge bus station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0869411,
+          51.5052951
+        ]
+      },
+      "id": "way/282348817"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/286733046",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "check_date": "2024-04-04",
+        "name": "Vauxhall Bus Station",
+        "operator": "London Buses",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "wikidata": "Q7917468",
+        "wikipedia": "en:Vauxhall bus station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1242396,
+          51.4853908
+        ]
+      },
+      "id": "way/286733046"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/293427801",
+        "amenity": "bus_station",
+        "area": "yes",
+        "bus": "yes",
+        "name": "Watford Junction Railway Station (bus station)",
+        "public_transport": "station",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3963139,
+          51.6631591
+        ]
+      },
+      "id": "way/293427801"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/302110969",
+        "addr:city": "London",
+        "addr:postcode": "SW1V 1JR",
+        "addr:street": "Terminus Place",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Victoria Bus Station",
+        "network": "London Buses",
+        "opening_hours": "24/7",
+        "operator": "Transport for London",
+        "public_transport": "station",
+        "website": "http://www.tfl.gov",
+        "wheelchair": "yes",
+        "wikidata": "Q7927165",
+        "wikipedia": "en:Victoria bus station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1439769,
+          51.4960384
+        ]
+      },
+      "id": "way/302110969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/312242606",
+        "access": "private",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "capacity": "9",
+        "lit": "yes",
+        "name": "Barking Bus Stand",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0769408,
+          51.538129
+        ]
+      },
+      "id": "way/312242606"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/352167551",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Stratford City Bus Station",
+        "public_transport": "station",
+        "website": "https://tfl.gov.uk/bus/stop/490G00019793/stratford-city-bus-station",
+        "wheelchair": "yes",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0042077,
+          51.5437699
+        ]
+      },
+      "id": "way/352167551"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/471944977",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "check_date": "2022-11-21",
+        "internet_access:fee": "no",
+        "name": "Lewisham Bus Station",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0148638,
+          51.465655
+        ]
+      },
+      "id": "way/471944977"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/492651716",
+        "access": "private",
+        "addr:housenumber": "186-220",
+        "addr:postcode": "RM1 1DS",
+        "addr:street": "North Street",
+        "amenity": "bus_station",
+        "building": "bus_garage",
+        "bus": "yes",
+        "name": "Romford Bus Garage",
+        "operator": "Stagecoach London",
+        "parking": "depot",
+        "public_transport": "station",
+        "ref": "NS",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1751283,
+          51.5839798
+        ]
+      },
+      "id": "way/492651716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/544595849",
+        "amenity": "bus_station",
+        "building": "transportation",
+        "bus": "yes",
+        "name": "Victoria Coach Station (Arrivals)",
+        "public_transport": "station",
+        "toilets:wheelchair": "yes",
+        "wheelchair": "yes",
+        "wikidata": "Q279459",
+        "wikipedia": "en:Victoria Coach Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1489124,
+          51.4933587
+        ]
+      },
+      "id": "way/544595849"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/552213648",
+        "amenity": "bus_station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0620149,
+          51.6609187
+        ]
+      },
+      "id": "way/552213648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/607744361",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Bluewater Bus Station",
+        "naptan:AtcoCode": "240G070000A",
+        "public_transport": "station",
+        "toilets": "yes",
+        "toilets:wheelchair": "yes",
+        "wheelchair:description": "There are accessible toilets in the Bluewater Shopping Centre served by the bus station.",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2758285,
+          51.4376967
+        ]
+      },
+      "id": "way/607744361"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/679928406",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4109947,
+          51.4479987
+        ]
+      },
+      "id": "way/679928406"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/683270265",
+        "amenity": "bus_station",
+        "name": "St James Bus Station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0322605,
+          51.5814346
+        ]
+      },
+      "id": "way/683270265"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/757875919",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Beckton Bus Station",
+        "operator": "Transport for London",
+        "public_transport": "station",
+        "wikidata": "Q4878777",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0594286,
+          51.5141802
+        ]
+      },
+      "id": "way/757875919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/796889558",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Prince Regent Bus Station",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0350816,
+          51.5094699
+        ]
+      },
+      "id": "way/796889558"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/838370240",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Canning Town Bus Station",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.0084817,
+          51.5142388
+        ]
+      },
+      "id": "way/838370240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/858911244",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Beacontree Heath Bus Terminal",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1498024,
+          51.5604121
+        ]
+      },
+      "id": "way/858911244"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/875492899",
+        "amenity": "bus_station",
+        "building": "yes",
+        "bus": "yes",
+        "layer": "1",
+        "name": "Lakeside Bus Station",
+        "naptan:AtcoCode": "159G0060101",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2831495,
+          51.4903694
+        ]
+      },
+      "id": "way/875492899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/888759715",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4220148,
+          51.6339969
+        ]
+      },
+      "id": "way/888759715"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/913673439",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "24 Bus - End of Route",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1651004,
+          51.5544839
+        ]
+      },
+      "id": "way/913673439"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/962140191",
+        "amenity": "bus_station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0860615,
+          51.6527233
+        ]
+      },
+      "id": "node/962140191"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/990472615",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Amazon LCY3",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2418371,
+          51.4645491
+        ]
+      },
+      "id": "way/990472615"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/995308591",
+        "amenity": "bus_station",
+        "building": "yes",
+        "bus": "yes",
+        "name": "Hammersmith Upper Bus Station",
+        "operator": "Transport for London",
+        "public_transport": "station",
+        "source": "survey",
+        "wheelchair": "yes",
+        "wikidata": "Q5645763",
+        "wikipedia": "en:Hammersmith bus station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2238511,
+          51.492158
+        ]
+      },
+      "id": "way/995308591"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/995313288",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Hammersmith Lower Bus Station",
+        "operator": "Transport for London",
+        "public_transport": "station",
+        "source": "survey",
+        "wheelchair": "yes",
+        "wikidata": "Q5645763",
+        "wikipedia": "en:Hammersmith bus station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2230007,
+          51.4926137
+        ]
+      },
+      "id": "way/995313288"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1155214934",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Golders Green",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1945866,
+          51.5720217
+        ]
+      },
+      "id": "way/1155214934"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1197183933",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "256 Bus route terminus/layby",
+        "network": "256 Bus Route",
+        "operator": "Transport For London",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2155033,
+          51.5453477
+        ]
+      },
+      "id": "way/1197183933"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1311017871",
+        "alt_name": "Staines Bus Station",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Elmsleigh Bus Station",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.5091747,
+          51.4325436
+        ]
+      },
+      "id": "way/1311017871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/1314032722",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Uxbridge bus station",
+        "network": "Transport for London",
+        "public_transport": "station",
+        "@geometry": "center"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4782631,
+          51.5467259
+        ]
+      },
+      "id": "way/1314032722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1645567973",
+        "alt_name": "Heathrow Central Bus Station",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "layer": "5",
+        "name": "Heathrow Central bus station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4534928,
+          51.4712019
+        ]
+      },
+      "id": "node/1645567973"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1794838014",
+        "addr:unit": "4A",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Green Line Coaches",
+        "public_transport": "station",
+        "source": "survey",
+        "wikidata": "Q5602825",
+        "wikipedia": "en:Green Line Coach Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1461027,
+          51.4930068
+        ]
+      },
+      "id": "node/1794838014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3473769517",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Richmond Bus Station",
+        "note": "Terminating Buses: 190 337 391 419",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.304207,
+          51.4593225
+        ]
+      },
+      "id": "node/3473769517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3499360043",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Hounslow Bus Station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.3547251,
+          51.4710998
+        ]
+      },
+      "id": "node/3499360043"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3499486969",
+        "access": "private",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Cromwell Road Bus Station",
+        "public_transport": "station",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.2988622,
+          51.4125288
+        ]
+      },
+      "id": "node/3499486969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5371099277",
+        "amenity": "bus_station",
+        "bench": "yes",
+        "bin": "yes",
+        "bus": "yes",
+        "covered": "yes",
+        "highway": "bus_stop",
+        "internet_access": "wlan",
+        "lit": "yes",
+        "local_ref": "->NE",
+        "name": "Victoria Coach Station (Departures)",
+        "naptan:AtcoCode": "490014051VC",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "source": "naptan",
+        "tactile_paving": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.149216,
+          51.4926693
+        ]
+      },
+      "id": "node/5371099277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6821779205",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Edmonton Green Bus Station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.0587015,
+          51.625275
+        ]
+      },
+      "id": "node/6821779205"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6831355685",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Megabus Station",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.1496324,
+          51.4926493
+        ]
+      },
+      "id": "node/6831355685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9050302687",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Metroline Uxbridge",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4778121,
+          51.5469187
+        ]
+      },
+      "id": "node/9050302687"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11348742742",
+        "addr:city": "London",
+        "addr:housename": "Binfield Rd",
+        "addr:postcode": "SW4 6ST",
+        "addr:street": "Binfield Road",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Stockwell Bus Garage Office",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.124388,
+          51.473593
+        ]
+      },
+      "id": "node/11348742742"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12355511684",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Ebbsfleet International Railway Station Coach Stop",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.3197954,
+          51.4429998
+        ]
+      },
+      "id": "node/12355511684"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12355511685",
+        "amenity": "bus_station",
+        "bus": "yes",
+        "name": "Bluewater Shopping Centre Coach Park",
+        "public_transport": "station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.2656401,
+          51.44102
+        ]
+      },
+      "id": "node/12355511685"
+    }
+  ]
+}
