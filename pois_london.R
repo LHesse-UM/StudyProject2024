@@ -4,10 +4,12 @@
 if (!require("sf")) install.packages("sf")
 if (!require("leaflet")) install.packages("leaflet")
 if (!require("dplyr")) install.packages("dplyr")
+if (!require("htmlwidgets")) install.packages("htmlwidgets")
 
 library(sf)
 library(leaflet)
 library(dplyr)
+library(htmlwidgets)
 
 # Shapefile einlesen
 # Ersetze "/data/POIs London/pois_london.shp" mit dem tatsächlichen Pfad zur Shapefile
@@ -28,7 +30,6 @@ bbox_small <- list(
   ymax = bbox[[4]] - (bbox[[4]] - bbox[[2]]) * buffer_factor
 )
 
-# leaflet map
 for (i in 1:4) {
   typ_daten <- subset(daten, type == i)
   if (nrow(typ_daten) > 0) {
@@ -42,10 +43,11 @@ for (i in 1:4) {
         type == 4 ~ "#FFD700"
       ), weight = 1, opacity = 1, fillOpacity = 0.5) %>%
       addLegend(position = "bottomright", colors = c("#FF6347", "#4682B4", "#32CD32", "#FFD700"), labels = c("Bus stops", "Subway stations", "Football stadiums", "Other big arenas"), title = paste("Type", i, "POIs in London"))
-    print(karte)
+    
+    # Speichern der Karte als HTML-Datei
+    saveWidget(karte, file = paste0("data/maps/karte_typ_", i, ".html"), selfcontained = TRUE)
   }
 }
-
 
 karte_alle_types <- leaflet(data = daten) %>%
   addProviderTiles(providers$CartoDB.Positron) %>% 
@@ -58,4 +60,6 @@ karte_alle_types <- leaflet(data = daten) %>%
   ), weight = 1, opacity = 1, fillOpacity = 0.5) %>%
   addLegend(position = "bottomright", colors = c("#FF6347", "#4682B4", "#32CD32", "#FFD700"), labels = c("Bus stops", "Subway stations", "Football stadiums", "Other big arenas"), title = "All Types of POIs in London")
 
-print(karte_alle_types)
+
+# Speichere die Karte für alle POI-Typen
+saveWidget(karte_alle_types, file = "data/maps/karte_alle_types.html", selfcontained = TRUE)
