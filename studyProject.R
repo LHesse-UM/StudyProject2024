@@ -8,9 +8,10 @@ library(cluster)  # Für k-Means
 library(htmltools)
 
 # Daten vorbereiten
-distinct_LONLAT <- read_parquet("C:/Users/lucah/Downloads/distinct_LONLAT.parquet")
-pre_processed_movement <- read_parquet("C:/Users/lucah/Downloads/pre_processed_movement.parquet")
-greater_London_area <- st_read("C:/Users/lucah/Downloads/StudyProject2024-main/Study Project/data/London Boundaries/London_Ward.shp")
+user_path <- "C:/Users/lucah/Downloads/"
+distinct_LONLAT <- read_parquet(paste0(user_path, "distinct_LONLAT.parquet"))
+pre_processed_movement <- read_parquet(paste0(user_path, "pre_processed_movement.parquet"))
+greater_London_area <- st_read("data/London Boundaries/London_Ward.shp")
 
 ersterJanuar <- pre_processed_movement[pre_processed_movement$AGG_DAY_PERIOD == "2020-01-10", ]
 mergedData <- merge(ersterJanuar, distinct_LONLAT, by = "LONLAT_ID")
@@ -42,7 +43,7 @@ response <- GET(url, query = params)
 linestring_data <- st_read(content(response, as = "text"), quiet = TRUE)
 
 # Lokale GeoJSON-Datei laden und ggfs. CRS anpassen
-local_geojson <- st_read("C:/Users/lucah/Downloads/StudyProject2024-main (3)/StudyProject2024-main/pois_london.geojson")
+local_geojson <- st_read("data/POIs London/pois_london.geojson")
 if (st_crs(local_geojson) != st_crs(data_london)) {
   local_geojson <- st_transform(local_geojson, st_crs(data_london))
 }
