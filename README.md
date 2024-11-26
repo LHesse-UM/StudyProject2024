@@ -30,7 +30,7 @@ This project was built using the following technologies and tools:
 
 The complete project results are available online:
 
-[📂 **StudyProject2024 Results**](https://tkrumrei.github.io/StudyProject2024/)
+[ **StudyProject2024 Results**](https://tkrumrei.github.io/StudyProject2024/)
 
 Visit the website to explore the interactive results and functionalities.
 
