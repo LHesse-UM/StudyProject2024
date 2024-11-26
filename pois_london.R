@@ -30,6 +30,11 @@ bbox_small <- list(
   ymax = bbox[[4]] - (bbox[[4]] - bbox[[2]]) * buffer_factor
 )
 
+greater_London_area <- st_read("data/London Boundaries/London_Ward.shp")
+shape_transformed <- st_transform(greater_London_area, crs = 4326)
+london_outline <- st_union(shape_transformed)
+london_outline_sf <- st_sf(geometry = london_outline)
+
 for (i in 1:4) {
   typ_daten <- subset(daten, type == i)
   if (nrow(typ_daten) > 0) {
@@ -51,6 +56,7 @@ for (i in 1:4) {
 
 karte_alle_types <- leaflet(data = daten) %>%
   addProviderTiles(providers$CartoDB.Positron) %>% 
+  addPolygons(data = london_outline_sf, color = "black", weight = 1, opacity = 0.8, fill = FALSE, group = "London Outline") %>%
   fitBounds(bbox_small$xmin, bbox_small$ymin, bbox_small$xmax, bbox_small$ymax) %>% 
   addPolygons(color = ~case_when(
     type == 1 ~ "#FF6347",
