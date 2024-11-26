@@ -1,7 +1,7 @@
 # StudyProject2024
 
 ![Project Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
 ## Table of Contents
 
