@@ -1,7 +1,7 @@
 # StudyProject2024
 
 ![Project Status](https://img.shields.io/badge/Status-Active-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
 ## Table of Contents
 
@@ -44,7 +44,22 @@ No installation or additional setup is required.
 
 ## License
 
+This project is licensed under the Apache License 2.0. 
 
+Copyright 2024 by the following contributors:
+
+- [tkrumrei](https://github.com/tkrumrei)
+- [LHesse-UM](https://github.com/LHesse-UM)
+- [tlehman1](https://github.com/tlehman1)
+
+You may read the full license in the [LICENSE](LICENSE) file included in this repository or visit the official [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0).
 
 ## Contact
 
+If you have any questions, feedback, or suggestions, please feel free to reach out to us:
+
+- **tkrumrei**: [GitHub Profile](https://github.com/tkrumrei)
+- **LHesse-UM**: [GitHub Profile](https://github.com/LHesse-UM)
+- **tlehman1**: [GitHub Profile](https://github.com/tlehman1)
+
+We appreciate your interest in **StudyProject2024** and look forward to your feedback!
