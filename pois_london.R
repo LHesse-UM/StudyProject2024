@@ -79,4 +79,4 @@ karte_alle_types <- leaflet(data = pois_london) %>%
   ), weight = 1, opacity = 1, fillOpacity = 0.5) %>%
   addLegend(position = "bottomright", colors = c("#333333", "#666666", "#104E8B", "#1E90FF", "#8B4500", "#66CD00"), labels = c("Bus stations", "Subway stations", "Football stadiums", "Other big stadiums", "Sightseeings", "Parks"), title = "All Types of POIs in London")
 
-saveWidget(karte_alle_types, file = "data/maps/karte_alle_types.html")
+saveWidget(karte_alle_types, file = "data/maps/karte_alle_types.html", selfcontained = FALSE)
