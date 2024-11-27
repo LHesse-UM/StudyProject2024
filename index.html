@@ -29,6 +29,33 @@
         a {
             color: #007acc;
         }
+        .color-box {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 10px;
+            border: 1px solid #000;
+            opacity: 0.5;
+        }
+
+        .bus {
+            background-color: #333333; /* Grey for Bus stations */
+        }
+        .subway {
+            background-color: #666666; /* Olive green for Subway stations */
+        }
+        .soccer {
+            background-color: #104E8B; /* Steel blue for Football stadiums */
+        }
+        .event {
+            background-color: #1E90FF; /* Sky blue for Other big stadiums */
+        }
+        .sightseeing {
+            background-color: #8B4500; /* Gold for Sightseeings */
+        }
+        .park {
+            background-color: #66CD00; /* Lime green for Parks */
+        }
     </style>
 </head>
 <body>
@@ -42,7 +69,15 @@
     </section>
     <section>
         <h2>Map of the Polygons of Interest (POIs)</h2>
-        <p>We have five different types of POIs, the biggest bus stops and subway stations, soccer stadiums with over 25.000 people, other big event places with a capacity of over 7.500 (and sightseeing and other big places).</p>
+        <p>We have six different types of POIs: </p>
+        <ol>
+            <li><span class="color-box bus"></span>the biggest bus stops,</li>
+        <li><span class="color-box subway"></span>the biggest subway stations,</li>
+        <li><span class="color-box soccer"></span>soccer stadiums with over 25,000 people,</li>
+        <li><span class="color-box event"></span>big event places with a capacity of over 7,500,</li>
+        <li><span class="color-box sightseeing"></span>the most popular sightseeings, and</li>
+        <li><span class="color-box park"></span>royal parks</li>
+        </ol>
         <iframe src="data/maps/karte_alle_types.html"></iframe>
     </section>
     <section>
