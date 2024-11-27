@@ -4,20 +4,24 @@ library(sf)
 library(dplyr)
 library(leaflet)
 library(httr)
-library(cluster)  # Für k-Means
+library(cluster)  
 library(htmltools)
+library(htmlwidgets) 
 
 # Daten vorbereiten
-user_path <- "C:/Users/lucah/Downloads/"
-distinct_LONLAT <- read_parquet(paste0(user_path, "distinct_LONLAT.parquet"))
-pre_processed_movement <- read_parquet(paste0(user_path, "pre_processed_movement.parquet"))
-greater_London_area <- st_read("data/London Boundaries/London_Ward.shp")
+distinct_LONLAT <- read_parquet("C:/Users/lucah/Downloads/distinct_LONLAT.parquet")
+pre_processed_movement <- read_parquet("C:/Users/lucah/Downloads/pre_processed_movement.parquet")
+greater_London_area <- st_read("C:/Users/lucah/Downloads/StudyProject2024-main/Study Project/data/London Boundaries/London_Ward.shp")
+poi_geojson <- st_read("C:/Users/lucah/Downloads/StudyProject2024-main (3)/StudyProject2024-main/pois_london.geojson")
 
-ersterJanuar <- pre_processed_movement[pre_processed_movement$AGG_DAY_PERIOD == "2020-01-10", ]
-mergedData <- merge(ersterJanuar, distinct_LONLAT, by = "LONLAT_ID")
+selectedDay <- pre_processed_movement[pre_processed_movement$AGG_DAY_PERIOD == "2020-03-24", ]
+mergedData <- merge(selectedDay, distinct_LONLAT, by = "LONLAT_ID")
+
+# Auf London begrenzen
 filtered_data <- mergedData %>%
   filter(XLAT > 51.275, XLAT < 51.7, XLON > -0.52, XLON < 0.35)
 
+# Transformieren
 filtered_data_sf <- st_as_sf(filtered_data, coords = c("XLON", "XLAT"), crs = 4326)
 
 shape_transformed <- st_transform(greater_London_area, crs = 4326)
@@ -26,49 +30,13 @@ london_outline_sf <- st_sf(geometry = london_outline)
 
 data_london <- st_intersection(filtered_data_sf, london_outline_sf)
 
+#######################################################################################################
+
 # Clustering: k-Means
 set.seed(123)  # Reproduzierbarkeit
 num_clusters <- 4  
 data_london$cluster <- kmeans(data_london$mean_column, centers = num_clusters)$cluster
 data_london$cluster <- as.factor(data_london$cluster)  
-
-# Thames-Daten von MapServer laden
-url <- "https://gis2.london.gov.uk/server/rest/services/apps/webmap_context_layer/MapServer/1/query"
-params <- list(
-  where = "1=1",
-  outFields = "*",
-  f = "geojson"
-)
-response <- GET(url, query = params)
-linestring_data <- st_read(content(response, as = "text"), quiet = TRUE)
-
-# Lokale GeoJSON-Datei laden und ggfs. CRS anpassen
-local_geojson <- st_read("data/POIs London/pois_london.geojson")
-if (st_crs(local_geojson) != st_crs(data_london)) {
-  local_geojson <- st_transform(local_geojson, st_crs(data_london))
-}
-
-# Benutzerdefinierte Legendenfunktion
-addLegendCustom <- function(map, position, colors, labels, title = NULL) {
-  legend_html <- paste0(
-    "<div style='background: white; padding: 8px; border-radius: 5px;'>",
-    if (!is.null(title)) paste0("<b>", title, "</b><br>"),
-    paste0(
-      mapply(function(color, label) {
-        paste0("<i style='background:", color, ";width:10px;height:10px;float:left;margin-right:8px;opacity:0.7;'></i>", label, "<br>")
-      }, colors, labels, SIMPLIFY = FALSE),
-      collapse = ""
-    ),
-    "</div>"
-  )
-  addControl(map, html = legend_html, position = position)
-}
-
-# Farben basierend auf den Clustern definieren
-color_palette <- colorFactor(
-  palette = c("orange", "yellow", "red", "green"),  # Farben für die Cluster
-  domain = data_london$cluster
-)
 
 # 100x100 Meter großes Rechteck zu erstellen
 create_square <- function(point, size = 150) {
@@ -100,9 +68,41 @@ data_london_rectangles <- st_as_sf(data_london_transformed %>%
                                      mutate(geometry = create_square(geometry))) %>%
   st_transform(crs = 4326)
 
-print(data_london_rectangles)
 
-leaflet() %>%
+
+################################################################################################################################
+# Thames-Daten von MapServer laden
+url <- "https://gis2.london.gov.uk/server/rest/services/apps/webmap_context_layer/MapServer/1/query"
+params <- list(
+  where = "1=1",
+  outFields = "*",
+  f = "geojson"
+)
+response <- GET(url, query = params)
+linestring_data <- st_read(content(response, as = "text"), quiet = TRUE)
+
+######################################################################################################################################
+
+# Lokale GeoJSON-Datei laden und ggfs. CRS anpassen
+
+if (st_crs(poi_geojson) != st_crs(data_london)) {
+  poi_geojson <- st_transform(poi_geojson, st_crs(data_london))
+}
+
+
+####################################################################################################################################
+
+
+# Farben basierend auf den Clustern definieren
+color_palette <- colorFactor(
+  palette = c("orange", "yellow", "red", "green"),
+  domain = data_london$cluster
+)
+
+
+##############################################################################################################################################
+
+leafletMap <- leaflet() %>%
   # Graue Hintergrundkarte hinzufügen
   addProviderTiles(providers$CartoDB.Positron, group = "Graue Karte") %>%
   
@@ -120,13 +120,15 @@ leaflet() %>%
   addPolylines(data = linestring_data, color = "blue", weight = 1, opacity = 0.5, group = "Thames Lines") %>%
   
   # Lokale GeoJSON-Punkte hinzufügen
-  addPolygons(data=local_geojson, color = ~case_when(
-    type == 1 ~ "#FF6347",
-    type == 2 ~ "#4682B4",
-    type == 3 ~ "#32CD32",
-    type == 4 ~ "#FFD700"
+   addPolygons(data = poi_geojson, color = ~case_when(
+    type == 1 ~ "#333333",
+    type == 2 ~ "#666666",
+    type == 3 ~ "#104E8B",
+    type == 4 ~ "#1E90FF",
+    type == 5 ~ "#8B4500",
+    type == 6 ~ "#66CD00"
   ), weight = 1, opacity = 1, fillOpacity = 0.5) %>%
-  addLegend(position = "bottomright", colors = c("#FF6347", "#4682B4", "#32CD32", "#FFD700"), labels = c("Bus stops", "Subway stations", "Football stadiums", "Other big arenas"), title = "All Types of POIs in London") %>%
+  addLegend(position = "bottomright", colors = c("#333333", "#666666", "#104E8B", "#1E90FF", "#8B4500", "#66CD00"), labels = c("Bus stations", "Subway stations", "Football stadiums", "Other big stadiums", "Sightseeings", "Parks"), title = "All Types of POIs in London") %>%
   
   # Layer-Toggle hinzufügen
   addLayersControl(
@@ -148,6 +150,10 @@ leaflet() %>%
     htmltools::tags$div(
       style = "position: absolute; top: 10px; left: 50%; transform: translateX(-50%); 
                z-index: 999; background: transparent; padding: 10px; border-radius: 5px;",
-      htmltools::tags$h2("London Movement Data on January 1, 2020")
+      htmltools::tags$h2("London Movement Data on March 24, 2020")
     )
   )
+
+
+saveWidget(leafletMap, file = "name_leafletkarte.html", selfcontained = TRUE)
+
