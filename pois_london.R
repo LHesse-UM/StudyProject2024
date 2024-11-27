@@ -4,20 +4,20 @@ if (!require("leaflet")) install.packages("leaflet")
 if (!require("dplyr")) install.packages("dplyr")
 if (!require("htmlwidgets")) install.packages("htmlwidgets")
 if (!require("httr")) install.packages("httr")
-
 library(sf)
 library(leaflet)
 library(dplyr)
 library(htmlwidgets)
 library(httr)
 
-
+##### POIs dataset #####
 pois_london <- st_read("data/POIs London/pois_london.shp")
 anzahl_types <- pois_london %>% 
   group_by(type) %>% 
   summarise(anzahl = n())
 print(anzahl_types)
 
+##### bbox #####
 bbox <- st_bbox(pois_london)
 buffer_factor <- 0.3
 bbox_small <- list(
@@ -43,27 +43,7 @@ params <- list(
 response <- GET(url, query = params)
 linestring_data <- st_read(content(response, as = "text"), quiet = TRUE)
 
-'
-for (i in 1:4) {
-  typ_daten <- subset(pois_london, type == i)
-  if (nrow(typ_daten) > 0) {
-    karte <- leaflet(data = typ_daten) %>%
-      addProviderTiles(providers$CartoDB.Positron) %>% 
-      fitBounds(bbox_small$xmin, bbox_small$ymin, bbox_small$xmax, bbox_small$ymax) %>% 
-      addPolygons(color = ~case_when(
-        type == 1 ~ "#FF6347",
-        type == 2 ~ "#4682B4",
-        type == 3 ~ "#32CD32",
-        type == 4 ~ "#FFD700"
-      ), weight = 1, opacity = 1, fillOpacity = 0.5) %>%
-      addLegend(position = "bottomright", colors = c("#FF6347", "#4682B4", "#32CD32", "#FFD700"), labels = c("Bus stops", "Subway stations", "Football stadiums", "Other big arenas"), title = paste("Type", i, "POIs in London"))
-    
-    # Speichern der Karte als HTML-Datei
-    saveWidget(karte, file = paste0("data/maps/karte_typ_", i, ".html"), selfcontained = TRUE)
-  }
-}
-'
-
+##### Leaflet Karte #####
 karte_alle_types <- leaflet(data = pois_london) %>%
   addProviderTiles(providers$CartoDB.Positron) %>% 
   addPolygons(data = london_outline_sf, color = "black", weight = 1, opacity = 0.8, fill = FALSE, group = "London Outline") %>%
@@ -76,7 +56,15 @@ karte_alle_types <- leaflet(data = pois_london) %>%
     type == 4 ~ "#1E90FF",
     type == 5 ~ "#8B4500",
     type == 6 ~ "#66CD00"
-  ), weight = 1, opacity = 1, fillOpacity = 0.5) %>%
+  ), weight = 1, opacity = 1, fillOpacity = 0.5, 
+  popup = ~Name,
+    highlightOptions = highlightOptions(
+      weight = 3,
+      color = "#666",
+      fillOpacity = 0.7,
+      bringToFront = TRUE
+    )) %>%
+
   addLegend(position = "bottomright", colors = c("#333333", "#666666", "#104E8B", "#1E90FF", "#8B4500", "#66CD00"), labels = c("Bus stations", "Subway stations", "Football stadiums", "Other big stadiums", "Sightseeings", "Parks"), title = "All Types of POIs in London")
 
 saveWidget(karte_alle_types, file = "data/maps/karte_alle_types.html", selfcontained = FALSE)
