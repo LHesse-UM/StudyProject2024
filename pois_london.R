@@ -56,13 +56,13 @@ karte_alle_types <- leaflet(data = daten) %>%
   addPolygons(data = london_outline_sf, color = "black", weight = 1, opacity = 0.8, fill = FALSE, group = "London Outline") %>%
   fitBounds(bbox_small$xmin, bbox_small$ymin, bbox_small$xmax, bbox_small$ymax) %>% 
   addPolygons(color = ~case_when(
-    type == 1 ~ "#666666",
-    type == 2 ~ "#7F7F7F",
-    type == 3 ~ "#008B8B",
-    type == 4 ~ "#00CED1",
+    type == 1 ~ "#333333",
+    type == 2 ~ "#666666",
+    type == 3 ~ "#104E8B",
+    type == 4 ~ "#1E90FF",
     type == 5 ~ "#8B4500",
-    type == 6 ~ "#32CD32"
+    type == 6 ~ "#66CD00"
   ), weight = 1, opacity = 1, fillOpacity = 0.5) %>%
-  addLegend(position = "bottomright", colors = c("#666666", "#7F7F7F4", "#008B8B", "#00CED1", "#8B4500", "#32CD32"), labels = c("Bus stations", "Subway stations", "Football stadiums", "Other big stadiums", "Sightseeings", "Parks"), title = "All Types of POIs in London")
+  addLegend(position = "bottomright", colors = c("#333333", "#666666", "#104E8B", "#1E90FF", "#8B4500", "#66CD00"), labels = c("Bus stations", "Subway stations", "Football stadiums", "Other big stadiums", "Sightseeings", "Parks"), title = "All Types of POIs in London")
 
 saveWidget(karte_alle_types, file = "data/maps/karte_alle_types.html")
