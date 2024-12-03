@@ -22,6 +22,18 @@ h2 {
     margin: 0 auto;
     width: fit-content;
 }
+#navToC ol {
+    counter-reset: section; /* Reset der Zähler */
+}
+
+#navToC ol > li {
+    counter-increment: section; /* Erhöht die Sektion */
+    list-style-type: none; /* Entfernt den Standardlistenstil */
+}
+
+#navToC ol > li::before {
+    content: counters(section, ".") " "; /* Fügt z. B. 2.1, 2.2 hinzu */
+}
 iframe {
     width: 90%;
     height: 400px;
