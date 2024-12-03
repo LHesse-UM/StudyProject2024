@@ -14,7 +14,8 @@
 
 ## About the Project
 
-**StudyProject2024** is a university project designed to [describe the purpose of the project briefly]. It aims to [highlight main goals and functionalities of the project]. The project provides an accessible solution to [specific problem] by [unique approach or method used].
+This project explores human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic. By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, we aim to understand how the pandemic influenced urban mobility. Our analysis offers insights into the reduction of activity during lockdowns, the rebound effects post-restrictions, and the shifting dynamics of human movement in response to public health measures.
+
 
 The project results are publicly available and require no installation to use or explore.
 
