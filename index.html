@@ -6,82 +6,58 @@
     <title>Study Project 2024</title>
     <link rel="icon" href="data/img/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            background-color: #f9f9f9;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        h1 {
-            color: #333;
-        }
-        iframe {
-            width: 100%;
-            height: 400px;
-            border: none;
-        }
-        a {
-            color: #007acc;
-        }
-        .color-box {
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            margin-right: 10px;
-            border: 1px solid #000;
-            opacity: 0.5;
-        }
-
-        .bus {
-            background-color: #333333; /* Grey for Bus stations */
-        }
-        .subway {
-            background-color: #666666; /* Olive green for Subway stations */
-        }
-        .soccer {
-            background-color: #104E8B; /* Steel blue for Football stadiums */
-        }
-        .event {
-            background-color: #1E90FF; /* Sky blue for Other big stadiums */
-        }
-        .sightseeing {
-            background-color: #8B4500; /* Gold for Sightseeings */
-        }
-        .park {
-            background-color: #66CD00; /* Lime green for Parks */
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Study Project 2024</h1>
-        <p>Explore the interactive visualizations of Points of Interest (POIs) in London.</p>
+        <h1>Welcome to our Study Project:</h1>
+        <h2>Exploring Human Activity Patterns in London</h2>
+        <h3>Exploring how human activity in London shifted during 2020, a year defined by unprecedented challenges</h3>
     </header>
+    <nav id="navToC">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#aboutTheProject">About the Project</a></li>
+            <li><a href="#dataAquiAndProces">Data Acquisition and Preprocessing</a>
+                <ul>
+                    <li><a href="#selectedPOIs"> Selected Polygons of Interest (POIs)</a></li>
+                </ul>
+            </li>
+            <li><a href="#clustered-heatmaps">Clustered Heatmaps for the Movement Data</a></li>
+            <li><a href="#imprint">Imprint</a></li>
+        </ul>
+    </nav>
+    <section><hr class="border-line"></section>
     <section>
-        <h2>About the Project</h2>
-        <p>This project includes several visualizations of various categories of POIs in London, including bus stations, sport stadiums, and more. The interactive maps help understand the spatial distribution of these POIs.</p>
+        <h2 id="aboutTheProject">About the Project</h2>
+        <p>This project explores human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic. By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, we aim to understand how the pandemic influenced urban mobility. Our analysis offers insights into the reduction of activity during lockdowns, the rebound effects post-restrictions, and the shifting dynamics of human movement in response to public health measures.</p>
     </section>
+    <section><hr class="border-line"></section>
     <section>
-        <h2>Map of the Polygons of Interest (POIs)</h2>
-        <p>We have six different types of POIs: </p>
-        <ol>
-            <li><span class="color-box bus"></span>the biggest bus stops,</li>
-        <li><span class="color-box subway"></span>the biggest subway stations,</li>
-        <li><span class="color-box soccer"></span>soccer stadiums with over 25,000 people,</li>
-        <li><span class="color-box event"></span>big event places with a capacity of over 7,500,</li>
-        <li><span class="color-box sightseeing"></span>the most popular sightseeings, and</li>
-        <li><span class="color-box park"></span>royal parks</li>
-        </ol>
-        <iframe src="data/maps/karte_alle_types.html"></iframe>
+        <h2 id="dataAquiAndProces">Data Acquistion and Preprocessing</h2>
+        <p>The foundation of this project is the 2020 movement data of London, which provides daily aggregated metrics of human activity. These data points are complemented by geospatial information, including:
+
+            Geo-coordinates linked to specific locations,
+            London borough boundaries, and
+            Points of Interest (POIs) categorized by function and significance.
+            Preprocessing involved cleaning, mapping, and aggregating the data for analysis. Special focus was given to temporal patterns, allowing us to identify activity trends before, during, and after key COVID-19 milestones, such as lockdown announcements or easing measures.</p>
+        <section id="selectedPOIs">
+            <h3>Selected Polygons of Interest (POIs)</h3>
+            <h4>Map of the POIs</h4>
+            <p>We have six different types of POIs: </p>
+            <ol>
+                <li><span class="color-box bus"></span>the biggest bus stops,</li>
+            <li><span class="color-box subway"></span>the biggest subway stations,</li>
+            <li><span class="color-box soccer"></span>soccer stadiums with over 25,000 people,</li>
+            <li><span class="color-box event"></span>big event places with a capacity of over 7,500,</li>
+            <li><span class="color-box sightseeing"></span>the most popular sightseeings, and</li>
+            <li><span class="color-box park"></span>royal parks</li>
+            </ol>
+            <iframe src="data/maps/karte_alle_types.html"></iframe>
+        </section>
     </section>
-    <section>
+    <section><hr class="border-line"></section>
+    <section id="clustered-heatmaps">
         <h2>Clustered Heatmaps for the movement data</h2>
         <p> Here are different the maps of the movement data for different days</p>
         <h5>Clustered activity map for the 01.01.20</h5>
@@ -90,7 +66,9 @@
         <h5>Clustered activity map for the 03.24.20</h5>
         <iframe src="data/maps/03-24-2020-clustered-activity.html" title="Clustered activity map for the 03.24.20"></iframe>
     </section>
-    <footer>
+    <section><hr class="border-line"></section>
+    <footer id="imprint">
+        <h3>Imprint</h3>
         <p>Created by <a href="https://github.com/tkrumrei">tkrumrei</a>, <a href="https://github.com/LHesse-UM">LHesse-UM</a>, <a href="https://github.com/tlehman1">tlehman1</a> | <a href="https://github.com/tkrumrei/StudyProject2024">GitHub Repository</a></p>
     </footer>
 </body>
