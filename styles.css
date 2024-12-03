@@ -22,6 +22,18 @@ h2 {
     margin: 0 auto;
     width: fit-content;
 }
+#navToC ol {
+    counter-reset: section; /* Reset der Zähler */
+}
+
+#navToC ol > li {
+    counter-increment: section; /* Erhöht die Sektion */
+    list-style-type: none; /* Entfernt den Standardlistenstil */
+}
+
+#navToC ol > li::before {
+    content: counters(section, ".") " "; /* Fügt z. B. 2.1, 2.2 hinzu */
+}
 iframe {
     width: 90%;
     height: 400px;
@@ -47,22 +59,57 @@ a {
     border: 1px solid #000;
     opacity: 0.5;
 }
+/* Farbe der Bullets für Bus Stops */
+.color-box.bus + ul li::marker {
+    content: "●";
+    color: #969696;
+}
+.color-box.bus {
+    background-color: #333333;
+}
 
-.bus {
-    background-color: #333333; /* Grey for Bus stations */
+/* Farbe der Bullets für Subway Stations */
+.color-box.subway + ul li::marker {
+    content: "●";
+    color: #afafaf;
 }
-.subway {
-    background-color: #666666; /* Olive green for Subway stations */
+.color-box.subway {
+    background-color: #666666;
 }
-.soccer {
-    background-color: #104E8B; /* Steel blue for Football stadiums */
+
+/* Farbe der Bullets für Football Stadiums */
+.color-box.soccer + ul li::marker {
+    content: "●";
+    color: #84a3c2; /* Steel blue for Football stadiums */
 }
-.event {
-    background-color: #1E90FF; /* Sky blue for Other big stadiums */
+.color-box.soccer {
+    background-color: #104E8B;
 }
-.sightseeing {
-    background-color: #8B4500; /* Gold for Sightseeings */
+
+/* Farbe der Bullets für Big Event Places */
+.color-box.event + ul li::marker {
+    content: "●";
+    color: #8bc4fc; /* Sky blue for Big event places */
+} 
+.color-box.event {
+    background-color: #1E90FF;
 }
-.park {
-    background-color: #66CD00; /* Lime green for Parks */
+
+/* Farbe der Bullets für Sightseeings */
+.color-box.sightseeing + ul li::marker {
+    content: "●";
+    color: #c29f7c; /* Gold for Sightseeings */
 }
+.color-box.sightseeing {
+    background-color: #8B4500;
+}
+
+/* Farbe der Bullets für Royal Parks */
+.color-box.park + ul li::marker {
+    content: "●";
+    color: #afe37c; /* Lime green for Royal parks */
+}
+.color-box.park {
+    background-color: #66CD00;
+}
+
