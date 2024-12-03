@@ -19,11 +19,31 @@
             <li><a href="#aboutTheProject">About the Project</a></li>
             <li><a href="#dataAquiAndProces">Data Acquisition and Preprocessing</a>
                 <ol type="1">
-                    <li><a href="#selectedPOIs"> Selected Polygons of Interest (POIs)</a></li>
-                    <li><a href="#mapPOIs"> Map of the POIs</a></li>
+                    <li><a href="#movementData">Movement Data</a></li>
+                    <li><a href="#selectedPOIs">Selected Polygons of Interest (POIs)</a></li>
+                    <li><a href="#mapPOIs">Map of the POIs</a></li>
+                    <li><a href="#eventsData">Temporal Data</a></li>
+                    <li><a href="#LimitsDataProcess">Limitations and Challenges in Data Preprocessing</a></li>
                 </ol>
             </li>
-            <li><a href="#clustered-heatmaps">Clustered Heatmaps for the Movement Data</a></li>
+            <li><a href="#analysisHumanActitiyData">Analysis of Human Activity Data</a></li>
+                <ol type="1">
+                    <li><a href="#temporalAnalysis">Temporal Analysis</a></li>
+                    <li><a href="#impactCov19">Impact of Covid-19 Lockdowns</a></li>
+                    <li><a href="#copmarisonPOIsCategories">Comparison Across POI Categories</a></li>
+                </ol>
+            <li><a href="#discussion">Discussion</a></li>
+                <ol type="1">
+                    <li><a href="#keyFinds">Temporal Analysis</a></li>
+                    <li><a href="#implicsUrbanMob">Impact of Covid-19 Lockdowns</a></li>
+                    <li><a href="#learningsCov19">Comparison Across POI Categories</a></li>
+                    <li><a href="#LimitsAnalysis">Comparison Across POI Categories</a></li>
+                </ol>
+            <li><a href="#conclusion"> Conclusion</a></li>
+                <ol type="1">
+                    <li><a href="#summaryFindings">Temporal Analysis</a></li>
+                    <li><a href="#futureReasearch">Impact of Covid-19 Lockdowns</a></li>
+                </ol>
             <li><a href="#imprint">Imprint</a></li>
         </ol>
     </nav>
@@ -32,21 +52,34 @@
 
     <section>
         <h2 id="aboutTheProject">1. About the Project</h2>
-        <p>This project explores human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic. By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, we aim to understand how the pandemic influenced urban mobility. Our analysis offers insights into the reduction of activity during lockdowns, the rebound effects post-restrictions, and the shifting dynamics of human movement in response to public health measures.</p>
+        <p>
+            This project explores human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic. 
+            By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, we aim to understand how the pandemic influenced urban mobility. 
+            Our analysis offers insights into the reduction of activity during lockdowns, the rebound effects post-restrictions, and the shifting dynamics of human movement in response to public health measures.
+        </p>
     </section>
 
     <section><hr class="border-line"></section>
 
     <section>
         <h2 id="dataAquiAndProces">2. Data Acquistion and Preprocessing</h2>
-        <p>The foundation of this project is the 2020 movement data of London, which provides daily aggregated metrics of human activity. These data points are complemented by geospatial information, including:
-
+        <p>
+            The foundation of this project is the 2020 movement data of London, which provides daily aggregated metrics of human activity. 
+            These data points are complemented by geospatial information, including: 
             Geo-coordinates linked to specific locations,
             London borough boundaries, and
             Points of Interest (POIs) categorized by function and significance.
-            Preprocessing involved cleaning, mapping, and aggregating the data for analysis. Special focus was given to temporal patterns, allowing us to identify activity trends before, during, and after key COVID-19 milestones, such as lockdown announcements or easing measures.</p>
+            Preprocessing involved cleaning, mapping, and aggregating the data for analysis. 
+            Special focus was given to temporal patterns, allowing us to identify activity trends before, during, and after key COVID-19 milestones, such as lockdown announcements or easing measures.
+        </p>
+
+        <section id="movementData">
+            <h3>2.1 Movement Data</h3>
+            <p></p>
+        </section>
+
         <section id="selectedPOIs">
-            <h3>2.1 Selected Polygons of Interest (POIs)</h3>
+            <h3>2.2 Selected Polygons of Interest (POIs)</h3>
             <p>We have six different types of POIs: </p>
             <ol>
                 <li>
@@ -96,21 +129,73 @@
         </section>
             
         <section id="mapPOIs">
-            <h4>2.2 Map of the POIs</h4>
+            <h4>2.3 Map of the POIs</h4>
             <iframe src="data/maps/karte_alle_types.html"></iframe>
+        </section>
+
+        <section id="eventsData">
+            <h3>2.4 Events Dataset</h3>
+        </section>
+    
+        <section id="LimitsDataProcess">
+            <h3>2.5 Limitations and Challenges in Data Preprocessing</h3>
         </section>
     </section>
 
     <section><hr class="border-line"></section>
 
-    <section id="clustered-heatmaps">
-        <h2>3. Clustered Heatmaps for the movement data</h2>
-        <p> Here are different the maps of the movement data for different days</p>
-        <h5>Clustered activity map for the 01.01.20</h5>
-        <iframe src="data/maps/01-01-2020-clustered-activity.html" title="Clustered activity map for the 01.01.20"></iframe>
-        <p></p>
-        <h5>Clustered activity map for the 03.24.20</h5>
-        <iframe src="data/maps/03-24-2020-clustered-activity.html" title="Clustered activity map for the 03.24.20"></iframe>
+    <section id="analysisHumanActitiyData">
+        <h2>3. Analysis of Human Activity Data</h2>
+
+        <section id="temporalAnalysis">
+            <h3>3.1 Temporal Analysis</h3>  
+        </section>
+
+        <section id="impactCov19">
+            <h3>3.2 Impact of COVID-19 Lockdowns</h3>
+        </section>
+
+        <section id="copmarisonPOIsCategories">
+            <h3>3.3 Comparison Across POI Categories</h3>
+        </section>
+
+    </section>
+
+    <section><hr class="border-line"></section>
+
+    <section id="discussion">
+        <h2>4. Discussion</h2>
+
+        <section id="keyFinds">
+            <h3>4.1 Key Findings</h3>
+        </section>
+
+        <section id="implicsUrbanMob">
+            <h3>4.2 Implications for Urban Mobility</h3>
+        </section>
+
+        <section id="learningsCov19">
+            <h3>4.3 Lessons Learned from the COVID-19 Pandemic</h3>
+        </section>
+
+        <section id="LimitsAnalysis">
+            <h3>4.4 Limitations of the Analysis</h3>
+        </section>
+
+    </section>
+
+    <section><hr class="border-line"></section>
+
+    <section id="conclusion">
+        <h2>5. Conclusion</h2>
+
+        <section id="summaryFindings">
+            <h3>5.1 Summary of Findings</h3>
+        </section>
+
+        <section id="futureReasearch">
+            <h3>5.2 Future Research Directions</h3>
+        </section>
     </section>
 
     <section><hr class="border-line"></section>
@@ -119,5 +204,16 @@
         <h3>Imprint</h3>
         <p>Created by <a href="https://github.com/tkrumrei">tkrumrei</a>, <a href="https://github.com/LHesse-UM">LHesse-UM</a>, <a href="https://github.com/tlehman1">tlehman1</a> | <a href="https://github.com/tkrumrei/StudyProject2024">GitHub Repository</a></p>
     </footer>
+
+    <section id="clustered-heatmaps">
+        <h2>4. Clustered Heatmaps for the movement data</h2>
+        <p> Here are different the maps of the movement data for different days</p>
+        <h5>Clustered activity map for the 01.01.20</h5>
+        <iframe src="data/maps/01-01-2020-clustered-activity.html" title="Clustered activity map for the 01.01.20"></iframe>
+        <p></p>
+        <h5>Clustered activity map for the 03.24.20</h5>
+        <iframe src="data/maps/03-24-2020-clustered-activity.html" title="Clustered activity map for the 03.24.20"></iframe>
+    </section>
+
 </body>
 </html>
