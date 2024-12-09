@@ -16,8 +16,8 @@ january_filtered_data <- mergedData2 %>%
 
 set.seed(42)  # Für Reproduzierbarkeit
 
-#sampled_data <- mergedData2 %>%
-#  sample_frac(0.001)  # Nimm 1% der Daten
+sampled_data <- mergedData2 %>%
+  sample_frac(0.001)  # Nimm 1% der Daten
 
 data_matrix <- as.matrix(sampled_data %>% select(XLON, XLAT, time, mean_column))
 
@@ -36,4 +36,12 @@ st_dbscan_instance$fit(data_np)
 labels <- st_dbscan_instance$labels
 
 table(labels)
+print(labels)
 
+labels_r <- py_to_r(labels)
+if (length(labels_r) != nrow(sampled_data)) {
+  stop("Die Länge der Labels stimmt nicht mit den Daten überein!")
+}
+
+sampled_data <- sampled_data %>%
+  mutate(Cluster = labels_r)
