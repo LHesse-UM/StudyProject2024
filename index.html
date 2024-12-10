@@ -7,6 +7,7 @@
     <link rel="icon" href="data/img/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.sync/0.1.1/leaflet.sync.min.js"></script>
 </head>
 <body>
     <header>
@@ -75,8 +76,10 @@
 
         <section id="movementData">
             <h3>2.1 Movement Data</h3>
-            <iframe src="data/London Movement/london_move_11-01.html" title="London Movement data 11.01.20" loading="lazy"></iframe>
-            <p></p>
+            <p>Compare different London movement maps to analyze patterns over time.</p>
+            <a href="html/comparisonMovementData.html" target="_blank" style="font-size: 1.2em; color: #007acc; text-decoration: none;">
+                Click here to compare maps
+            </a>
         </section>
 
         <section id="selectedPOIs">
@@ -215,6 +218,37 @@
         <h5>Clustered activity map for the 03.24.20</h5>
         <iframe src="data/maps/03-24-2020-clustered-activity.html" title="Clustered activity map for the 03.24.20" loading="lazy"></iframe>
     </section>
+    <script>
+        let map1Instance, map2Instance;
 
+        // Funktion zum Aktualisieren der Karten
+        function updateMap(mapNumber) {
+            const mapSelect = document.getElementById(`map${mapNumber}-select`);
+            const mapIframe = document.getElementById(`map${mapNumber}`);
+            mapIframe.src = mapSelect.value;
+
+            mapIframe.onload = () => {
+                // Nachdem die Karte geladen ist, die Leaflet-Instanz synchronisieren
+                setupSync();
+            };
+        }
+
+        // Funktion zum Synchronisieren der beiden Karten
+        function setupSync() {
+            const map1Iframe = document.getElementById('map1').contentWindow;
+            const map2Iframe = document.getElementById('map2').contentWindow;
+
+            if (map1Iframe && map2Iframe) {
+                // Karte 1 und Karte 2 synchronisieren
+                map1Iframe.L.sync(map2Iframe.L);
+                map2Iframe.L.sync(map1Iframe.L);
+            }
+        }
+
+        // Initialisierung beim Laden der Seite
+        window.onload = () => {
+            setupSync();
+        };
+    </script>
 </body>
 </html>

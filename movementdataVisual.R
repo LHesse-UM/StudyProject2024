@@ -9,21 +9,30 @@ library(htmltools)
 library(htmlwidgets) 
 
 londonMovData <- mergedData2
+min_value_total <- min(londonMovData$mean_column, na.rm = TRUE)
+max_value_total <- max(londonMovData$mean_column, na.rm = TRUE)
 
 days <- c(10, 31, 52, 58, 66, 207, 261, 296, 311, 350)
 
 londonMovDataEventDays <- dplyr::filter(londonMovData, time %in% days)
 
-# Daten filtern für time = 10
-data_time_10 <- dplyr::filter(londonMovDataEventDays, time == 10)
+# Liste zum Speichern der gefilterten Datensätze erstellen
+filtered_data <- list()
 
-londonMovDataEventDays_sf <- st_as_sf(data_time_10, coords = c("XLON", "XLAT"), crs = 4326)
+# Schleife über alle Werte in `days`
+for (day in days) {
+  filtered_data[[paste0("data_time_", day)]] <- dplyr::filter(londonMovDataEventDays, time == day)
+}
+
+data_time <- filtered_data$data_time_10
+
+londonMovDataEventDays_sf <- st_as_sf(data_time, coords = c("XLON", "XLAT"), crs = 4326)
 shape_transformed <- st_transform(greater_London_area, crs = 4326)
 london_outline <- st_union(shape_transformed)
 london_outline_sf <- st_sf(geometry = london_outline)
 
 data_london <- st_intersection(londonMovDataEventDays_sf, london_outline_sf)
-data_london_sf <- st_as_sf(data_time_10, coords = c("XLON", "XLAT"), crs = 4326)
+data_london_sf <- st_as_sf(data_time, coords = c("XLON", "XLAT"), crs = 4326)
 
 
 
@@ -41,9 +50,7 @@ linestring_data_polygon <- st_cast(linestring_data, "POLYGON")
 
 ######################################################################################################################################
 
-min_value <- min(data_london$mean_column, na.rm = TRUE)
-max_value <- max(data_london$mean_column, na.rm = TRUE)
-breaks <- c(min_value, 0.4, 0.6, 0.9, 1.1, 1.9, 2.1, max_value)
+breaks <- c(min_value_total, 0.4, 0.6, 0.9, 1.1, 1.9, 2.1, max_value_total)
 color_scale <- colorBin(
   palette = c("#bcf7f7", "#6ad5fc", "#589afc", "darkgrey" ,"#FFCC99", "red", "darkred"),  # Farbverlauf
   domain = data_london$mean_column,
