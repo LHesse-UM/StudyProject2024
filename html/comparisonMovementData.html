@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare London Movement Maps</title>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+            text-align: center;
+            margin: 1rem;
+        }
+        #map-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 10px;
+            padding: 20px;
+        }
+        .map-panel {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        select {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Compare London Movement Maps</h3>
+    <div id="map-container">
+        <div class="map-panel">
+            <label for="map1-dropdown">Select Map 1:</label>
+            <select id="map1-dropdown">
+                <option value="../data/London Movement/london_move_11-01.html">Movement 11.01.20</option>
+                <option value="../data/London Movement/london_move_01-02.html">Movement 01.02.20</option>
+                <option value="../data/London Movement/london_move_22-02.html">Movement 22.02.20</option>
+                <option value="../data/London Movement/london_move_29-02.html">Movement 29.02.20</option>
+                <option value="../data/London Movement/london_move_07-03.html">Movement 07.03.20</option>
+                <option value="../data/London Movement/london_move_26-07.html">Movement 26.07.20</option>
+                <option value="../data/London Movement/london_move_19-09.html">Movement 19.09.20</option>
+                <option value="../data/London Movement/london_move_24-10.html">Movement 24.10.20</option>
+                <option value="../data/London Movement/london_move_07-11.html">Movement 07.11.20</option>
+                <option value="../data/London Movement/london_move_16-12.html">Movement 16.12.20</option>
+            </select>
+            <iframe id="map1" src="../data/London Movement/london_move_11-01.html"></iframe>
+        </div>
+        <div class="map-panel">
+            <label for="map2-dropdown">Select Map 2:</label>
+            <select id="map2-dropdown">
+                <option value="../data/London Movement/london_move_26-07.html">Movement 26.07.20</option>
+                <option value="../data/London Movement/london_move_11-01.html">Movement 11.01.20</option>
+                <option value="../data/London Movement/london_move_01-02.html">Movement 01.02.20</option>
+                <option value="../data/London Movement/london_move_22-02.html">Movement 22.02.20</option>
+                <option value="../data/London Movement/london_move_29-02.html">Movement 29.02.20</option>
+                <option value="../data/London Movement/london_move_07-03.html">Movement 07.03.20</option>
+                <option value="../data/London Movement/london_move_19-09.html">Movement 19.09.20</option>
+                <option value="../data/London Movement/london_move_24-10.html">Movement 24.10.20</option>
+                <option value="../data/London Movement/london_move_07-11.html">Movement 07.11.20</option>
+                <option value="../data/London Movement/london_move_16-12.html">Movement 16.12.20</option>
+            </select>
+            <iframe id="map2" src="../data/London Movement/london_move_26-07.html"></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Update iframes when dropdowns change
+        document.getElementById('map1-dropdown').addEventListener('change', function() {
+            document.getElementById('map1').src = this.value;
+        });
+
+        document.getElementById('map2-dropdown').addEventListener('change', function() {
+            document.getElementById('map2').src = this.value;
+        });
+
+        // Synchronize scrolling and zooming between maps
+        const maps = [];
+        function syncMaps(event) {
+            const sourceMap = event.target;
+            maps.forEach((map) => {
+                if (map !== sourceMap) {
+                    map.setView(sourceMap.getCenter(), sourceMap.getZoom(), { animate: false });
+                }
+            });
+        }
+
+        function addSync(map) {
+            maps.push(map);
+            map.on('move', syncMaps);
+        }
+
+        // Load maps dynamically
+        window.addEventListener('load', function () {
+            const iframe1 = document.getElementById('map1');
+            const iframe2 = document.getElementById('map2');
+
+            iframe1.contentWindow.addEventListener('load', () => {
+                const map1 = iframe1.contentWindow.map; // Assume each map has a `map` variable
+                addSync(map1);
+            });
+
+            iframe2.contentWindow.addEventListener('load', () => {
+                const map2 = iframe2.contentWindow.map; // Assume each map has a `map` variable
+                addSync(map2);
+            });
+        });
+    </script>
+</body>
+</html>

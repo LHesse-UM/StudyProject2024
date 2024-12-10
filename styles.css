@@ -34,6 +34,20 @@ h2 {
 #navToC ol > li::before {
     content: counters(section, ".") " "; /* Fügt z. B. 2.1, 2.2 hinzu */
 }
+
+.map-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.map-container div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 iframe {
     width: 90%;
     height: 400px;
