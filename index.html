@@ -213,16 +213,47 @@
         <h2>3. Analysis of Human Activity Data</h2>
 
         <section id="intervalAnalysis">
-            <h3>3.1 Interval analysis</h3> 
-            <p>You can compare different London movement maps to analyze patterns over time:</p>
+            <h3>3.1 Interval Analysis</h3> 
+            <p>
+                The "Compare London Movement Maps" page allows users to interactively analyze human activity patterns in London during different COVID-19 intervals. 
+                By selecting and comparing maps from various phases — such as Pre-Corona, First Lockdown, and Four-Tier Restriction Phase — users can visually assess the impact of 
+                lockdowns and reopening policies on urban mobility.
+            </p>
             <a href="html/comparisonMovementData.html" style="font-size: 1.2em; color: #007acc; text-decoration: none;">
                 Click here to compare maps
             </a> 
-        </section>
+        </section>        
 
         <section id="STDBSCAN">
             <h3>3.2 ST-DBSCAN</h3>
+            <p>
+                The **Spatio-Temporal Density-Based Clustering of Applications with Noise (ST-DBSCAN)** algorithm was applied to analyze spatial and temporal patterns in human mobility data. 
+                The following visualizations compare clustering results before and after COVID-19 lockdowns.
+            </p>
+        
+            <!-- Container für die beiden Karten -->
+            <div style="display: flex; justify-content: space-between; gap: 20px; margin-top: 20px;">
+                <!-- Erste Karte: Pre-COVID -->
+                <div style="flex: 1;">
+                    <h4>Pre-COVID-19</h4>
+                    <iframe src="data/STDBSCAN/st-preCov-timeRes.html" 
+                            title="Pre-COVID-19 Clustering Results" 
+                            loading="lazy" 
+                            style="width: 80%; height: 500px; border: none;"></iframe>
+                </div>
+        
+                <!-- Zweite Karte: Post-COVID -->
+                <div style="flex: 1;">
+                    <h4>Post-COVID-19</h4>
+                    <iframe src="data/STDBSCAN/st-postCov-timeRes.html" 
+                            title="Post-COVID-19 Clustering Results" 
+                            loading="lazy" 
+                            style="width: 80%; height: 500px; border: none;"></iframe>
+                </div>
+            </div>
         </section>
+        
+        
 
         <section id="moransI">
             <h3>3.3 Moran's I</h3>
@@ -282,46 +313,5 @@
         <p>Created by <a href="https://github.com/tkrumrei">tkrumrei</a>, <a href="https://github.com/LHesse-UM">LHesse-UM</a>, <a href="https://github.com/tlehman1">tlehman1</a> | <a href="https://github.com/tkrumrei/StudyProject2024">GitHub Repository</a></p>
     </footer>
 
-    <section id="clustered-heatmaps">
-        <h2>4. Clustered Heatmaps for the movement data</h2>
-        <p> Here are different the maps of the movement data for different days</p>
-        <h5>Clustered activity map for the 01.01.20</h5>
-        <iframe src="data/maps/01-01-2020-clustered-activity.html" title="Clustered activity map for the 01.01.20" loading="lazy"></iframe>
-        <p></p>
-        <h5>Clustered activity map for the 03.24.20</h5>
-        <iframe src="data/maps/03-24-2020-clustered-activity.html" title="Clustered activity map for the 03.24.20" loading="lazy"></iframe>
-    </section>
-    <script>
-        let map1Instance, map2Instance;
-
-        // Funktion zum Aktualisieren der Karten
-        function updateMap(mapNumber) {
-            const mapSelect = document.getElementById(`map${mapNumber}-select`);
-            const mapIframe = document.getElementById(`map${mapNumber}`);
-            mapIframe.src = mapSelect.value;
-
-            mapIframe.onload = () => {
-                // Nachdem die Karte geladen ist, die Leaflet-Instanz synchronisieren
-                setupSync();
-            };
-        }
-
-        // Funktion zum Synchronisieren der beiden Karten
-        function setupSync() {
-            const map1Iframe = document.getElementById('map1').contentWindow;
-            const map2Iframe = document.getElementById('map2').contentWindow;
-
-            if (map1Iframe && map2Iframe) {
-                // Karte 1 und Karte 2 synchronisieren
-                map1Iframe.L.sync(map2Iframe.L);
-                map2Iframe.L.sync(map1Iframe.L);
-            }
-        }
-
-        // Initialisierung beim Laden der Seite
-        window.onload = () => {
-            setupSync();
-        };
-    </script>
 </body>
 </html>
