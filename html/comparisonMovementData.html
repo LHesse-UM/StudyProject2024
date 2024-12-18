@@ -6,15 +6,20 @@
     <title>Compare London Movement Maps</title>
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="icon" href="../data/img/icon.png">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        h3 {
+        h1, footer {
             text-align: center;
-            margin: 1rem;
+        }
+        h2, h3, p {
+            margin: 0;
+            padding: 10px 0;
         }
         #map-container {
             display: flex;
@@ -29,92 +34,191 @@
         }
         iframe {
             width: 100%;
-            height: 500px;
+            height: 500px; /* Ensure a fixed height */
             border: none;
+            margin: 0; /* Remove any iframe margin */
+            padding: 0;
         }
         select {
             margin-bottom: 10px;
         }
+        .stat-section img, .stat-section iframe {
+            margin: 20px auto; /* Center images and tables */
+            display: block;
+            width: 80%;
+        }
+        .stat-section p {
+            text-align: center;
+        }
+        .border-line {
+            width: 90%; /* Breite der Linie */
+            border: 0; /* Entfernt Standardrahmen */
+            height: 2px; /* Höhe der Linie */
+            background-color: black; /* Farbe der Linie */
+            margin: 20px auto; /* Zentrierung und Abstand */
+        }
     </style>
 </head>
 <body>
-    <h3>Compare London Movement Maps</h3>
-    <div id="map-container">
-        <div class="map-panel">
-            <label for="map1-dropdown">Select Map 1:</label>
-            <select id="map1-dropdown">
-                <option value="../data/London Movement/london_move_11-01.html">Movement 11.01.20</option>
-                <option value="../data/London Movement/london_move_01-02.html">Movement 01.02.20</option>
-                <option value="../data/London Movement/london_move_22-02.html">Movement 22.02.20</option>
-                <option value="../data/London Movement/london_move_29-02.html">Movement 29.02.20</option>
-                <option value="../data/London Movement/london_move_07-03.html">Movement 07.03.20</option>
-                <option value="../data/London Movement/london_move_26-07.html">Movement 26.07.20</option>
-                <option value="../data/London Movement/london_move_19-09.html">Movement 19.09.20</option>
-                <option value="../data/London Movement/london_move_24-10.html">Movement 24.10.20</option>
-                <option value="../data/London Movement/london_move_07-11.html">Movement 07.11.20</option>
-                <option value="../data/London Movement/london_move_16-12.html">Movement 16.12.20</option>
-            </select>
-            <iframe id="map1" src="../data/London Movement/london_move_11-01.html"></iframe>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <button onclick="goBack()" style="padding: 10px 20px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px; margin-top: 10px;">
+            Back to Analysis
+        </button>
+        <h1 style="margin: 0; text-align: center; flex-grow: 1;">3.1 Compare London Movement Maps</h1>
+        <div style="width: 80px;"></div>
+    </div>
+    <p style="text-align: center; margin: 10px auto; width: 80%; font-size: 1.1em;">
+        This page provides tools to visually and statistically analyze human movement patterns in London during the year 2020.
+        By selecting different time intervals, you can explore the impact of various COVID-19 measures on urban mobility, 
+        compare mobility trends across key phases, and delve into detailed statistical summaries. Use the interactive maps 
+        and graphs to uncover the dynamics of movement throughout the pandemic.
+    </p>
+    <section class="section">
+        <h2>3.1.1 Interactive Comparison of Movement Maps</h2>
+        <p>
+            This section allows you to compare movement patterns in London across different intervals during 2020. 
+            Select two maps to compare using the dropdown menus below. 
+        </p>
+        <div id="map-container" style="display: flex; justify-content: space-around; gap: 20px;">
+            <div class="map-panel">
+                <label for="map1-dropdown">Select Map 1:</label>
+                <select id="map1-dropdown" onchange="updateDescription(1)">
+                    <option value="mean_PreCoronaI">1. Pre Corona</option>
+                    <option value="mean_FirstLockdownI">2. First Lockdown UK</option>
+                    <option value="mean_RelaxingSummerI">3. Relaxing Restrictions</option>
+                    <option value="mean_ThreeTierSystemI">4. Three Tier System</option>
+                    <option value="mean_SecondLockdownUKI">5. Second Lockdown UK</option>
+                    <option value="mean_EndSecondLockdownI">6. End Second Lockdown</option>
+                    <option value="mean_TierFourLondonI">7. Tier 4 in London</option>
+                </select>
+                <iframe id="map1" src="../data/London Movement/mean_PreCoronaI.html"></iframe>
+                <p id="description1" style="margin-top: 10px;"></p>
+            </div>
+            <div class="map-panel">
+                <label for="map2-dropdown">Select Map 2:</label>
+                <select id="map2-dropdown" onchange="updateDescription(2)">
+                    <option value="mean_PreCoronaI">1. Pre Corona</option>
+                    <option value="mean_FirstLockdownI" selected>2. First Lockdown UK</option>
+                    <option value="mean_RelaxingSummerI">3. Relaxing Restrictions</option>
+                    <option value="mean_ThreeTierSystemI">4. Three Tier System</option>
+                    <option value="mean_SecondLockdownUKI">5. Second Lockdown UK</option>
+                    <option value="mean_EndSecondLockdownI">6. End Second Lockdown</option>
+                    <option value="mean_TierFourLondonI">7. Tier 4 in London</option>
+                </select>
+                <iframe id="map2" src="../data/London Movement/mean_FirstLockdownI.html"></iframe>
+                <p id="description2" style="margin-top: 10px;"></p>
+            </div>
         </div>
-        <div class="map-panel">
-            <label for="map2-dropdown">Select Map 2:</label>
-            <select id="map2-dropdown">
-                <option value="../data/London Movement/london_move_26-07.html">Movement 26.07.20</option>
-                <option value="../data/London Movement/london_move_11-01.html">Movement 11.01.20</option>
-                <option value="../data/London Movement/london_move_01-02.html">Movement 01.02.20</option>
-                <option value="../data/London Movement/london_move_22-02.html">Movement 22.02.20</option>
-                <option value="../data/London Movement/london_move_29-02.html">Movement 29.02.20</option>
-                <option value="../data/London Movement/london_move_07-03.html">Movement 07.03.20</option>
-                <option value="../data/London Movement/london_move_19-09.html">Movement 19.09.20</option>
-                <option value="../data/London Movement/london_move_24-10.html">Movement 24.10.20</option>
-                <option value="../data/London Movement/london_move_07-11.html">Movement 07.11.20</option>
-                <option value="../data/London Movement/london_move_16-12.html">Movement 16.12.20</option>
-            </select>
-            <iframe id="map2" src="../data/London Movement/london_move_26-07.html"></iframe>
-        </div>
+    </section>
+    <section><hr class="border-line"></section>
+
+    <section class="section stat-section">
+        <h2>3.1.2 Statistical Analysis of Movement Data</h2>
+        <p>
+            The statistical analysis examines the data across seven distinct intervals during 2020, highlighting mobility trends and their association with key government interventions. 
+            By analyzing the provided graphs and summary table, we can identify both temporal patterns and notable deviations in mobility during critical phases of the pandemic.
+        </p>
+    
+        <h3>Comparative Visualization of Movement Trends</h3>
+        <p>
+            The graph below illustrates the movement trends across all intervals, providing a visual summary of average movement levels and their fluctuations. 
+            Key observations include:
+        </p>
+        <ul>
+            <li><b>Pre-Corona:</b> As expected, movement levels were consistently high, reflecting normal urban activity prior to any restrictions.</li>
+            <li><b>First Lockdown UK:</b> Mobility experienced the sharpest decline, with certain areas showing reductions as high as 80%. Central London and transit hubs were particularly affected.</li>
+            <li><b>Relaxing Restrictions:</b> Movement levels began to recover, particularly in parks and recreational areas, as restrictions were eased during the summer months.</li>
+            <li><b>Second Lockdown UK:</b> A renewed drop in mobility occurred, although the overall reduction was less severe than during the first lockdown, likely due to increased adaptation to remote working and essential activities.</li>
+            <li><b>Tier 4 in London:</b> Emergency restrictions during December led to another sharp decline, with movement levels nearing those of the initial lockdown phase.</li>
+        </ul>
+        <img src="../data/London Movement/CompThroughTimeIntervals.png" alt="Comparison Through Time Intervals" style="width: 80%; display: block; margin: 0 auto;">
+        <p style="text-align: center;">Figure 1: Movement trends across time intervals, showcasing the average activity levels and their changes over time.</p>
+    
+        <h3>Mean Movement Values Across Intervals</h3>
+        <p>
+            The following graph provides a detailed statistical view of mean movement levels across the seven intervals. This visualization highlights the differences in activity during various phases, with significant contrasts observed between lockdowns and reopening phases:
+        </p>
+        <ul>
+            <li><b>First Lockdown:</b> The mean movement value dropped to its lowest point, with an average significantly below 0.5, indicating widespread reductions in activity.</li>
+            <li><b>Relaxing Restrictions:</b> Movement levels rose steadily, with mean values nearing pre-pandemic levels, particularly during the summer months.</li>
+            <li><b>Tier 4:</b> Although the mean movement levels decreased, they did not reach the lows of the first lockdown, reflecting increased resilience and adaptation by the public.</li>
+        </ul>
+        <img src="../data/London Movement/MeanByTimeInterval.png" alt="Mean Movement Values Across Intervals" style="width: 80%; display: block; margin: 0 auto;">
+        <p style="text-align: center;">Figure 2: Mean movement values across intervals, highlighting mobility reductions during lockdowns and recovery during reopening phases.</p>
+    
+        <h3>Summary Statistics</h3>
+        <p>
+            The summary table below offers a comprehensive view of movement statistics, including minimum, median, mean, and maximum values for each interval. 
+            These metrics provide deeper insights into how movement distributions varied across London during different periods:
+        </p>
+        <ul>
+            <li><b>Pre-Corona:</b> The maximum movement value exceeded 2.8, indicating extremely high activity levels in central hubs and transport zones.</li>
+            <li><b>First Lockdown:</b> Median and mean values dropped below 0.5, with some areas recording movement levels close to zero.</li>
+            <li><b>Relaxing Restrictions:</b> The median movement level recovered to around 0.7, while maximum values remained lower than pre-pandemic levels.</li>
+            <li><b>Second Lockdown:</b> Although reductions were observed, the median remained slightly higher than during the first lockdown.</li>
+        </ul>
+        <iframe src="../data/London Movement/summary_table.html" title="Summary Table" style="width: 80%; display: block; margin: 0 auto;"></iframe>
+        <p style="text-align: center;">Table 1: Summary of movement statistics for each interval, showcasing key metrics such as median and maximum activity levels.</p>
+    
+        <p>
+            These observations demonstrate the significant impact of COVID-19 policies on human mobility patterns. 
+            The stark contrasts between intervals highlight the effectiveness of lockdowns and the gradual recovery during reopening phases, 
+            providing valuable insights into how urban movement responds to external interventions.
+        </p>
+    </section>
+
+    <section><hr class="border-line"></section>
+
+    <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+        <button onclick="goBack()" style="padding: 10px 20px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Back to Analysis
+        </button>
     </div>
 
+    <section><hr class="border-line"></section>
+
+    <footer id="imprint">
+        <h3>Imprint</h3>
+        <p>Created by <a href="https://github.com/tkrumrei">tkrumrei</a>, <a href="https://github.com/LHesse-UM">LHesse-UM</a>, <a href="https://github.com/tlehman1">tlehman1</a> | <a href="https://github.com/tkrumrei/StudyProject2024">GitHub Repository</a></p>
+    </footer>
+
+
     <script>
-        // Update iframes when dropdowns change
-        document.getElementById('map1-dropdown').addEventListener('change', function() {
-            document.getElementById('map1').src = this.value;
-        });
+        // Explanations for each map
+        const descriptions = {
+            mean_PreCoronaI: "Pre-Corona: Typical mobility patterns before restrictions (January to March).",
+            mean_FirstLockdownI: "First Lockdown UK: Strict nationwide lockdown causing sharp declines in movement (March to May).",
+            mean_RelaxingSummerI: "Relaxing Restrictions: Gradual reopening during the summer (May to October).",
+            mean_ThreeTierSystemI: "Three Tier System: Localized restrictions based on infection rates (October to November).",
+            mean_SecondLockdownUKI: "Second Lockdown UK: Reintroduction of lockdown measures (November).",
+            mean_EndSecondLockdownI: "End of Second Lockdown: Transition back to tiered restrictions (December).",
+            mean_TierFourLondonI: "Tier 4 in London: Emergency restrictions in response to rising cases (late December)."
+        };
 
-        document.getElementById('map2-dropdown').addEventListener('change', function() {
-            document.getElementById('map2').src = this.value;
-        });
+        // Function to update description
+        function updateDescription(mapNumber) {
+            const dropdown = document.getElementById(`map${mapNumber}-dropdown`);
+            const description = document.getElementById(`description${mapNumber}`);
+            const selectedValue = dropdown.value;
 
-        // Synchronize scrolling and zooming between maps
-        const maps = [];
-        function syncMaps(event) {
-            const sourceMap = event.target;
-            maps.forEach((map) => {
-                if (map !== sourceMap) {
-                    map.setView(sourceMap.getCenter(), sourceMap.getZoom(), { animate: false });
-                }
-            });
+            // Update description text
+            description.textContent = descriptions[selectedValue];
+
+            // Update the map iframe source
+            document.getElementById(`map${mapNumber}`).src = `../data/London Movement/${selectedValue}.html`;
         }
 
-        function addSync(map) {
-            maps.push(map);
-            map.on('move', syncMaps);
+        // Initialize descriptions
+        updateDescription(1);
+        updateDescription(2);
+
+        function goBack() {
+        if (document.referrer) {
+            window.history.back();
+        } else {
+            window.location.href = "../index.html#temporalAnalysis";
         }
-
-        // Load maps dynamically
-        window.addEventListener('load', function () {
-            const iframe1 = document.getElementById('map1');
-            const iframe2 = document.getElementById('map2');
-
-            iframe1.contentWindow.addEventListener('load', () => {
-                const map1 = iframe1.contentWindow.map; // Assume each map has a `map` variable
-                addSync(map1);
-            });
-
-            iframe2.contentWindow.addEventListener('load', () => {
-                const map2 = iframe2.contentWindow.map; // Assume each map has a `map` variable
-                addSync(map2);
-            });
-        });
+    }
     </script>
 </body>
 </html>
