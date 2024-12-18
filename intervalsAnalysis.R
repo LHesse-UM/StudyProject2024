@@ -264,3 +264,52 @@ gt_table <- gt(summary_table) %>%
 
 # Als HTML speichern
 gtsave(gt_table, "data/London Movement/summary_table.html")
+
+
+
+# Daten für den Zeitstrahl
+timeline_data <- intervalle %>%
+  mutate(
+    start_date = as.Date("2020-01-01") + start,  # Startdatum aus dem Tag des Jahres berechnen
+    end_date = as.Date("2020-01-01") + end      # Enddatum aus dem Tag des Jahres berechnen
+  )
+
+timeline_data$intervall <- factor(timeline_data$intervall, levels = rev(c(
+  "Pre Corona",
+  "First Lockdown UK",
+  "Return to relaxing restrictions",
+  "Three Tier System",
+  "Second Lockdown UK",
+  "End Second Lockdown",
+  "Tier 4 London"
+)))
+
+# Plot erstellen
+ggplot(timeline_data) +
+  # Segmente für jedes Intervall
+  geom_segment(
+    aes(x = start_date, xend = end_date, y = intervall, yend = intervall, color = intervall),
+    linewidth = 4  # Dicke der Linien
+  ) +
+  # Punkte für Start- und Endzeiten
+  geom_point(
+    aes(x = start_date, y = intervall),
+    size = 3, color = "black"
+  ) +
+  geom_point(
+    aes(x = end_date, y = intervall),
+    size = 3, color = "black"
+  ) +
+  # Titel und Achsen
+  labs(
+    title = "Timeline of Mobility Intervals",
+    x = "Date",
+    y = "Intervals"
+  ) +
+  scale_color_manual(values = custom_colors) +  # Farben für die Intervalle
+  theme_minimal() +
+  theme(
+    axis.text.y = element_text(size = 10),
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.position = "none"  # Entferne die Legende, falls nicht benötigt
+  )
