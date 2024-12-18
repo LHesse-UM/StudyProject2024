@@ -22,7 +22,6 @@
                 <ol type="1">
                     <li><a href="#movementData">Movement Data</a></li>
                     <li><a href="#selectedPOIs">Selected Polygons of Interest (POIs)</a></li>
-                    <li><a href="#mapPOIs">Map of the POIs</a></li>
                     <li><a href="#eventsData">Temporal Data</a></li>
                     <li><a href="#LimitsDataProcess">Limitations and Challenges in Data Preprocessing</a></li>
                 </ol>
@@ -137,14 +136,78 @@
         </section>
             
         <section id="mapPOIs">
-            <h4>2.3 Map of the POIs</h4>
+            <h4>2.2.1 Map of the POIs</h4>
             <iframe src="data/maps/karte_alle_types.html" loading="lazy"></iframe>
         </section>
 
         <section id="eventsData">
-            <h3>2.4 Events Dataset</h3>
-            <img src="data/London Games/Dates.png" width="80%" style="display: block; margin: 0 auto;">
-        </section>
+            <h3>2.4 Temporal Data</h3>
+            <p>
+                The <b>Temporal Data</b> section highlights how mobility patterns in London evolved throughout the different phases of the COVID-19 pandemic in 2020. 
+                By dividing the year into <b>distinct intervals</b> aligned with major policy changes and restrictions, 
+                we analyze the short- and long-term effects of lockdowns, reopenings, and other interventions on human activity.
+            </p>
+        
+            <h4>2.4.1 Corona Intervals</h4>
+            <p style="margin-bottom: 20px;">
+                To better understand mobility changes, the year 2020 has been divided into 
+                <b>seven key intervals</b>, each corresponding to major COVID-19 measures or milestones.
+            </p>
+            <div style="display: flex; align-items: flex-start; gap: 20px;">
+                <div style="flex: 1; max-width: 50%;">
+                    <ul>
+                        <li><b>Pre-Corona</b> (Jan 1 - Mar 25): Baseline period before any pandemic-related restrictions.</li>
+                        <li><b>First Lockdown</b> (Mar 26 - May 10): Strict nationwide lockdown causing sharp declines in movement.</li>
+                        <li><b>Return to Relaxing Restrictions</b> (May 11 - Oct 13): Gradual easing of restrictions leading to activity rebounds.</li>
+                        <li><b>Three-Tier System</b> (Oct 14 - Nov 4): Regionalized restrictions based on infection rates.</li>
+                        <li><b>Second Lockdown</b> (Nov 5 - Dec 1): Reimposition of nationwide restrictions.</li>
+                        <li><b>End of Second Lockdown</b> (Dec 2 - Dec 20): Temporary recovery under tiered restrictions.</li>
+                        <li><b>Tier 4 in London</b> (Dec 21 - Dec 31): Strict "Stay at Home" orders applied to London.</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; max-width: 50%;">
+                    <img src="data/London Movement/TimeLineCorona.png" 
+                         alt="Timeline of Mobility Intervals" 
+                         style="width: 100%; height: auto; display: block;">
+                </div>
+            </div>
+
+            <h4>2.4.2 Events Dataset</h4>
+            <p>
+                The <b>Events Dataset</b> focuses on <b>specific dates</b> where notable events and policy decisions occurred. 
+                These events include significant football matches, concerts, and public gatherings, 
+                particularly in key <b>Polygons of Interest (POIs)</b> such as football stadiums and large event venues. 
+                By examining mobility patterns during these events, 
+                we gain a deeper understanding of the short-term fluctuations in movement across London.
+            </p>
+
+            <p>Key events include:</p>
+            <ul>
+                <li><b>March 7</b>: Major football matches and concerts at notable stadiums and arenas, attracting large crowds.</li>
+                <li><b>February 1</b> and <b>February 22</b>: High-profile matches and events leading to increased activity in surrounding areas.</li>
+                <li><b>March 26</b> (First Lockdown UK): Start of strict restrictions, resulting in a sharp decline in mobility across all POIs.</li>
+                <li><b>July 26</b>: Gradual return of mobility during the summer, with easing restrictions allowing limited public events.</li>
+                <li><b>November 5</b> (Second Lockdown): Reimposition of lockdown measures, leading to reduced activity in stadiums and event venues.</li>
+                <li><b>December 16</b>: Large-scale events towards the year-end, with notable activity increases despite restrictions.</li>
+            </ul>
+
+            <p>
+                The table below summarizes these significant events, their corresponding dates, and their places:
+            </p>
+
+            <!-- Tabelle Bild -->
+            <img src="data/London Games/Dates.png" 
+                alt="Events Dataset Table" 
+                style="display: block; margin: 0 auto; width: 80%;">
+
+            <p>
+                By analyzing mobility patterns during these <b>events</b>, particularly at football stadiums and event venues, 
+                we can identify spikes in activity that correspond to crowd movements. 
+                Additionally, when combined with the <b>Corona Intervals</b>, 
+                this dataset provides insights into how lockdowns and reopening phases impacted public gatherings at key POIs.
+            </p>
+
+        
     
         <section id="LimitsDataProcess">
             <h3>2.5 Limitations and Challenges in Data Preprocessing</h3>
