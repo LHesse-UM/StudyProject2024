@@ -51,9 +51,9 @@ Tier_4_London <- data_london %>%
 
 ##### calc mean for intervals
 # Funktion: Mittelwert pro Punkt berechnen
-calculate_means_per_point <- function(data, interval_name) {
-  data %>%
-    group_by(XLON, XLAT) %>%  # Gruppieren nach Koordinaten
+calculate_means_per_point <- function(data_sf, interval_name) {
+  data_sf %>%
+    group_by(geometry) %>%  # Gruppieren nach Geometrie
     summarise(
       mean_value = mean(mean_column, na.rm = TRUE),  # Mittelwert berechnen
       n = n()  # Anzahl der Beobachtungen
@@ -71,71 +71,168 @@ Second_Lockdown_UK_means <- calculate_means_per_point(Second_Lockdown_UK, "Secon
 End_Second_Lockdown_means <- calculate_means_per_point(End_Second_Lockdown, "End_Second_Lockdown")
 Tier_4_London_means <- calculate_means_per_point(Tier_4_London, "Tier_4_London")
 
-# Optional: In sf-Objekte konvertieren, falls erforderlich
-Pre_Corona_means_sf <- st_as_sf(Pre_Corona_means, coords = c("XLON", "XLAT"), crs = 4326)
-First_Lockdown_UK_means_sf <- st_as_sf(First_Lockdown_UK_means, coords = c("XLON", "XLAT"), crs = 4326)
-Return_to_relaxing_restrictions_means_sf <- st_as_sf(Return_to_relaxing_restrictions_means, coords = c("XLON", "XLAT"), crs = 4326)
-Three_Tier_System_means_sf <- st_as_sf(Three_Tier_System_means, coords = c("XLON", "XLAT"), crs = 4326)
-Second_Lockdown_UK_means_sf <- st_as_sf(Second_Lockdown_UK_means, coords = c("XLON", "XLAT"), crs = 4326)
-End_Second_Lockdown_means_sf <- st_as_sf(End_Second_Lockdown_means, coords = c("XLON", "XLAT"), crs = 4326)
-Tier_4_London_means_sf <- st_as_sf(Tier_4_London_means, coords = c("XLON", "XLAT"), crs = 4326)
-
-
 ###### MoransI calc
 # 1. data to sf object
 # 2. neighborhood and weight matrix
 # 3. morans I
 
-# Funktion zur Berechnung von Moran's I und Erstellung der Karten
-calculate_morans_i_and_save_html <- function(data_sf, interval_name) {
-  # 1. Koordinaten und räumliche Nachbarschaftsstruktur
-  coords <- st_coordinates(data_sf)
-  neighbors <- knearneigh(coords, k = 4)
-  listw <- nb2listw(knn2nb(neighbors), style = "W")
+# Funktion: Berechnung des lokalen Moran's I
+calculate_local_morans_i <- function(data_sf, interval_name) {
+  coords <- st_coordinates(data_sf)  # Extrahiere Koordinaten
+  neighbors <- knearneigh(coords, k = 4)  # 4 nächste Nachbarn
+  listw <- nb2listw(knn2nb(neighbors), style = "W")  # Gewichtsmatrix erstellen
   
-  # 2. Moran's I berechnen
-  moran_result <- moran.test(data_sf$mean_value, listw)
-  print(paste("Moran's I für", interval_name, ":", moran_result$estimate[1]))
-  
-  # 3. Lokale Moran's I Statistik berechnen
+  # Lokales Moran's I berechnen
   local_moran <- localmoran(data_sf$mean_value, listw)
-  data_sf <- data_sf %>%
-    mutate(local_moran_i = local_moran[, 1],  # Lokale Moran's I Werte
-           p_value = local_moran[, 5])       # P-Werte
   
-  # 4. Interaktive Karte erstellen
-  map <- leaflet(data_sf) %>%
-    addTiles() %>%  # OpenStreetMap hinzufügen
+  # Ergebnisse hinzufügen
+  data_sf <- data_sf %>%
+    mutate(
+      local_moran_i = local_moran[, 1],  # Lokales Moran's I
+      p_value = local_moran[, 5],       # P-Wert
+      interval = interval_name          # Intervallname
+    )
+  
+  return(data_sf)
+}
+
+# Funktion: Berechnung des globalen Moran's I
+calculate_global_morans_i <- function(data_sf) {
+  coords <- st_coordinates(data_sf)  # Extrahiere Koordinaten
+  neighbors <- knearneigh(coords, k = 4)  # 4 nächste Nachbarn
+  listw <- nb2listw(knn2nb(neighbors), style = "W")  # Gewichtsmatrix erstellen
+  
+  # Globales Moran's I berechnen
+  global_moran <- moran.test(data_sf$mean_value, listw)
+  
+  return(list(
+    estimate = global_moran$estimate[1],  # Moran's I-Wert
+    p_value = global_moran$p.value        # P-Wert
+  ))
+}
+
+# Liste der Intervalle
+intervals <- list(
+  list(data = Pre_Corona_means, name = "Pre_Corona"),
+  list(data = First_Lockdown_UK_means, name = "First_Lockdown_UK"),
+  list(data = Return_to_relaxing_restrictions_means, name = "Return_to_relaxing_restrictions"),
+  list(data = Three_Tier_System_means, name = "Three_Tier_System"),
+  list(data = Second_Lockdown_UK_means, name = "Second_Lockdown_UK"),
+  list(data = End_Second_Lockdown_means, name = "End_Second_Lockdown"),
+  list(data = Tier_4_London_means, name = "Tier_4_London")
+)
+
+# Ergebnisse berechnen
+results_list <- lapply(intervals, function(interval) {
+  calculate_local_morans_i(interval$data, interval$name)
+})
+
+# Kombiniere alle Ergebnisse in ein DataFrame
+combined_results <- do.call(rbind, results_list)
+
+# Berechnung des globalen Moran's I für jedes Intervall
+global_morans_results <- lapply(intervals, function(interval) {
+  global_moran <- calculate_global_morans_i(interval$data)
+  list(
+    interval = interval$name,
+    morans_i = global_moran$estimate,
+    p_value = global_moran$p_value
+  )
+})
+
+# Globale Min-Max-Skalierung
+global_min <- min(combined_results$local_moran_i, na.rm = TRUE)
+global_max <- max(combined_results$local_moran_i, na.rm = TRUE)
+
+# Normalisierung auf [-1, 1] für alle Intervalle
+combined_results <- combined_results %>%
+  mutate(
+    standardized_local_moran_i = (local_moran_i - global_min) / (global_max - global_min) * 2 - 1
+  )
+
+color_scale <- colorNumeric(
+  palette = c("blue", "grey", "red"),
+  domain = c(-1, 1),
+  na.color = "transparent"
+)
+
+for (interval in intervals) {
+  interval_name <- interval$name
+  data_sf <- combined_results %>% filter(interval == interval_name)
+  
+  global_moran <- global_morans_results[[which(sapply(global_morans_results, function(x) x$interval) == interval_name)]]
+  morans_i_value <- round(global_moran$morans_i, 3)
+  
+  significant_data <- data_sf %>% filter(p_value < 0.05)
+  non_significant_data <- data_sf %>% filter(p_value >= 0.05)
+  
+  # Map with all points
+  map_all <- leaflet() %>%
+    addTiles() %>%
     addCircleMarkers(
-      radius = 5,
-      fillColor = ~colorNumeric("viridis", local_moran_i)(local_moran_i),
+      data = significant_data,
+      radius = 2,
+      fillColor = ~color_scale(standardized_local_moran_i),
       fillOpacity = 0.8,
-      color = "black",
-      weight = 0.5,
+      weight = 0.3,
       popup = ~paste(
         "<strong>Longitude:</strong>", st_coordinates(geometry)[,1], "<br>",
         "<strong>Latitude:</strong>", st_coordinates(geometry)[,2], "<br>",
-        "<strong>Lokales Moran's I:</strong>", round(local_moran_i, 3), "<br>",
-        "<strong>P-Wert:</strong>", round(p_value, 3)
+        "<strong>Standardized Local Moran's I:</strong>", round(standardized_local_moran_i, 3)
+      )
+    ) %>%
+    addCircleMarkers(
+      data = non_significant_data,
+      radius = 0.5,
+      fillColor = "lightgrey",
+      fillOpacity = 0.05,
+      color = "lightgrey",
+      weight = 0.1
+    ) %>%
+    addLegend(
+      "bottomright",
+      pal = color_scale,
+      values = c(-1, 1),
+      title = paste("Standardized Local Moran's I:", interval_name),
+      opacity = 1
+    ) %>%
+    addControl(
+      paste0(
+        "<b>Global Moran's I:</b> ", morans_i_value
+      ),
+      position = "topright"
+    )
+  
+  saveWidget(map_all, file = paste0(interval_name, "_all_points_morans_i_map.html"))
+  
+  # Map with only significant points
+  map_significant <- leaflet() %>%
+    addTiles() %>%
+    addCircleMarkers(
+      data = significant_data,
+      radius = 2,
+      fillColor = ~color_scale(standardized_local_moran_i),
+      fillOpacity = 0.8,
+      weight = 0.3,
+      popup = ~paste(
+        "<strong>Longitude:</strong>", st_coordinates(geometry)[,1], "<br>",
+        "<strong>Latitude:</strong>", st_coordinates(geometry)[,2], "<br>",
+        "<strong>Standardized Local Moran's I:</strong>", round(standardized_local_moran_i, 3)
       )
     ) %>%
     addLegend(
       "bottomright",
-      pal = colorNumeric("viridis", data_sf$local_moran_i),
-      values = data_sf$local_moran_i,
-      title = paste("Lokales Moran's I:", interval_name),
+      pal = color_scale,
+      values = c(-1, 1),
+      title = paste("Standardized Local Moran's I (Significant Points):", interval_name),
       opacity = 1
+    ) %>%
+    addControl(
+      paste0(
+        "<b>Global Moran's I:</b> ", morans_i_value
+      ),
+      position = "topright"
     )
   
-  # 5. Karte als HTML speichern
-  saveWidget(map, file = paste0(interval_name, "_morans_i_map.html"))
+  saveWidget(map_significant, file = paste0(interval_name, "_significant_points_morans_i_map.html"))
 }
-
-# Interaktive Karten für jedes Intervall berechnen und speichern
-calculate_morans_i_and_save_html(Pre_Corona_means_sf, "Pre_Corona")
-calculate_morans_i_and_save_html(First_Lockdown_UK_means_sf, "First_Lockdown_UK")
-calculate_morans_i_and_save_html(Return_to_relaxing_restrictions_means_sf, "Return_to_relaxing_restrictions")
-calculate_morans_i_and_save_html(Three_Tier_System_means_sf, "Three_Tier_System")
-calculate_morans_i_and_save_html(Second_Lockdown_UK_means_sf, "Second_Lockdown_UK")
-calculate_morans_i_and_save_html(End_Second_Lockdown_means_sf, "End_Second_Lockdown")
-calculate_morans_i_and_save_html(Tier_4_London_means_sf, "Tier_4_London")
