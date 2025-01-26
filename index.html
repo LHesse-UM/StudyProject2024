@@ -66,16 +66,16 @@
 <body>
     <header style="position: relative; text-align: center; padding: 10px 0;">
         <!-- Logo größer und oben über der H2 -->
-        <img src="data/img/icon.png" 
-             alt="Project Logo" 
+        <img src="data/img/icon.png"
+             alt="Project Logo"
              style="position: absolute; top: 10px; right: 10px; width: 90px; height: auto;">
-    
+
         <!-- Header Content -->
         <h1 style="margin: 0;">Welcome to our Study Project:</h1>
-    
+
     </header>
     <h2 style="margin: 0;">Exploring Human Activity Patterns in London during 2020 - a year defined by unprecedented challenges</h2>
-    
+
     <nav id="navToC">
         <h2>Table of Contents</h2>
         <ol>
@@ -117,8 +117,8 @@
     <section>
         <h2 id="aboutTheProject">1. About the Project</h2>
         <p>
-            This project explores human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic. 
-            By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, we aim to understand how the pandemic influenced urban mobility. 
+            This project explores human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic.
+            By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, we aim to understand how the pandemic influenced urban mobility.
             Our analysis offers insights into the reduction of activity during lockdowns, the rebound effects post-restrictions, and the shifting dynamics of human movement in response to public health measures.
         </p>
     </section>
@@ -128,19 +128,19 @@
     <section>
         <h2 id="dataAquiAndProces">2. Data Acquistion and Preprocessing</h2>
         <p>
-            The foundation of this project is the 2020 movement data of London, which provides daily aggregated metrics of human activity. 
-            These data points are complemented by geospatial information, including: 
+            The foundation of this project is the 2020 movement data of London, which provides daily aggregated metrics of human activity.
+            These data points are complemented by geospatial information, including:
             Geo-coordinates linked to specific locations,
             London borough boundaries, and
             Points of Interest (POIs) categorized by function and significance.
-            Preprocessing involved cleaning, mapping, and aggregating the data for analysis. 
+            Preprocessing involved cleaning, mapping, and aggregating the data for analysis.
             Special focus was given to temporal patterns, allowing us to identify activity trends before, during, and after key COVID-19 milestones, such as lockdown announcements or easing measures.
         </p>
 
         <section id="movementData">
             <h3>2.1 Movement Data</h3>
             <p>
-                The movement data of London has a column mean_column. 
+                The movement data of London has a column mean_column.
                 It has a values ranging from 0.000003 to 2.892247.
                 These values are to be seen in relation to the average movement in UK.
                 1.0 would mean in this case that in this 100x100 area the movement was like the average in the UK.
@@ -198,7 +198,7 @@
                 </li>
             </ol>
         </section>
-            
+
         <section id="mapPOIs">
             <h4>2.2.1 Map of the POIs</h4>
             <iframe src="data/maps/karte_alle_types.html" loading="lazy"></iframe>
@@ -207,16 +207,16 @@
         <section id="temporalData">
             <h3>2.3 Temporal Data</h3>
             <p>
-                The <b>Temporal Data</b> section highlights how mobility patterns in London evolved throughout the different phases of the COVID-19 pandemic in 2020. 
-                By dividing the year into <b>distinct intervals</b> aligned with major policy changes and restrictions, 
+                The <b>Temporal Data</b> section highlights how mobility patterns in London evolved throughout the different phases of the COVID-19 pandemic in 2020.
+                By dividing the year into <b>distinct intervals</b> aligned with major policy changes and restrictions,
                 we analyze the short- and long-term effects of lockdowns, reopenings, and other interventions on human activity.
             </p>
-        
+
             <h3>2.3.1 Corona Intervals</h3>
             <p style="margin-bottom: 20px;">
-                To better understand mobility changes, the year 2020 has been divided into 
+                To better understand mobility changes, the year 2020 has been divided into
                 <b>seven key intervals</b>, each corresponding to major COVID-19 measures or milestones.
-                The time intervals are based on governmental documents that can be found 
+                The time intervals are based on governmental documents that can be found
                 <a href="https://www.instituteforgovernment.org.uk/sites/default/files/timeline-lockdown-web.pdf" target="_blank">here</a>.
             </p>
             <div style="display: flex; align-items: flex-start; gap: 20px;">
@@ -232,18 +232,18 @@
                     </ul>
                 </div>
                 <div style="flex: 1; max-width: 50%;">
-                    <img src="data/London Movement/TimeLineCorona.png" 
-                         alt="Timeline of Mobility Intervals" 
+                    <img src="data/London Movement/TimeLineCorona.png"
+                         alt="Timeline of Mobility Intervals"
                          style="width: 100%; height: auto; display: block;">
                 </div>
             </div>
 
             <h3>2.3.2 Events Dataset</h3>
             <p>
-                The <b>Events Dataset</b> focuses on <b>specific dates</b> where notable events and policy decisions occurred. 
-                These events include significant football matches, concerts, and public gatherings, 
-                particularly in key <b>Polygons of Interest (POIs)</b> such as football stadiums and large event venues. 
-                By examining mobility patterns during these events, 
+                The <b>Events Dataset</b> focuses on <b>specific dates</b> where notable events and policy decisions occurred.
+                These events include significant football matches, concerts, and public gatherings,
+                particularly in key <b>Polygons of Interest (POIs)</b> such as football stadiums and large event venues.
+                By examining mobility patterns during these events,
                 we gain a deeper understanding of the short-term fluctuations in movement across London.
             </p>
             <p>
@@ -251,19 +251,19 @@
             </p>
 
             <!-- Tabelle Bild -->
-            <img src="data/London Games/Dates.png" 
-                alt="Events Dataset Table" 
+            <img src="data/London Games/Dates.png"
+                alt="Events Dataset Table"
                 style="display: block; margin: 0 auto; width: 80%;">
 
             <p>
-                By analyzing mobility patterns during these <b>events</b>, particularly at football stadiums and event venues, 
-                we can identify spikes in activity that correspond to crowd movements. 
-                Additionally, when combined with the <b>Corona Intervals</b>, 
+                By analyzing mobility patterns during these <b>events</b>, particularly at football stadiums and event venues,
+                we can identify spikes in activity that correspond to crowd movements.
+                Additionally, when combined with the <b>Corona Intervals</b>,
                 this dataset provides insights into how lockdowns and reopening phases impacted public gatherings at key POIs.
             </p>
 
-        
-    
+
+
         <section id="LimitsDataProcess">
             <h3>2.4 Limitations and Challenges in Data Preprocessing</h3>
         </section>
@@ -275,15 +275,26 @@
         <h2>3. Analysis of Human Activity Data</h2>
 
         <section id="intervalAnalysis">
-            <h3>3.1 Interval Analysis</h3> 
+            <h3>3.1 Interval Analysis</h3>
             <p>
-                The "Compare London Movement Maps" page allows users to interactively analyze human activity patterns in London during different COVID-19 intervals. 
-                By selecting and comparing maps from various phases — such as Pre-Corona, First Lockdown, and Four-Tier Restriction Phase — users can visually assess the impact of 
+                The "Compare London Movement Maps" page allows users to interactively analyze human activity patterns in London during different COVID-19 intervals.
+                By selecting and comparing maps from various phases — such as Pre-Corona, First Lockdown, and Four-Tier Restriction Phase — users can visually assess the impact of
                 lockdowns and reopening policies on urban mobility.
             </p>
-            <a href="html/comparisonMovementData.html" style="font-size: 1.2em; color: #007acc; text-decoration: none;">
-                Click here to compare maps
-            </a> 
+            <br>
+            <div align="center">
+                <!-- GIF-Element -->
+                <img
+                        src="data/London%20Movement/London_Intervals_Mean_Value.gif"
+                        alt="London Movement Data"
+                        onclick="restartGif(this)"
+                        width="40%">
+                <!-- Link -->
+                <br>
+                <a href="html/comparisonMovementData.html">
+                    Click here to access the full comparative analysis
+                </a>
+            </div>
         </section>
 
         <section id="STDBSCAN">
@@ -369,8 +380,8 @@
                 </div>
             </div>
         </section>
-        
-        
+
+
 
         <section id="moransI">
             <h3>3.3 Moran's I</h3>
@@ -471,6 +482,12 @@
                 const header = content.previousElementSibling;
                 const icon = header.querySelector('span');
                 icon.textContent = isVisible ? '\u25B6' : '\u25BC';
+            }
+
+            function restartGif(imgElement) {
+                const src = imgElement.src;
+                imgElement.src = "";
+                imgElement.src = src;
             }
         </script>
 </body>
