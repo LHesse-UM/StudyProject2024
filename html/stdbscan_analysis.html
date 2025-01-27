@@ -66,6 +66,9 @@
         h1 {
             text-align: center;
         }
+        h2, h3 {
+            color: #007BFF;
+        }
 
         footer {
             text-align: center;
@@ -91,15 +94,27 @@
 
 <section id="STDBSCAN">
     <h2 style="text-align: center;">Spatio-Temporal Density-Based Spatial Clustering (ST-DBSCAN)</h2>
-    <p style="text-align: justify; padding: 0 20px;">
-        ST-DBSCAN, or Spatio-Temporal Density-Based Spatial Clustering of Applications with Noise, is a clustering algorithm that integrates both spatial and temporal dimensions. Applied to London’s movement data with the predefined time intervals, ST-DBSCAN identified patterns across different periods. To illustrate the algorithm's capabilities, three specific examples—Westminster, Greenwich, and Regent's Park—were selected to demonstrate how movement clusters manifest in distinct urban areas. A slider interface allows for navigation through the various time intervals, enabling the visualization of movement patterns over time. For each predefined interval, a span of 20 days was chosen to ensure the analysis remained computationally manageable. In this study, the epsilon parameters were set with eps1 at 0.0006 and eps2 encompassing approximately one week. However, it is important to note that these parameter choices are not ideal; converting the movement data into a metric system would have allowed for more accurate and undistorted search radii for the clusters. Additionally, more extensive testing would have been necessary to optimally select the parameters, but hardware limitations prevented this. Nonetheless, several effective clusters were still identified and are analyzed in the following sections. These limitations are further discussed in the limitations section. By analyzing how movements are distributed in space and change over time, the algorithm uncovered significant trends, providing valuable insights into urban movement behaviors.
+    <p style="text-align: center; padding: 0 20px; font-size: 18px">
+        ST-DBSCAN, or Spatio-Temporal Density-Based Spatial Clustering of Applications with Noise, is a clustering algorithm that integrates both spatial and temporal dimensions.
+        Applied to London’s movement data with the predefined time intervals, ST-DBSCAN identified patterns across different periods.
+        To illustrate the algorithm's capabilities, three specific examples—Westminster, Greenwich, and Regent's Park—were selected to demonstrate how movement clusters manifest in distinct urban areas.
+    </p>
+    <p style="text-align: center; padding: 0 20px;">
+        A slider interface allows for navigation through the various time intervals, enabling the visualization of movement patterns over time.
+        For each predefined interval, a span of 20 days was chosen to ensure the analysis remained computationally manageable.
+        In this study, the epsilon parameters were set with eps1 at 0.0006 and eps2 encompassing approximately one week.
+        However, it is important to note that these parameter choices are not ideal; converting the movement data into a metric system would have allowed for more accurate and undistorted search radii for the clusters.
+        Additionally, more extensive testing would have been necessary to optimally select the parameters, but hardware limitations prevented this.
+        Nonetheless, several effective clusters were still identified and are analyzed in the following sections.
+        These limitations are further discussed in the limitations section.
+        By analyzing how movements are distributed in space and change over time, the algorithm uncovered significant trends, providing valuable insights into urban movement behaviors.
     </p>
 
     <div class="accordion">
         <h3 onclick="toggleAccordion('content1')">
-            <span style="margin-right: 8px;">&#x25B6;</span> Westminster
+            <span style="margin-right: 8px;">&#x25BC;</span> Westminster
         </h3>
-        <div id="content1" class="accordion-content">
+        <div id="content1" class="accordion-content" style="display: block;">
             <div style="text-align: center;">
                 <img id="image-westminster" class="compressed" src="../data/img/image1_1.png" alt="Westminster">
                 <div id="label-westminster" class="label">Pre Corona</div>
@@ -110,10 +125,15 @@
             </div>
             <div>
                 <p>
-                    Applying ST-DBSCAN to Westminster’s movement data revealed distinct patterns across the different time intervals. During less restrictive phases, clear movement hotspots emerged near key landmarks such as Big Ben and major subway stations like Waterloo. As restrictions became tighter, overall movement spread more evenly across the entire area. Interestingly, under stricter conditions, hotspots were not solely concentrated around tourist attractions but were also distributed throughout residential neighborhoods, resulting in numerous clusters in these areas.
+                    Applying ST-DBSCAN to Westminster’s movement data revealed distinct patterns across the different time intervals.
+                    During less restrictive phases, clear movement hotspots emerged near key landmarks such as Big Ben and major subway stations like Waterloo.
+                    As restrictions became tighter, overall movement spread more evenly across the entire area.
+                    Interestingly, under stricter conditions, hotspots were not solely concentrated around tourist attractions but were also distributed throughout residential neighborhoods,
+                    resulting in numerous clusters in these areas.
                 </p>
             </div>
         </div>
+        <section><hr class="border-line" color="#007BFF"></section>
     </div>
 
     <div class="accordion">
@@ -135,6 +155,7 @@
                 </p>
             </div>
         </div>
+        <section><hr class="border-line" color="#007BFF"></section>
     </div>
 
     <div class="accordion">
@@ -159,11 +180,17 @@
     </div>
 </section>
 <section><hr class="border-line" color="#007BFF"></section>
+<div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+    <button onclick="goBack()"
+            style="padding: 10px 20px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Back to Analysis
+    </button>
+</div>
+<section><hr class="border-line" color="#007BFF"></section>
 <footer>
     <h3>Imprint</h3>
     <p>Created by <a href="https://github.com/tkrumrei">tkrumrei</a>, <a href="https://github.com/LHesse-UM">LHesse-UM</a>, <a href="https://github.com/tlehman1">tlehman1</a> | <a href="https://github.com/tkrumrei/StudyProject2024">GitHub Repository</a></p>
 </footer>
-<section><hr class="border-line" color="#007BFF"></section>
 
 <script>
     const imageSets = {
@@ -227,13 +254,25 @@
     }
 
     function toggleAccordion(contentId) {
-        const content = document.getElementById(contentId);
-        const isVisible = content.style.display === 'block';
-        content.style.display = isVisible ? 'none' : 'block';
+        const allContents = document.querySelectorAll('.accordion-content');
+        const allIcons = document.querySelectorAll('.accordion h3 span');
 
+        allContents.forEach(content => {
+            content.style.display = 'none'; // Collapse all
+        });
+
+        allIcons.forEach(icon => {
+            icon.textContent = '\u25B6'; // Reset all icons to right-facing triangle
+        });
+
+        const content = document.getElementById(contentId);
         const header = content.previousElementSibling;
         const icon = header.querySelector('span');
-        icon.textContent = isVisible ? '\u25B6' : '\u25BC';
+
+        if (content.style.display === 'none') {
+            content.style.display = 'block'; // Expand the clicked section
+            icon.textContent = '\u25BC'; // Change icon to down-facing triangle
+        }
     }
 
     function goBack() {
