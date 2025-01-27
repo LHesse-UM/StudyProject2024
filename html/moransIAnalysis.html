@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moran's I Analysis</title>
+    <link rel="icon" href="../data/img/icon.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        iframe {
+            width: 80%;
+            height: 600px;
+            border: none;
+            margin: 20px auto;
+            display: block;
+        }
+        .button-container {
+            display: flex; /* Flexbox für Buttons */
+            justify-content: center; /* Buttons zentrieren */
+            gap: 10px; /* Abstand zwischen Buttons */
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            flex: 1; /* Alle Buttons erhalten denselben Platz */
+            max-width: 150px; /* Optional: Maximalbreite für Buttons */
+            text-align: center; /* Text innerhalb des Buttons zentrieren */
+        }
+
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        button:hover:not(:disabled) {
+            background-color: #0056b3;
+        }
+        .slider-container {
+            text-align: center;
+            margin: 20px;
+        }
+        #selectedPeriod {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            align-self: center;
+        }
+        h1, footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex; align-items: center; justify-content: space-between;">
+        <button onclick="goBack()" style="padding: 10px 20px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px; margin-top: 10px;">
+            Back to Analysis
+        </button>
+        <h1 style="margin: 0; text-align: center; flex-grow: 1;">3.3 Moran's I</h1>
+        <div style="width: 80px;"></div>
+    </div>
+
+    <section><hr class="border-line"></section>
+
+
+    <div class="slider-container">
+        <span id="selectedPeriod">Pre-Corona</span>
+        <div class="button-container">
+            <button id="prevButton" onclick="changePeriod(-1)">← Previous</button>
+            <button id="nextButton" onclick="changePeriod(1)">Next →</button>
+        </div>
+    </div>
+
+    <!-- Container für Karte -->
+    <iframe id="map-frame" src="../data/moransI/Pre_Corona_significant_points_morans_i_map.html"></iframe>
+
+    <section><hr class="border-line"></section>
+
+    <footer id="imprint">
+        <h3>Imprint</h3>
+        <p>Created by <a href="https://github.com/tkrumrei">tkrumrei</a>, <a href="https://github.com/LHesse-UM">LHesse-UM</a>, <a href="https://github.com/tlehman1">tlehman1</a> | <a href="https://github.com/tkrumrei/StudyProject2024">GitHub Repository</a></p>
+    </footer>
+
+    <script>
+        const intervals = [
+            "Pre_Corona",
+            "First_Lockdown_UK",
+            "Return_to_relaxing_restrictions",
+            "Three_Tier_System",
+            "Second_Lockdown_UK",
+            "End_Second_Lockdown",
+            "Tier_4_London"
+        ];
+
+        // Aktueller Index für den Zeitraum
+        let currentIndex = 0;
+
+        // Funktion zum Ändern des Zeitraums
+        function changePeriod(step) {
+            // Berechne den neuen Index
+            const newIndex = currentIndex + step;
+
+            // Stelle sicher, dass der Index innerhalb der Grenzen bleibt
+            if (newIndex >= 0 && newIndex < intervals.length) {
+                currentIndex = newIndex;
+
+                // Aktualisiere den Zeitraum
+                const period = intervals[currentIndex];
+                document.getElementById('selectedPeriod').textContent = period.replace(/_/g, " ");
+                document.getElementById('map-frame').src = `../data/moransI/${period}_significant_points_morans_i_map.html`;
+
+                // Buttons aktivieren/deaktivieren je nach Index
+                updateButtonStates();
+            }
+        }
+
+        // Funktion zum Aktivieren/Deaktivieren der Buttons
+        function updateButtonStates() {
+            document.getElementById('prevButton').disabled = (currentIndex === 0);
+            document.getElementById('nextButton').disabled = (currentIndex === intervals.length - 1);
+        }
+
+        // Initialisierung der Button-Zustände
+        updateButtonStates(); // Stelle sicher, dass die Buttons beim Laden korrekt sind
+
+        function goBack() {
+            window.location.href = "../index.html#moransI";
+        }
+    </script>
+</body>
