@@ -8,60 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.sync/0.1.1/leaflet.sync.min.js"></script>
-    <style>
-        .image-container {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        img {
-            max-width: 80%;
-            height: auto;
-        }
-        .slider {
-            width: 80%;
-            -webkit-appearance: none;
-            appearance: none;
-            height: 10px;
-            background: #ddd;
-            border-radius: 5px;
-            outline: none;
-            transition: background 0.3s, box-shadow 0.3s;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.6);
-        }
-        .slider:hover {
-            background: #ccc;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 1px 3px rgba(255, 255, 255, 0.7);
-        }
-        .slider::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            background: #4CAF50;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-        }
-        .slider::-moz-range-thumb {
-            width: 20px;
-            height: 20px;
-            background: #4CAF50;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-        }
-        .slider-label {
-            font-size: 1.2em;
-            margin-top: 10px;
-        }
-        .compressed {
-            max-width: 50%;
-            height: 400px;
-            border: 5px solid #ccc;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-    </style>
 </head>
 <body>
     <header style="position: relative; text-align: center; padding: 10px 0;">
@@ -304,9 +250,15 @@
 
         <section id="moransI">
             <h3>3.3 Moran's I</h3>
-            <a href="html/moransIAnalysis.html">
-                Click here to see the Moran's I results
-            </a>
+            <p>
+                The Moran's I analysis reveals dynamic spatial patterns in human activity during key COVID-19 intervals.
+                Global Moran's I highlights the clustering of activity, with stronger patterns during the Pre-Corona and Relaxation phases,
+                while lockdowns showed decreased clustering. Local Moran's I provides a detailed view,
+                uncovering significant contrasts near roads and key Points of Interest (POIs), such as bus depots and subway stations.
+            </p>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="html/moransIAnalysis.html" class="button-link">Explore complete Moran's I Results</a>
+            </div>
         </section>
 
         <section id="copmarisonPOIsCategories">
