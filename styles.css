@@ -12,8 +12,15 @@ body {
 footer {
     text-align: center;
 }
+img {
+    max-width: 80%;
+    height: auto;
+}
 h1 {
     color: #333,
+}
+p {
+    font-size: 18px;
 }
 #subtitle, #ToC {
     color: #333;
@@ -63,6 +70,22 @@ iframe {
 a {
     color: #007BFF;
 }
+
+.button-link {
+    display: inline-block;
+    background-color: #007BFF; /* Button background */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for size */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.button-link:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
 .color-box {
     display: inline-block;
     width: 15px;
