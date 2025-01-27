@@ -13,9 +13,13 @@ footer {
     text-align: center;
 }
 h1 {
+    color: #333,
+}
+#subtitle, #ToC {
     color: #333;
 }
-h2, h4 {
+h2, h3, h4 {
+    color: #007BFF;
     text-align: center;
 }
 #navToC {
@@ -54,16 +58,10 @@ iframe {
     border: none;
     display: block;
     margin: 0 auto;
+    background-color: #007BFF;
 }
 a {
-    color: #007acc;
-}
-.border-line {
-    width: 90%; /* Breite der Linie */
-    border: 0; /* Entfernt Standardrahmen */
-    height: 2px; /* Höhe der Linie */
-    background-color: black; /* Farbe der Linie */
-    margin: 20px auto; /* Zentrierung und Abstand */
+    color: #007BFF;
 }
 .color-box {
     display: inline-block;
@@ -104,7 +102,7 @@ a {
 .color-box.event + ul li::marker {
     content: "●";
     color: #8bc4fc; /* Sky blue for Big event places */
-} 
+}
 .color-box.event {
     background-color: #1E90FF;
 }

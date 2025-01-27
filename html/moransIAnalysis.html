@@ -12,10 +12,11 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            align-items: center;
         }
         iframe {
-            width: 80%;
-            height: 600px;
+            width: 70%;
+            height: 500px;
             border: none;
             margin: 20px auto;
             display: block;
@@ -72,7 +73,23 @@
         <div style="width: 80px;"></div>
     </div>
 
-    <section><hr class="border-line"></section>
+    <section><hr class="border-line" color="#007BFF"></section>
+
+    <section>
+        <div class="intro">
+            <p>
+                Moran's I is a measure of spatial autocorrelation, which quantifies how similar or dissimilar data values are
+                based on their spatial location. This analysis is particularly useful for understanding the clustering patterns
+                within spatial data. Our analysis focuses on identifying spatial clusters and hotspots during various time intervals.
+            </p>
+            <p>
+                The analysis employs both global and local Moran's I to assess spatial patterns. The p-value is incorporated to
+                filter significant results, ensuring only relevant spatial clusters are highlighted. This approach not only
+                reduces unnecessary data but also optimizes the performance of this web-based visualization tool. By focusing
+                on significant clusters, we aim to provide clear and actionable insights without overloading the system.
+            </p>
+        </div>
+    </section>
 
 
     <div class="slider-container">
@@ -86,7 +103,44 @@
     <!-- Container für Karte -->
     <iframe id="map-frame" src="../data/moransI/Pre_Corona_significant_points_morans_i_map.html"></iframe>
 
-    <section><hr class="border-line"></section>
+    <section>
+        <div class="results">
+            <h2>Results and Interpretation</h2>
+            <p>
+                Through this analysis, distinct spatial patterns have emerged during different time intervals:
+            </p>
+            <ul>
+                <li>
+                    <strong>Pre-Corona:</strong> The spatial clusters during this time revealed consistent hotspots, indicating
+                    areas of activity prior to the lockdown.
+                </li>
+                <li>
+                    <strong>First Lockdown:</strong> Significant cold spots appeared, reflecting reduced activity and mobility.
+                </li>
+                <li>
+                    <strong>Relaxation of Restrictions:</strong> A mix of fluctuating clusters emerged, reflecting variable behavior
+                    as restrictions eased.
+                </li>
+                <li>
+                    <strong>Three-Tier System:</strong> Consistent hotspots returned, suggesting areas that retained high activity levels.
+                </li>
+            </ul>
+            <p>
+                These results demonstrate the effectiveness of using Moran's I and p-values to identify and visualize spatial
+                clusters over time.
+            </p>
+        </div>
+    </section>
+
+    <section><hr class="border-line" color="#007BFF"></section>
+
+    <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+        <button onclick="goBack()" style="padding: 10px 20px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+            Back to Analysis
+        </button>
+    </div>
+
+    <section><hr class="border-line" color="#007BFF"></section>
 
     <footer id="imprint">
         <h3>Imprint</h3>

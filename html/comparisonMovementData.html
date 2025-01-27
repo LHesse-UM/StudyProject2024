@@ -17,7 +17,13 @@
         h1, footer {
             text-align: center;
         }
-        h2, h3, p {
+        h2, h3{
+            margin: 0;
+            padding: 10px 0;
+            color: #007BFF;
+            text-align: center;
+        }
+        p {
             margin: 0;
             padding: 10px 0;
         }
@@ -50,13 +56,6 @@
         .stat-section p {
             text-align: center;
         }
-        .border-line {
-            width: 90%; /* Breite der Linie */
-            border: 0; /* Entfernt Standardrahmen */
-            height: 2px; /* Höhe der Linie */
-            background-color: black; /* Farbe der Linie */
-            margin: 20px auto; /* Zentrierung und Abstand */
-        }
     </style>
 </head>
 <body>
@@ -73,6 +72,7 @@
         compare mobility trends across key phases, and delve into detailed statistical summaries. Use the interactive maps
         and graphs to uncover the dynamics of movement throughout the pandemic.
     </p>
+    <section><hr class="border-line" color="#007BFF"></section>
     <section class="section">
         <h2>3.1.1 Interactive Comparison of Movement Maps</h2>
         <p>
@@ -110,7 +110,7 @@
             </div>
         </div>
     </section>
-    <section><hr class="border-line"></section>
+    <section><hr class="border-line" color="#007BFF"></section>
 
     <section class="section stat-section">
         <h2>3.1.2 Comparative Analysis of Movement Data</h2>
@@ -133,7 +133,7 @@
         </ul>
         <img src="../data/London Movement/CompThroughTimeIntervals.png" alt="Comparison Through Time Intervals" style="width: 80%; display: block; margin: 0 auto;">
         <p style="text-align: center;">Figure 1: Movement trends across time intervals, showcasing the average activity levels and their changes over time.</p>
-
+        <section><hr class="border-line" color="#007BFF"></section>
         <h3>Mean Movement Values Across Intervals</h3>
         <p>
             The following graph provides a detailed statistical view of mean movement levels across the seven intervals. This visualization highlights the differences in activity during various phases, with significant contrasts observed between lockdowns and reopening phases:
@@ -145,7 +145,7 @@
         </ul>
         <img src="../data/London Movement/MeanByTimeInterval.png" alt="Mean Movement Values Across Intervals" style="width: 80%; display: block; margin: 0 auto;">
         <p style="text-align: center;">Figure 2: Mean movement values across intervals, highlighting mobility reductions during lockdowns and recovery during reopening phases.</p>
-
+        <section><hr class="border-line" color="#007BFF"></section>
         <h3>Summary Statistics</h3>
         <p>
             The summary table below offers a comprehensive view of movement statistics, including minimum, median, mean, and maximum values for each interval.
@@ -167,7 +167,7 @@
         </p>
     </section>
 
-    <section><hr class="border-line"></section>
+    <section><hr class="border-line" color="#007BFF"></section>
 
     <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
         <button onclick="goBack()" style="padding: 10px 20px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
@@ -175,7 +175,7 @@
         </button>
     </div>
 
-    <section><hr class="border-line"></section>
+    <section><hr class="border-line" color="#007BFF"></section>
 
     <footer id="imprint">
         <h3>Imprint</h3>
