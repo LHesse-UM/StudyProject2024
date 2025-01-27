@@ -309,7 +309,7 @@
                 </h4>
                 <div id="content1" class="accordion-content" style="display: none;">
                     <div class="image-container">
-                        <img id="image1" class="compressed" src="image1_1.png" alt="Image 1">
+                        <img id="image1" class="compressed" src="" alt="Image 1">
                         <br>
                         <input
                                 type="range"
@@ -327,6 +327,7 @@
                     </p>
                 </div>
             </div>
+
 
             <!-- Second Image Section -->
             <div class="accordion">
@@ -456,9 +457,19 @@
             function updateImageWithLabel(imgId, baseName, value, labelId) {
                 const imgElement = document.getElementById(imgId);
                 const labelElement = document.getElementById(labelId);
-                imgElement.src = baseName + value + '.png';
+
+                // Dynamisch den Pfad der HTML-Datei ermitteln
+                const currentPath = document.location.pathname; // Aktueller HTML-Pfad
+                const repoBasePath = currentPath.substring(0, currentPath.lastIndexOf('/')) + '/data/img/';
+
+                // Bildpfad zusammensetzen
+                const newSrc = `${repoBasePath}${baseName}${value}.png`;
+
+                imgElement.src = newSrc; // Bild aktualisieren
                 labelElement.textContent = sliderLabels[value] || `Step ${value}`;
             }
+
+
 
             // Initialize labels based on default slider values
             document.addEventListener("DOMContentLoaded", () => {
