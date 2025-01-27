@@ -69,15 +69,15 @@
     </div>
     <p style="text-align: center; margin: 10px auto; width: 80%; font-size: 1.1em;">
         This page provides tools to visually and statistically analyze human movement patterns in London during the year 2020.
-        By selecting different time intervals, you can explore the impact of various COVID-19 measures on urban mobility, 
-        compare mobility trends across key phases, and delve into detailed statistical summaries. Use the interactive maps 
+        By selecting different time intervals, you can explore the impact of various COVID-19 measures on urban mobility,
+        compare mobility trends across key phases, and delve into detailed statistical summaries. Use the interactive maps
         and graphs to uncover the dynamics of movement throughout the pandemic.
     </p>
     <section class="section">
         <h2>3.1.1 Interactive Comparison of Movement Maps</h2>
         <p>
-            This section allows you to compare movement patterns in London across different intervals during 2020. 
-            Select two maps to compare using the dropdown menus below. 
+            This section allows you to compare movement patterns in London across different intervals during 2020.
+            Select two maps to compare using the dropdown menus below.
         </p>
         <div id="map-container" style="display: flex; justify-content: space-around; gap: 20px;">
             <div class="map-panel">
@@ -118,10 +118,10 @@
             The comparative analysis examines the data across seven distinct intervals during 2020, highlighting mobility trends and their association with key government interventions.
             By analyzing the provided graphs and summary table, we can identify both temporal patterns and notable deviations in mobility during critical phases of the pandemic.
         </p>
-    
+
         <h3>Comparative Visualization of Movement Trends</h3>
         <p>
-            The graph below illustrates the movement trends across all intervals, providing a visual summary of average movement levels and their fluctuations. 
+            The graph below illustrates the movement trends across all intervals, providing a visual summary of average movement levels and their fluctuations.
             Key observations include:
         </p>
         <ul>
@@ -133,7 +133,7 @@
         </ul>
         <img src="../data/London Movement/CompThroughTimeIntervals.png" alt="Comparison Through Time Intervals" style="width: 80%; display: block; margin: 0 auto;">
         <p style="text-align: center;">Figure 1: Movement trends across time intervals, showcasing the average activity levels and their changes over time.</p>
-    
+
         <h3>Mean Movement Values Across Intervals</h3>
         <p>
             The following graph provides a detailed statistical view of mean movement levels across the seven intervals. This visualization highlights the differences in activity during various phases, with significant contrasts observed between lockdowns and reopening phases:
@@ -145,10 +145,10 @@
         </ul>
         <img src="../data/London Movement/MeanByTimeInterval.png" alt="Mean Movement Values Across Intervals" style="width: 80%; display: block; margin: 0 auto;">
         <p style="text-align: center;">Figure 2: Mean movement values across intervals, highlighting mobility reductions during lockdowns and recovery during reopening phases.</p>
-    
+
         <h3>Summary Statistics</h3>
         <p>
-            The summary table below offers a comprehensive view of movement statistics, including minimum, median, mean, and maximum values for each interval. 
+            The summary table below offers a comprehensive view of movement statistics, including minimum, median, mean, and maximum values for each interval.
             These metrics provide deeper insights into how movement distributions varied across London during different periods:
         </p>
         <ul>
@@ -159,10 +159,10 @@
         </ul>
         <iframe src="../data/London Movement/summary_table.html" title="Summary Table" style="width: 80%; display: block; margin: 0 auto;"></iframe>
         <p style="text-align: center;">Table 1: Summary of movement statistics for each interval, showcasing key metrics such as median and maximum activity levels.</p>
-    
+
         <p>
-            These observations demonstrate the significant impact of COVID-19 policies on human mobility patterns. 
-            The stark contrasts between intervals highlight the effectiveness of lockdowns and the gradual recovery during reopening phases, 
+            These observations demonstrate the significant impact of COVID-19 policies on human mobility patterns.
+            The stark contrasts between intervals highlight the effectiveness of lockdowns and the gradual recovery during reopening phases,
             providing valuable insights into how urban movement responds to external interventions.
         </p>
     </section>
@@ -213,12 +213,8 @@
         updateDescription(2);
 
         function goBack() {
-        if (document.referrer) {
-            window.history.back();
-        } else {
-            window.location.href = "../index.html#temporalAnalysis";
+            window.location.href = "../index.html#intervalAnalysis";
         }
-    }
     </script>
 </body>
 </html>
