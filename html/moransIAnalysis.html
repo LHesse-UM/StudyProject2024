@@ -133,18 +133,36 @@
             left: 0; /* Setzt das Symbol linksbündig */
             top: 0.1em; /* Justiert die vertikale Position für bessere Ausrichtung */
         }
+
+        .back-to-analysis {
+            display: inline-block;
+            padding: 10px 30px; /* Increased padding for a longer button */
+            font-size: 18px; /* Slightly larger font for readability */
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap; /* Ensures single-line button text */
+            max-width: none; /* Removes width restriction */
+        }
+
+        .back-to-analysis:hover {
+            background-color: #0056b3; /* Darker blue for hover effect */
+        }
     </style>
 </head>
 <body>
 <div style="display: flex; align-items: center; justify-content: space-between;">
-    <button onclick="goBack()"
-            style="padding: 10px 20px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px; margin-top: 10px;">
-        Back to Analysis
-    </button>
+    <div style="text-align: center; margin-top: 20px; margin-bottom: 20px; margin-left: 10px">
+        <button class="back-to-analysis" onclick="goBack()">Back to Analysis</button>
+    </div>
     <h1 style="margin: 0; text-align: center; flex-grow: 1;">3.3 Moran's I</h1>
     <div style="width: 80px;"></div>
 </div>
-<p id="intro" style="font-size: 18px">
+
+<p id="intro" style="font-size: 18px; text-align: center">
     Moran's I is a measure of spatial autocorrelation, which quantifies how similar or dissimilar data values are
     based on their spatial location. This analysis is particularly useful for understanding the clustering patterns
     within spatial data. Our analysis focuses on identifying spatial clusters and hotspots during various time
@@ -203,6 +221,8 @@
         <button id="prevButton" onclick="changePeriod(-1)">← Previous</button>
         <button id="nextButton" onclick="changePeriod(1)">Next →</button>
     </div>
+    <br>
+    <br>
 </section>
 
 <section>
@@ -243,10 +263,7 @@
 </section>
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
-    <button onclick="goBack()"
-            style="padding: 10px 20px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
-        Back to Analysis
-    </button>
+    <button class="back-to-analysis" onclick="goBack()">Back to Analysis</button>
 </div>
 
 <section>
