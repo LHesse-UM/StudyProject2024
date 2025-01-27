@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST-DBSCAN Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        button:hover:not(:disabled) {
+            background-color: #0056b3;
+        }
+
+        .accordion {
+            margin: 20px;
+        }
+
+        .accordion h3 {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+        }
+
+        img.compressed {
+            max-width: 50%;
+            height: 400px;
+            display: block;
+            margin: 0 auto;
+            border: 5px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .label {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div style="display: flex; align-items: center; justify-content: space-between;">
+    <button onclick="goBack()" style="margin: 10px;">Back to Analysis</button>
+    <h1>3.2 STDBSCAN Analysis</h1>
+    <div style="width: 80px;"></div>
+</div>
+
+<section><hr class="border-line" color="#007BFF"></section>
+
+<section id="STDBSCAN">
+    <h2 style="text-align: center;">Spatio-Temporal Density-Based Spatial Clustering (ST-DBSCAN)</h2>
+    <p style="text-align: justify; padding: 0 20px;">
+        ST-DBSCAN, or Spatio-Temporal Density-Based Spatial Clustering of Applications with Noise, is a clustering algorithm that integrates both spatial and temporal dimensions. Applied to London’s movement data with the predefined time intervals, ST-DBSCAN identified patterns across different periods. To illustrate the algorithm's capabilities, three specific examples—Westminster, Greenwich, and Regent's Park—were selected to demonstrate how movement clusters manifest in distinct urban areas. A slider interface allows for navigation through the various time intervals, enabling the visualization of movement patterns over time. For each predefined interval, a span of 20 days was chosen to ensure the analysis remained computationally manageable. In this study, the epsilon parameters were set with eps1 at 0.0006 and eps2 encompassing approximately one week. However, it is important to note that these parameter choices are not ideal; converting the movement data into a metric system would have allowed for more accurate and undistorted search radii for the clusters. Additionally, more extensive testing would have been necessary to optimally select the parameters, but hardware limitations prevented this. Nonetheless, several effective clusters were still identified and are analyzed in the following sections. These limitations are further discussed in the limitations section. By analyzing how movements are distributed in space and change over time, the algorithm uncovered significant trends, providing valuable insights into urban movement behaviors.
+    </p>
+
+    <div class="accordion">
+        <h3 onclick="toggleAccordion('content1')">
+            <span style="margin-right: 8px;">&#x25B6;</span> Westminster
+        </h3>
+        <div id="content1" class="accordion-content">
+            <div style="text-align: center;">
+                <img id="image-westminster" class="compressed" src="../data/img/image1_1.png" alt="Westminster">
+                <div id="label-westminster" class="label">Pre Corona</div>
+            </div>
+            <div class="button-container">
+                <button id="prev-westminster" onclick="changeImage('westminster', -1)" disabled>← Previous</button>
+                <button id="next-westminster" onclick="changeImage('westminster', 1)">Next →</button>
+            </div>
+            <div>
+                <p>
+                    Applying ST-DBSCAN to Westminster’s movement data revealed distinct patterns across the different time intervals. During less restrictive phases, clear movement hotspots emerged near key landmarks such as Big Ben and major subway stations like Waterloo. As restrictions became tighter, overall movement spread more evenly across the entire area. Interestingly, under stricter conditions, hotspots were not solely concentrated around tourist attractions but were also distributed throughout residential neighborhoods, resulting in numerous clusters in these areas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <h3 onclick="toggleAccordion('content2')">
+            <span style="margin-right: 8px;">&#x25B6;</span> Greenwich
+        </h3>
+        <div id="content2" class="accordion-content">
+            <div style="text-align: center;">
+                <img id="image-greenwich" class="compressed" src="../data/img/image2_1.png" alt="Greenwich">
+                <div id="label-greenwich" class="label">Pre Corona</div>
+            </div>
+            <div class="button-container">
+                <button id="prev-greenwich" onclick="changeImage('greenwich', -1)" disabled>← Previous</button>
+                <button id="next-greenwich" onclick="changeImage('greenwich', 1)">Next →</button>
+            </div>
+            <div>
+                <p>
+                    The next area of focus is the Greenwich district, particularly near Greenwich Park. The analysis reveals that during restrictive periods, movement was primarily concentrated in residential neighborhoods, while main streets exhibited significantly fewer clusters. In contrast, during less restrictive times—especially before the COVID-19 pandemic—there was increased activity along major thoroughfares, like the A200 main road.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <h3 onclick="toggleAccordion('content3')">
+            <span style="margin-right: 8px;">&#x25B6;</span> Regent's Park
+        </h3>
+        <div id="content3" class="accordion-content">
+            <div style="text-align: center;">
+                <img id="image-regents" class="compressed" src="../data/img/image3_1.png" alt="Regent's Park">
+                <div id="label-regents" class="label">Pre Corona</div>
+            </div>
+            <div class="button-container">
+                <button id="prev-regents" onclick="changeImage('regents', -1)" disabled>← Previous</button>
+                <button id="next-regents" onclick="changeImage('regents', 1)">Next →</button>
+            </div>
+            <div>
+                <p>
+                    Before the COVID-19 pandemic, distinct clusters were evident within the zoo and sporadically distributed throughout the park. During lockdown periods, movement clusters became more dispersed across other areas of the park, especially during the first lockdown when the zoo was entirely closed. In later lockdowns, the zoo operated under strict regulations, resulting in isolated clusters within the zoo region at specific times. By the end of the year, as restrictions were lifted, the average movement still not returned to normal amounts of movement, which explains the high intensity of clusters in the region. The clusters were once again broadly distributed, including within the zoo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<section><hr class="border-line" color="#007BFF"></section>
+<footer>
+    <h3>Imprint</h3>
+    <p>Created by <a href="https://github.com/tkrumrei">tkrumrei</a>, <a href="https://github.com/LHesse-UM">LHesse-UM</a>, <a href="https://github.com/tlehman1">tlehman1</a> | <a href="https://github.com/tkrumrei/StudyProject2024">GitHub Repository</a></p>
+</footer>
+<section><hr class="border-line" color="#007BFF"></section>
+
+<script>
+    const imageSets = {
+        westminster: {
+            base: '../data/img/image1_',
+            count: 6,
+            intervals: [
+                "Pre Corona",
+                "First Lockdown UK",
+                "Return to relaxing restrictions",
+                "Three Tier System",
+                "Second Lockdown UK",
+                "End Second Lockdown"
+            ]
+        },
+        greenwich: {
+            base: '../data/img/image2_',
+            count: 6,
+            intervals: [
+                "Pre Corona",
+                "First Lockdown UK",
+                "Return to relaxing restrictions",
+                "Three Tier System",
+                "Second Lockdown UK",
+                "End Second Lockdown"
+            ]
+        },
+        regents: {
+            base: '../data/img/image3_',
+            count: 6,
+            intervals: [
+                "Pre Corona",
+                "First Lockdown UK",
+                "Return to relaxing restrictions",
+                "Three Tier System",
+                "Second Lockdown UK",
+                "End Second Lockdown"
+            ]
+        }
+    };
+
+    const currentIndexes = {
+        westminster: 1,
+        greenwich: 1,
+        regents: 1
+    };
+
+    function changeImage(section, step) {
+        const { base, count, intervals } = imageSets[section];
+        const currentIndex = currentIndexes[section];
+        const newIndex = currentIndex + step;
+
+        if (newIndex >= 1 && newIndex <= count) {
+            currentIndexes[section] = newIndex;
+            document.getElementById(`image-${section}`).src = `${base}${newIndex}.png`;
+            document.getElementById(`label-${section}`).textContent = intervals[newIndex - 1];
+
+            document.getElementById(`prev-${section}`).disabled = newIndex === 1;
+            document.getElementById(`next-${section}`).disabled = newIndex === count;
+        }
+    }
+
+    function toggleAccordion(contentId) {
+        const content = document.getElementById(contentId);
+        const isVisible = content.style.display === 'block';
+        content.style.display = isVisible ? 'none' : 'block';
+
+        const header = content.previousElementSibling;
+        const icon = header.querySelector('span');
+        icon.textContent = isVisible ? '\u25B6' : '\u25BC';
+    }
+
+    function goBack() {
+        window.location.href = "../index.html#STDBSCAN";
+    }
+</script>
+</body>
+</html>
