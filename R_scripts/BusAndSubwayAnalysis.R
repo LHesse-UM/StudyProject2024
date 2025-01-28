@@ -1,6 +1,7 @@
 library(dplyr)
 library(sf)
 library(ggplot2)
+library(tidyr)
 
 # Busstationen (type == 1) filtern
 bus_stations <- poi_geojson %>% filter(type == 1)
@@ -400,6 +401,57 @@ type_6_plot <- ggplot(type_6_df, aes(x = interval, y = overall_mean)) +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1),
     plot.title = element_text(hjust = 0.5)
+  )
+
+##### All POIs together #####
+all_POIs_means <- data.frame(
+  intervall = c("Pre_Corona", "First_Lockdown_UK", "Return_to_relaxing_restrictions", 
+                "Three_Tier_System", "Second_Lockdown_UK", "End_Second_Lockdown", "Tier_4_London"),
+  bus_station = c(1.05, 0.25, 0.44, 0.44, 0.36, 0.4, 0.26),
+  subway_station = c(1.77, 0.35, 0.67, 0.72, 0.56, 0.63, 0.44),
+  football_stadium = c(0.37, 0.2, 0.21, 0.18, 0.21, 0.19, 0.17),
+  big_event_places = c(0.31, 0.16, 0.19, 0.19, 0.23, 0.18, 0.18),
+  sightseeings = c(1.2, 0.23, 0.36, 0.4, 0.3, 0.34, 0.24),
+  parks = c(0.53, 0.23, 0.28, 0.25, 0.25, 0.23, 0.19)
+)
+
+all_POIs_means_long <- all_POIs_means %>%
+  pivot_longer(cols = -intervall, names_to = "category", values_to = "mean_value")
+
+interval_order <- c("Pre_Corona", "First_Lockdown_UK", "Return_to_relaxing_restrictions", 
+                    "Three_Tier_System", "Second_Lockdown_UK", "End_Second_Lockdown", "Tier_4_London")
+
+category_colors <- c(
+  "bus_station" = "#969696",
+  "subway_station" = "#afafaf",
+  "football_stadium" = "#95a3bf",
+  "big_event_places" = "#abc4f8",
+  "sightseeings" = "#baa088",
+  "parks" = "#c2e19c"
+)
+
+# Convert the 'intervall' column to a factor with the correct order
+all_POIs_means_long$intervall <- factor(all_POIs_means_long$intervall, levels = interval_order)
+
+# Create the plot with the corrected order
+all_POIs_means_plot <- ggplot(all_POIs_means_long, aes(x = intervall, y = mean_value, group = category, color = category)) +
+  geom_line(linewidth = 1) +  # Line connecting the points for each category
+  geom_point(size = 4) +  # Points for intervals
+  scale_color_manual(
+    values = category_colors  # Use only category colors
+  ) +
+  geom_text(aes(label = round(mean_value, 2)), vjust = -0.5, size = 3.5) +  # Add labels for mean values
+  labs(
+    title = "Overall Mean Across All POIs by Interval",
+    x = "Interval",
+    y = "Mean Value",
+    color = "Legend"
+  ) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 45, hjust = 1),  # Rotate x-axis labels
+    plot.title = element_text(hjust = 0.5),  # Center the title
+    legend.position = "bottom"  # Place the legend at the bottom
   )
 
 
