@@ -2,6 +2,7 @@
 # Load the libraries
 library(sf)
 library(dplyr)
+library(ggplot2)
 
 setwd("~/Desktop/Analysis")
 
@@ -24,12 +25,7 @@ rm(End_Second_Lockdown)
 FourTierSystem <- Tier_4_London
 rm(Tier_4_London)
 
-pois_Bus_Sub_Sight_Parks <- st_read("MobilityIntervalls/pois_Bus_Sub_Sight_Parks.geojson")  
-
-#########
-# 100x100 Polygons
-
-
+#pois_Bus_Sub_Sight_Parks <- st_read("MobilityIntervalls/pois_Bus_Sub_Sight_Parks.geojson")  
 
 #########
 
@@ -41,13 +37,13 @@ if (!inherits(PreCorona, "sf")) {
 }
 
 # 2. Räumlichen Join durchführen (Punkte mit Polygons verknüpfen)
-movement_PreCorona <- st_join(PreCorona, pois_Bus_Sub_Sight_Parks, join = st_intersects)
+movement_PreCorona <- st_join(PreCorona, poi_geojson, join = st_intersects)
 
 # 3. Punkte filtern: Nur Punkte, die innerhalb eines Polygons liegen
 movement_PreCorona <- movement_PreCorona %>% filter(!is.na(Name))  
 
 # 4. Gefilterte Punkte mit Stadioninformation speichern
-st_write(movement_PreCorona, "MobilityIntervalls/1PreCorona/result_PreCorona.geojson", driver = "GeoJSON")
+st_write(movement_PreCorona, "MobilityIntervalls/1PreCorona/result_PreCorona.geojson", driver = "GeoJSON", delete_dsn = TRUE)
 
 
 ### First Lockdown
@@ -58,13 +54,13 @@ if (!inherits(FirstLockdown, "sf")) {
 }
 
 # 2. Räumlichen Join durchführen (Punkte mit Polygons verknüpfen)
-movement_FirstLockdown <- st_join(FirstLockdown, pois_Bus_Sub_Sight_Parks, join = st_intersects)
+movement_FirstLockdown <- st_join(FirstLockdown, poi_geojson, join = st_intersects)
 
 # 3. Punkte filtern: Nur Punkte, die innerhalb eines Polygons liegen
 movement_FirstLockdown <- movement_FirstLockdown %>% filter(!is.na(Name))  
 
 # 4. Gefilterte Punkte mit Stadioninformation speichern
-st_write(movement_FirstLockdown, "MobilityIntervalls/2FirstLockdown/result_FirstLockdown.geojson", driver = "GeoJSON")
+st_write(movement_FirstLockdown, "MobilityIntervalls/2FirstLockdown/result_FirstLockdown.geojson", driver = "GeoJSON", delete_dsn = TRUE)
 
 
 ### Return to Relaxing Restirictions
@@ -75,13 +71,13 @@ if (!inherits(ReturnToRelaxingRestrictions, "sf")) {
 }
 
 # 2. Räumlichen Join durchführen (Punkte mit Polygons verknüpfen)
-movement_ReturnToRelaxingRestrictions <- st_join(ReturnToRelaxingRestrictions, pois_Bus_Sub_Sight_Parks, join = st_intersects)
+movement_ReturnToRelaxingRestrictions <- st_join(ReturnToRelaxingRestrictions, poi_geojson, join = st_intersects)
 
 # 3. Punkte filtern: Nur Punkte, die innerhalb eines Polygons liegen
 movement_ReturnToRelaxingRestrictions <- movement_ReturnToRelaxingRestrictions %>% filter(!is.na(Name))  
 
 # 4. Gefilterte Punkte mit Stadioninformation speichern
-st_write(movement_ReturnToRelaxingRestrictions, "MobilityIntervalls/3ReturnToRelaxingRestrictions/result_ReturnToRelaxingRestrictions.geojson", driver = "GeoJSON")
+st_write(movement_ReturnToRelaxingRestrictions, "MobilityIntervalls/3ReturnToRelaxingRestrictions/result_ReturnToRelaxingRestrictions.geojson", driver = "GeoJSON", delete_dsn = TRUE)
 
 
 ### Three Tier System
@@ -92,13 +88,13 @@ if (!inherits(ThreeTierSystem, "sf")) {
 }
 
 # 2. Räumlichen Join durchführen (Punkte mit Polygons verknüpfen)
-movement_ThreeTierSystem <- st_join(ThreeTierSystem, pois_Bus_Sub_Sight_Parks, join = st_intersects)
+movement_ThreeTierSystem <- st_join(ThreeTierSystem, poi_geojson, join = st_intersects)
 
 # 3. Punkte filtern: Nur Punkte, die innerhalb eines Polygons liegen
 movement_ThreeTierSystem <- movement_ThreeTierSystem %>% filter(!is.na(Name))  
 
 # 4. Gefilterte Punkte mit Stadioninformation speichern
-st_write(movement_ThreeTierSystem, "MobilityIntervalls/4ThreeTierSystem/result_ThreeTierSystem.geojson", driver = "GeoJSON")
+st_write(movement_ThreeTierSystem, "MobilityIntervalls/4ThreeTierSystem/result_ThreeTierSystem.geojson", driver = "GeoJSON", delete_dsn = TRUE)
 
 
 ### Second Lockdown
@@ -109,13 +105,13 @@ if (!inherits(SecondLockdown, "sf")) {
 }
 
 # 2. Räumlichen Join durchführen (Punkte mit Polygons verknüpfen)
-movement_SecondLockdown <- st_join(SecondLockdown, pois_Bus_Sub_Sight_Parks, join = st_intersects)
+movement_SecondLockdown <- st_join(SecondLockdown, poi_geojson, join = st_intersects)
 
 # 3. Punkte filtern: Nur Punkte, die innerhalb eines Polygons liegen
 movement_SecondLockdown <- movement_SecondLockdown %>% filter(!is.na(Name))  
 
 # 4. Gefilterte Punkte mit Stadioninformation speichern
-st_write(movement_SecondLockdown, "MobilityIntervalls/5SecondLockdown/result_SecondLockdown.geojson", driver = "GeoJSON")
+st_write(movement_SecondLockdown, "MobilityIntervalls/5SecondLockdown/result_SecondLockdown.geojson", driver = "GeoJSON", delete_dsn = TRUE)
 
 
 
@@ -127,13 +123,13 @@ if (!inherits(EndSecondLockdown, "sf")) {
 }
 
 # 2. Räumlichen Join durchführen (Punkte mit Polygons verknüpfen)
-movement_EndSecondLockdown <- st_join(EndSecondLockdown, pois_Bus_Sub_Sight_Parks, join = st_intersects)
+movement_EndSecondLockdown <- st_join(EndSecondLockdown, poi_geojson, join = st_intersects)
 
 # 3. Punkte filtern: Nur Punkte, die innerhalb eines Polygons liegen
 movement_EndSecondLockdown <- movement_EndSecondLockdown %>% filter(!is.na(Name))  
 
 # 4. Gefilterte Punkte mit Stadioninformation speichern
-st_write(movement_EndSecondLockdown, "MobilityIntervalls/6EndOfSecondLockdown/result_EndSecondLockdown.geojson", driver = "GeoJSON")
+st_write(movement_EndSecondLockdown, "MobilityIntervalls/6EndOfSecondLockdown/result_EndSecondLockdown.geojson", driver = "GeoJSON", delete_dsn = TRUE)
 
 
 ### Four Tier System
@@ -144,13 +140,13 @@ if (!inherits(FourTierSystem, "sf")) {
 }
 
 # 2. Räumlichen Join durchführen (Punkte mit Polygons verknüpfen)
-movement_FourTierSystem <- st_join(FourTierSystem, pois_Bus_Sub_Sight_Parks, join = st_intersects)
+movement_FourTierSystem <- st_join(FourTierSystem, poi_geojson, join = st_intersects)
 
 # 3. Punkte filtern: Nur Punkte, die innerhalb eines Polygons liegen
 movement_FourTierSystem <- movement_FourTierSystem %>% filter(!is.na(Name))  
 
 # 4. Gefilterte Punkte mit Stadioninformation speichern
-st_write(movement_FourTierSystem, "MobilityIntervalls/7FourTierSystem/result_FourTierSystem.geojson", driver = "GeoJSON")
+st_write(movement_FourTierSystem, "MobilityIntervalls/7FourTierSystem/result_FourTierSystem.geojson", driver = "GeoJSON", delete_dsn = TRUE)
 
 
 ###########
@@ -242,3 +238,23 @@ combined_intervals_type <- combined_intervals %>%
   )
 # Ergebnis speichern
 st_write(combined_intervals_type, "MobilityIntervalls/combined_intevals_type.geojson", driver = "GeoJSON")
+
+
+# Plot erstellen
+plots <- list()
+types <- unique(data_summary$Type)
+
+# Erstellen von 6 separaten Plots für jeden Type
+for (type in types) {
+  plot <- ggplot(data_summary %>% filter(Type == type), aes(x = Phase, y = mean_value)) +
+    geom_bar(stat = "identity", fill = "skyblue") +
+    labs(title = paste("Durchschnittliche Mean-Werte für", type),
+         x = "Phase", y = "Durchschnittlicher Mean-Wert") +
+    theme_minimal()
+  plots[[type]] <- plot
+}
+
+# Anzeigen der Plots
+for (plot in plots) {
+  print(plot)
+}
