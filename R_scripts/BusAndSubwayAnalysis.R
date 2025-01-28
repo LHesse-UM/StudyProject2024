@@ -422,36 +422,41 @@ interval_order <- c("Pre_Corona", "First_Lockdown_UK", "Return_to_relaxing_restr
                     "Three_Tier_System", "Second_Lockdown_UK", "End_Second_Lockdown", "Tier_4_London")
 
 category_colors <- c(
-  "bus_station" = "#969696",
+  "bus_station" = "#373636",
   "subway_station" = "#afafaf",
-  "football_stadium" = "#95a3bf",
+  "football_stadium" = "#312E74",
   "big_event_places" = "#abc4f8",
-  "sightseeings" = "#baa088",
-  "parks" = "#c2e19c"
+  "sightseeings" = "#7A5445",
+  "parks" = "#8CDB6C"
 )
 
 # Convert the 'intervall' column to a factor with the correct order
 all_POIs_means_long$intervall <- factor(all_POIs_means_long$intervall, levels = interval_order)
 
 # Create the plot with the corrected order
-all_POIs_means_plot <- ggplot(all_POIs_means_long, aes(x = intervall, y = mean_value, group = category, color = category)) +
-  geom_line(linewidth = 1) +  # Line connecting the points for each category
-  geom_point(size = 4) +  # Points for intervals
+all_POIs_means_plot <- ggplot(all_POIs_means_long, aes(x = intervall, y = mean_value, group = category)) +
+  geom_line(aes(color = category), linewidth = 1.5, show.legend = TRUE) +  # Linien in der Legende
+  geom_point(aes(color = intervall), size = 4, show.legend = FALSE) +  # Punkte nicht in der Legende
   scale_color_manual(
-    values = category_colors  # Use only category colors
+    values = c(category_colors, interval_colors),  # Farben für Linien und Punkte
+    breaks = names(category_colors)  # Zeige nur Kategorien in der Legende
   ) +
-  geom_text(aes(label = round(mean_value, 2)), vjust = -0.5, size = 3.5) +  # Add labels for mean values
+  geom_text(aes(label = round(mean_value, 2)), vjust = -0.5, size = 3.5) +  # Labels für Mittelwerte
   labs(
     title = "Overall Mean Across All POIs by Interval",
     x = "Interval",
     y = "Mean Value",
     color = "Legend"
   ) +
+  scale_y_continuous(
+    limits = c(0, 2),  # Bereich der y-Achse anpassen
+    breaks = seq(0, 2, by = 0.2)  # Schritte der Skala
+  ) +
   theme_minimal() +
   theme(
-    axis.text.x = element_text(angle = 45, hjust = 1),  # Rotate x-axis labels
-    plot.title = element_text(hjust = 0.5),  # Center the title
-    legend.position = "bottom"  # Place the legend at the bottom
+    axis.text.x = element_text(angle = 45, hjust = 1),  # X-Achsen-Beschriftung drehen
+    plot.title = element_text(hjust = 0.5),  # Titel zentrieren
+    legend.position = "bottom"  # Legende unten
   )
 
 
