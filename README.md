@@ -8,23 +8,22 @@
 1. [About the Project](#about-the-project)
 2. [Technologies](#technologies)
 3. [Project Results](#project-results)
-4. [How to Use](#how-to-use)
-5. [License](#license)
-6. [Contact](#contact)
+4. [License](#license)
+5. [Contact](#contact)
 
 ## About the Project
 
-This project explores human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic. By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, we aim to understand how the pandemic influenced urban mobility. Our analysis offers insights into the reduction of activity during lockdowns, the rebound effects post-restrictions, and the shifting dynamics of human movement in response to public health measures.
+This project explores human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic. By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, we aim to understand how the pandemic influenced urban mobility. Our analysis offers insights into the reduction of activity during lockdowns and the rebound effects post-restrictions.
 
 
-The project results are publicly available and require no installation to use or explore.
+The project results are publicly available and require no installation or additional setup to explore.
 
 ## Technologies
 
 This project was built using the following technologies and tools:
 
-- **Frontend**: [Technology/Framework, e.g., HTML5, CSS3, JavaScript]
-- **Backend**: Not applicable (static project)
+- **UI**: HTML, CSS, JavaScript
+- **Data Preprocessing and Analysis**: R, Python
 - **Hosting**: GitHub Pages
 
 ## Project Results
@@ -34,14 +33,6 @@ The complete project results are available online:
 [ **StudyProject2024 Results**](https://tkrumrei.github.io/StudyProject2024/)
 
 Visit the website to explore the interactive results and functionalities.
-
-## How to Use
-
-1. Open a web browser of your choice.
-2. Navigate to the live site: [StudyProject2024 Results](https://tkrumrei.github.io/StudyProject2024/).
-3. Interact with the content and explore the project deliverables.
-
-No installation or additional setup is required.
 
 ## License
 
