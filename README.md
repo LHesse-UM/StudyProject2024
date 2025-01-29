@@ -23,7 +23,7 @@ The project results are publicly available and require no installation or additi
 This project was built using the following technologies and tools:
 
 - **UI**: HTML, CSS, JavaScript
-- **Data Preprocessing and Analysis**: R, Python
+- **Data Preprocessing and Analysis**: R, Python, QGIS
 - **Hosting**: GitHub Pages
 
 ## Project Results
