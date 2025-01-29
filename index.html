@@ -44,15 +44,14 @@
                 </ol>
             <li><a href="#discussion">Discussion</a></li>
                 <ol type="1">
-                    <li><a href="#keyFinds">Temporal Analysis</a></li>
-                    <li><a href="#implicsUrbanMob">Impact of Covid-19 Lockdowns</a></li>
-                    <li><a href="#learningsCov19">Comparison Across POI Categories</a></li>
-                    <li><a href="#LimitsAnalysis">Comparison Across POI Categories</a></li>
+                    <li><a href="#Spatio-Temporal-Patterns">Temporal Analysis</a></li>
+                    <li><a href="#ImpactOnPois">Impact of Covid-19 Lockdowns</a></li>
+                    <li><a href="#Limitations">Comparison Across POI Categories</a></li>
                 </ol>
             <li><a href="#conclusion"> Conclusion</a></li>
                 <ol type="1">
-                    <li><a href="#summaryFindings">Temporal Analysis</a></li>
-                    <li><a href="#futureReasearch">Impact of Covid-19 Lockdowns</a></li>
+                    <li><a href="#summaryFindings">Summary</a></li>
+                    <li><a href="#futureResearch">Future Work</a></li>
                 </ol>
             <li><a href="#imprint">Imprint</a></li>
         </ol>
@@ -322,30 +321,40 @@
 
 
     </section>
+        <br>
 
     <section><hr class="border-line" color="#007BFF"></section>
 
     <section id="discussion">
         <h2>4. Discussion</h2>
 
-        <h3>4.1 Spatio-Temporal Patterns</h3>
-        <p>
-            All analytical approaches corroborate that mobility patterns in London underwent significant changes with the onset of the pandemic. On one hand, there was a sharp decline in mobility, particularly in the city center and around major Points of Interest (POIs). On the other hand, the remaining mobility was slightly redistributed into residential areas and parks. The negative Moran’s I values along major traffic arteries reinforce this observation: during restrictive phases, streets were utilized less compared to their surroundings, while activity levels in adjacent areas, such as residential neighborhoods, remained relatively stable.
-        </p>
-        <br>
+        <section id="Spatio-Temporal-Patterns">
+            <h3>4.1 Spatio-Temporal Patterns</h3>
+            <p>
+                All analytical approaches corroborate that mobility patterns in London underwent significant changes with the onset of the pandemic. On one hand, there was a sharp decline in mobility, particularly in the city center and around major Points of Interest (POIs). On the other hand, the remaining mobility was slightly redistributed into residential areas and parks. The negative Moran’s I values along major traffic arteries reinforce this observation: during restrictive phases, streets were utilized less compared to their surroundings, while activity levels in adjacent areas, such as residential neighborhoods, remained relatively stable.
+            </p>
+            <br>
+        </section>
+
         <section><hr class="border-line" color="#007BFF" width="60%"></section>
 
-        <h3>4.2 Impact on POIs</h3>
-        <p>
-            Whether it’s subway stations, bus depots, parks, or tourist attractions, highly frequented POIs experienced substantial declines during the initial lockdown phase. Although a partial recovery was noted during the summer months when restrictions were relaxed, activity levels generally remained below pre-pandemic norms. Repeated lockdowns in the autumn and winter prevented a complete return to previous activity levels. Public transportation hubs, such as Waterloo Station, consistently demonstrated sensitivity to restrictions, as evidenced by the development of clusters around these central stations. This indicates that public transport usage was significantly affected by lockdown measures, impacting overall mobility patterns in central London.
-        </p>
-        <br>
+        <section id="ImpactOnPois">
+            <h3>4.2 Impact on POIs</h3>
+            <p>
+                Whether it’s subway stations, bus depots, parks, or tourist attractions, highly frequented POIs experienced substantial declines during the initial lockdown phase. Although a partial recovery was noted during the summer months when restrictions were relaxed, activity levels generally remained below pre-pandemic norms. Repeated lockdowns in the autumn and winter prevented a complete return to previous activity levels. Public transportation hubs, such as Waterloo Station, consistently demonstrated sensitivity to restrictions, as evidenced by the development of clusters around these central stations. This indicates that public transport usage was significantly affected by lockdown measures, impacting overall mobility patterns in central London.
+            </p>
+            <br>
+        </section>
+
         <section><hr class="border-line" color="#007BFF" width="60%"></section>
 
-        <h3>4.3 Limitations</h3>
-        <p>
-            Several limitations impacted the scope and accuracy of this study. The use of WGS84 coordinates introduced distortions in distance calculations, particularly affecting vertical clustering patterns. Converting the movement data to a metric coordinate system is recommended for future research to enhance clustering precision. Additionally, computational constraints limited the analysis to smaller geographic areas and shorter time intervals, preventing a more comprehensive large-scale analysis. Enhanced computational resources and refined parameter testing could address these issues, allowing for more robust and detailed insights into mobility patterns.
-        </p>
+        <section id="Limitations">
+            <h3>4.3 Limitations</h3>
+            <p>
+                Several limitations impacted the scope and accuracy of this study. The use of WGS84 coordinates introduced distortions in distance calculations, particularly affecting vertical clustering patterns. Converting the movement data to a metric coordinate system is recommended for future research to enhance clustering precision. Additionally, computational constraints limited the analysis to smaller geographic areas and shorter time intervals, preventing a more comprehensive large-scale analysis. Enhanced computational resources and refined parameter testing could address these issues, allowing for more robust and detailed insights into mobility patterns.
+            </p>
+        </section>
+
 
     <section>
         <hr class="border-line" color="#007BFF"></section>
@@ -353,23 +362,29 @@
     <section id="conclusion">
         <h2>5. Conclusion</h2>
 
-        <h3>5.1 Summary of Findings</h3>
-        <p>
-            The combined methodologies—time interval analysis, global and local Moran’s I, POI evaluation, and ST-DBSCAN clustering—provide a multifaceted view of mobility in London during the pandemic. Key insights include:
-        </p>
-        <ul>
-            <li><strong>Lockdown Phases:</strong> Led to a significant reduction in spatial cluster density and a more uniform distribution of mobility.</li>
-            <li><strong>Relaxation Phases:</strong> Resulted in a partial return of known hotspots, though often not to pre-pandemic intensity levels.</li>
-            <li><strong>Transportation and Tourism Centers:</strong> Particularly sensitive to restrictions, while residential neighborhoods and parks temporarily gained prominence in mobility patterns.</li>
-            <li><strong>Methodological Factors:</strong> The choice of coordinate system and parameter settings, along with technical resources, critically influenced the clustering outcomes.</li>
-        </ul>
-        <p>
-            These findings highlight the profound impact of the COVID-19 pandemic on urban mobility patterns and underscore the importance of employing targeted spatio-temporal analytical methods with appropriate data and computational support. Future analyses aimed at urban planning or tourism management should focus on refining the data foundation and conducting more comprehensive parameter testing to minimize inaccuracies and fully leverage the potential of spatio-temporal clustering techniques.
-        </p>
+        <section id="summaryFindings">
+            <h3>5.1 Summary of Findings</h3>
+            <p>
+                The combined methodologies—time interval analysis, global and local Moran’s I, POI evaluation, and ST-DBSCAN clustering—provide a multifaceted view of mobility in London during the pandemic. Key insights include:
+            </p>
+            <ul>
+                <li><strong>Lockdown Phases:</strong> Led to a significant reduction in spatial cluster density and a more uniform distribution of mobility.</li>
+                <li><strong>Relaxation Phases:</strong> Resulted in a partial return of known hotspots, though often not to pre-pandemic intensity levels.</li>
+                <li><strong>Transportation and Tourism Centers:</strong> Particularly sensitive to restrictions, while residential neighborhoods and parks temporarily gained prominence in mobility patterns.</li>
+                <li><strong>Methodological Factors:</strong> The choice of coordinate system and parameter settings, along with technical resources, critically influenced the clustering outcomes.</li>
+            </ul>
+            <p>
+                These findings highlight the profound impact of the COVID-19 pandemic on urban mobility patterns and underscore the importance of employing targeted spatio-temporal analytical methods with appropriate data and computational support. Future analyses aimed at urban planning or tourism management should focus on refining the data foundation and conducting more comprehensive parameter testing to minimize inaccuracies and fully leverage the potential of spatio-temporal clustering techniques.
+            </p>
 
-        <br>
+            <br>
+        </section>
+
         <section><hr class="border-line" color="#007BFF" width="60%"></section>
-        <h3>5.2 Future Work</h3>
+        <section id="futureResearch">
+            <h3>5.2 Future Work</h3>
+        </section>
+
 
     </section>
 
