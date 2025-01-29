@@ -277,7 +277,7 @@ bus_facet_plot <- ggplot(bus_means_df, aes(x = interval, y = mean_of_means)) +
   geom_line(aes(group = 1), color = "grey") +  # Connect points for context
   scale_color_manual(values = interval_colors) +  # Apply custom colors
   labs(
-    title = "Mean of Means per Station and Interval",
+    title = "Mean of Means per Bus Station and Interval",
     x = "Interval",
     y = "Mean of Means",
     color = "Interval"
