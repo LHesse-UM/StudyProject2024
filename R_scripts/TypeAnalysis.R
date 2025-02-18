@@ -12,7 +12,7 @@ load("C:/Users/t.lehmann/Downloads/WichtigeDatenFürStudyProject.RData")
 #subway_stations <- poi_geojson %>% filter(type == 2)
 
 # Sightseeing Spots (type == 5) filtern
-sightseeing_spots <- poi_geojson %>% filter(type == 5)
+#sightseeing_spots <- poi_geojson %>% filter(type == 5)
 
 # Royal Parks (type == 6) filtern
 royal_parks <- poi_geojson %>% filter(type == 6)
@@ -88,8 +88,8 @@ data_london_Polygon <- st_as_sf(data_london_3857 %>%
 #bus_stations <- st_transform(bus_stations, crs = 4326)
 #subway_stations_3857 <- subway_stations
 #subway_stations <- st_transform(subway_stations, crs = 4326)
-sightseeing_spots_3857 <- sightseeing_spots
-sightseeing_spots <- st_transform(sightseeing_spots, crs = 4326)
+#sightseeing_spots_3857 <- sightseeing_spots
+#sightseeing_spots <- st_transform(sightseeing_spots, crs = 4326)
 royal_parks_3857 <- royal_parks
 royal_parks <- st_transform(royal_parks, crs = 4326)
 
@@ -109,7 +109,7 @@ interval_polygons <- list(
 # Ergebnisse-Listen für Bus- und U-Bahn-Stationen erstellen
 #bus_results <- list()
 #subway_results <- list()
-sightseeing_results <- list()
+#sightseeing_results <- list()
 parks_results <- list()
 
 #other_pois_results <- list()
@@ -131,12 +131,12 @@ for (interval_name in names(interval_polygons)) {
   # Intersektion und Kombination der Attribute für U-Bahn-Stationen
   #sightseeing_intersects <- st_join(interval, sightseeing_spots, join = st_intersects) %>%
   #  mutate(interval = interval_name,        # Intervallname hinzufügen
-  #         name = Name)             # Name der U-Bahn-Station hinzufügen
+  #         station_name = Name)             # Name der U-Bahn-Station hinzufügen
   
   # Intersektion und Kombination der Attribute für U-Bahn-Stationen
   parks_intersects <- st_join(interval, royal_parks, join = st_intersects) %>%
     mutate(interval = interval_name,        # Intervallname hinzufügen
-           name = Name)             # Name der U-Bahn-Station hinzufügen
+           station_name = Name)             # Name der U-Bahn-Station hinzufügen
   
   #other_pois_intersects <- st_join(interval, poi_geojson_others, join = st_intersects) %>%
   #  mutate(interval = interval_name,
@@ -145,7 +145,7 @@ for (interval_name in names(interval_polygons)) {
   # Ergebnisse speichern
   #bus_results[[interval_name]] <- bus_intersects
   #subway_results[[interval_name]] <- subway_intersects
-  sightseeing_results[[interval_name]] <- sightseeing_intersects
+  #sightseeing_results[[interval_name]] <- sightseeing_intersects
   parks_results[[interval_name]] <- parks_intersects
   #other_pois_results[[interval_name]] <- other_pois_intersects
 }
@@ -161,11 +161,11 @@ for (interval_name in names(parks_results)) {
   
   # NA-Einträge aus sightseeing_results entfernen
   #sightseeing_results[[interval_name]] <- sightseeing_results[[interval_name]] %>%
-  #  filter(!is.na(name))  # Entfernt Zeilen mit NA in station_name
+  #  filter(!is.na(station_name))  # Entfernt Zeilen mit NA in station_name
   
   # NA-Einträge aus parks_results entfernen
   parks_results[[interval_name]] <- parks_results[[interval_name]] %>%
-    filter(!is.na(name))  # Entfernt Zeilen mit NA in station_name
+    filter(!is.na(station_name))  # Entfernt Zeilen mit NA in station_name
   
   #other_pois_results[[interval_name]] <- other_pois_results[[interval_name]] %>%
   #  filter(!is.na(name))
@@ -194,21 +194,21 @@ for (interval_name in names(parks_results)) {
 #      .groups = "drop"
 #    )
 #}
-sightseeing_results_mean <- list()
-for (interval_name in names(sightseeing_results)) {
-  sightseeing_results_mean[[interval_name]] <- sightseeing_results[[interval_name]] %>%
-    group_by(name) %>%  # Gruppieren nach der Station
-    summarise(
-      mean_of_means = mean(mean_value, na.rm = TRUE),  # Mittelwert berechnen
-      n_intersections = n(),  # Anzahl der intersecting Kacheln
-      geometry = first(geometry),  # Eine Geometrie pro Station
-      .groups = "drop"
-    )
-}
+#sightseeing_results_mean <- list()
+#for (interval_name in names(sightseeing_results)) {
+#  sightseeing_results_mean[[interval_name]] <- sightseeing_results[[interval_name]] %>%
+#    group_by(station_name) %>%  # Gruppieren nach der Station
+#    summarise(
+#      mean_of_means = mean(mean_value, na.rm = TRUE),  # Mittelwert berechnen
+#      n_intersections = n(),  # Anzahl der intersecting Kacheln
+#      geometry = first(geometry),  # Eine Geometrie pro Station
+#      .groups = "drop"
+#    )
+#}
 parks_results_mean <- list()
 for (interval_name in names(parks_results)) {
   parks_results_mean[[interval_name]] <- parks_results[[interval_name]] %>%
-    group_by(name) %>%  # Gruppieren nach der Station
+    group_by(station_name) %>%  # Gruppieren nach der Station
     summarise(
       mean_of_means = mean(mean_value, na.rm = TRUE),  # Mittelwert berechnen
       n_intersections = n(),  # Anzahl der intersecting Kacheln
@@ -298,15 +298,15 @@ bus_overall_mean_per_interval <- bus_means_df %>%
     .groups = "drop" # Avoid unnecessary group attributes
   )
 
-subway_means_df <- bind_rows(subway_results_mean, .id = "interval") %>%
-  mutate(interval = factor(interval, levels = interval_order))  # Ensure correct interval order
+#subway_means_df <- bind_rows(subway_results_mean, .id = "interval") %>%
+#  mutate(interval = factor(interval, levels = interval_order))  # Ensure correct interval order
 
-subway_overall_mean_per_interval <- subway_means_df %>%
-  group_by(interval) %>%
-  summarize(
-    overall_mean = mean(mean_of_means, na.rm = TRUE),  # Calculate overall mean
-    .groups = "drop"
-  )
+#subway_overall_mean_per_interval <- subway_means_df %>%
+#  group_by(interval) %>%
+#  summarize(
+#    overall_mean = mean(mean_of_means, na.rm = TRUE),  # Calculate overall mean
+#    .groups = "drop"
+#  )
 
 sightseeing_means_df <- bind_rows(sightseeing_results_mean, .id = "interval") %>%
   mutate(interval = factor(interval, levels = interval_order))  # Ensure correct interval order
@@ -391,7 +391,8 @@ sightseeing_facet_plot <- ggplot(sightseeing_means_df, aes(x = interval, y = mea
   ) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  facet_wrap(~name, scales = "fixed")
+  facet_wrap(~station_name, scales = "fixed")
+sightseeing_facet_plot
 
 parks_facet_plot <- ggplot(parks_means_df, aes(x = interval, y = mean_of_means)) +
   geom_point(aes(color = interval), size = 3) +  # Use custom colors
@@ -405,7 +406,8 @@ parks_facet_plot <- ggplot(parks_means_df, aes(x = interval, y = mean_of_means))
   ) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
-  facet_wrap(~name, scales = "fixed")
+  facet_wrap(~station_name, scales = "fixed")
+parks_facet_plot
 
 # Plot the overall mean per interval
 bus_overall_mean_plot <- ggplot(bus_overall_mean_per_interval, aes(x = interval, y = overall_mean)) +
