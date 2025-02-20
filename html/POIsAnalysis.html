@@ -206,7 +206,7 @@
 </div>
 
 <body>
-    <p id="intro" style="font-size: 18px; text-align: center">
+    <p id="intro" style="font-size: 18px; text-align: justify; margin: 10px 20px; padding: 10px;">
         The POI analysis was conducted by intersecting pre-defined polygons representing various Polygons of Interest (POIs) with the movement data. 
         This allowed us to isolate mobility patterns specific to each POI. The intersected data was then divided into seven distinct COVID-19 phases for temporal analysis. 
         For each polygon within a phase, the movement data was aggregated, and the mean values were calculated. 
@@ -222,8 +222,9 @@
         <h2>Mean Values of every POI Type</h2>
         <div class="centered-section">
             <img src="../data/img/All_POIs_Mean.png" alt="Mean Values of POIs" style="width: 60%; height: auto; object-fit: contain; border: 1px solid #ddd; padding: 5px;">
-            <p style="text-align: justify; margin: 0 auto; padding: 20px;">
-                During the Pre-Corona phase, activity levels are highest across all POIs, particularly for bus stations and football stadiums, 
+            <br>
+            <p style="width: 80%; max-width: 1200px; font-size: 18px; line-height: 1.5; margin: 10px auto; padding: 10px; text-align: justify;">
+            During the Pre-Corona phase, activity levels are highest across all POIs, particularly for bus stations and football stadiums,
                 which show the most significant decline during the First Lockdown. In the Relaxing Restrictions phase, recovery is evident across most POIs, 
                 though the levels remain below Pre-Corona values. Notably, parks display smaller reductions in activity during lockdowns compared to other 
                 categories, likely due to their role as outdoor leisure spaces. Big event places and football stadiums, however, exhibit a minimal recovery, 
@@ -273,7 +274,10 @@
             <img src="../data/img/Sightseeing_Spots_Intervals.png"
                  style="width: 60%; height: auto; object-fit: contain; border: 1px solid #ddd; padding: 5px;">
             <p style="width: 40%; font-size: 18px; line-height: 1.5; margin: 0; text-align: justify;">
-                To be edited.
+                Compared to other POI categories, sightseeing spots show a steep and lasting decline in activity during COVID-19 intervals. While all locations experienced a sharp drop
+                during the First Lockdown, their recovery remained slow and inconsistent. Unlike the transportation hubs, which adapted more quickly, major landmarks such as the
+                British Museum and Tower of London saw prolonged low activity, reflecting restrictions on tourism and indoor venues. Even in later phases like the Three-Tier System and
+                Tier 4, activity levels remained far below Pre-Corona values, highlighting the pandemic’s lasting impact on cultural and historical sites.
             </p>
         </div>
     </section>
@@ -282,7 +286,9 @@
     <section id="globalMoransI">
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px; width: 100%; max-width: 1200px; margin: 0 auto;">
             <p style="width: 40%; font-size: 18px; line-height: 1.5; margin: 0; text-align: justify;">
-                To be edited.
+                Compared to other POI categories, Royal Parks showed greater resilience during COVID-19 intervals. While activity dropped during the First Lockdown, parks remained
+                accessible, leading to a steadier recovery during Relaxing Restrictions. However, Brompton Cemetery, Green Park, St. James’s Park, and Victoria Tower Gardens experienced
+                a significantly stronger decline than other parks, with lower recovery in later phases. Unlike larger parks like Hyde Park or Regent’s Park, their activity remained suppressed, highlighting varying usage patterns among green spaces.
             </p>
             <img src="../data/img/Royal_Parks_Intervals.png"
                  style="width: 60%; height: auto; object-fit: contain; border: 1px solid #ddd; padding: 5px;">

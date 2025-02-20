@@ -82,7 +82,6 @@
             font-weight: bold;
         }
 
-
     </style>
 </head>
 <body>
@@ -96,12 +95,12 @@
 
 <section id="STDBSCAN">
     <h2 style="text-align: center;">Spatio-Temporal Density-Based Spatial Clustering (ST-DBSCAN)</h2>
-    <p style="text-align: center; padding: 0 20px; font-size: 18px">
+    <p style="text-align: justify; margin: 10px 20px; padding: 10px; font-size: 18px">
         ST-DBSCAN, or Spatio-Temporal Density-Based Spatial Clustering of Applications with Noise, is a clustering algorithm that integrates both spatial and temporal dimensions.
         Applied to London’s movement data with the predefined time intervals, ST-DBSCAN identified patterns across different periods.
         To illustrate the algorithm's capabilities, three specific examples—Westminster, Greenwich, and Regent's Park—were selected to demonstrate how movement clusters manifest in distinct urban areas.
     </p>
-    <p style="text-align: center; padding: 0 20px;">
+    <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
         A button interface allows navigation through the time intervals, visualizing movement patterns at each station. Each interval spans 20 days to keep the analysis computationally feasible. The final interval is omitted as it is too short and falls outside the 20-day span. The analysis focuses on three study areas: Greenwich, Westminster, and Regent's Park, examining movement patterns within these regions. Two epsilon parameters were set. eps1 was set to 0.0006 degrees search radius and eps2 to approximately one week. These values are not ideal; converting movement data into a metric system would ensure more precise cluster radii. Limited hardware also restricted extensive parameter testing. Despite these constraints, several effective clusters were identified and analyzed, revealing key trends in urban movement patterns. Limitations are discussed further in their respective section.    </p>
 
     <div class="accordion">
@@ -118,13 +117,13 @@
                 <button id="next-westminster" onclick="changeImage('westminster', 1)">Next →</button>
             </div>
             <div>
-                <p>The data in this study are based on mean values, not absolute quantities, offering insight into movement patterns.</p>
+                <p style="text-align: justify;">The data in this study are based on mean values, not absolute quantities, offering insight into movement patterns.</p>
 
-                <p>In the first image, only a few hotspots are visible. In the southern part of Westminster, hotspots correspond to residential and office areas. Around bridges, hotspots are visible, but only on horizontal bridges. Vertical bridges lack clear clustering, reflecting the limitations of the Cartesian map, where horizontal clusters are more easily detected than vertical ones. This highlights the need for metric coordinates to avoid such distortions.</p>
+                <p style="text-align: justify;">In the first image, only a few hotspots are visible. In the southern part of Westminster, hotspots correspond to residential and office areas. Around bridges, hotspots are visible, but only on horizontal bridges. Vertical bridges lack clear clustering, reflecting the limitations of the Cartesian map, where horizontal clusters are more easily detected than vertical ones. This highlights the need for metric coordinates to avoid such distortions.</p>
 
-                <p>During lockdowns, distinct hotspots emerge as movement becomes more localized and restricted, reducing the significance of these patterns. In the summer, with eased restrictions, movement increased but did not return to pre-pandemic levels. Tourism in Westminster remained below normal, although clearer hotspots appeared compared to strict lockdown periods.</p>
+                <p style="text-align: justify;">During lockdowns, distinct hotspots emerge as movement becomes more localized and restricted, reducing the significance of these patterns. In the summer, with eased restrictions, movement increased but did not return to pre-pandemic levels. Tourism in Westminster remained below normal, although clearer hotspots appeared compared to strict lockdown periods.</p>
 
-                <p>At the end of the second lockdown near Christmas, a prominent hotspot at Waterloo Station suggests more people traveling for work or tourism, signaling a partial recovery in activity.</p>
+                <p style="text-align: justify;">At the end of the second lockdown near Christmas, a prominent hotspot at Waterloo Station suggests more people traveling for work or tourism, signaling a partial recovery in activity.</p>
 
             </div>
         </div>
@@ -145,9 +144,9 @@
                 <button id="next-greenwich" onclick="changeImage('greenwich', 1)">Next →</button>
             </div>
             <div>
-                <p>In Greenwich, a noticeable pattern emerges along the A200. As restrictions become more stringent, movement shifts away from the main road into other areas, such as residential neighborhoods. This indicates how people adapt their behavior to avoid busy roads during lockdown periods.</p>
+                <p style="text-align: justify;">In Greenwich, a noticeable pattern emerges along the A200. As restrictions become more stringent, movement shifts away from the main road into other areas, such as residential neighborhoods. This indicates how people adapt their behavior to avoid busy roads during lockdown periods.</p>
 
-                <p>Analyzing movement in Greenwich Park, however, presents challenges. The park is almost entirely vertically oriented on the map, and due to the limitations of the Cartesian map, no meaningful observations can be made. This highlights the distortion caused by horizontal bias in clustering, further emphasizing the need for future studies to adopt a metric coordinate system.</p>
+                <p style="text-align: justify;">Analyzing movement in Greenwich Park, however, presents challenges. The park is almost entirely vertically oriented on the map, and due to the limitations of the Cartesian map, no meaningful observations can be made. This highlights the distortion caused by horizontal bias in clustering, further emphasizing the need for future studies to adopt a metric coordinate system.</p>
             </div>
         </div>
         <section><hr class="border-line" color="#007BFF"></section>
@@ -168,9 +167,9 @@
             </div>
             <div>
 
-                <p>Before the pandemic, clear hotspots were visible in Regent's Park, including within the London Zoo. During the lockdown, movement became more distributed and balanced, similar to previous examples. However, it is evident that the zoo was closed during this time. Although the plot may suggest a cluster inside the zoo, this cluster appears to be part of the larger adjacent cluster and not actually within the zoo, likely due to the visualization method.</p>
+                <p style="text-align: justify;">Before the pandemic, clear hotspots were visible in Regent's Park, including within the London Zoo. During the lockdown, movement became more distributed and balanced, similar to previous examples. However, it is evident that the zoo was closed during this time. Although the plot may suggest a cluster inside the zoo, this cluster appears to be part of the larger adjacent cluster and not actually within the zoo, likely due to the visualization method.</p>
 
-                <p>The summer intervals show a partially open zoo (with some restrictions) and clear movement patterns within the zoo. These patterns disappear again during the second lockdown, although the visualization remains somewhat ambiguous. Toward the end of the second lockdown, people begin visiting the zoo again, with distinct hotspots forming within its boundaries.</p>
+                <p style="text-align: justify;">The summer intervals show a partially open zoo (with some restrictions) and clear movement patterns within the zoo. These patterns disappear again during the second lockdown, although the visualization remains somewhat ambiguous. Toward the end of the second lockdown, people begin visiting the zoo again, with distinct hotspots forming within its boundaries.</p>
 
             </div>
         </div>
@@ -180,18 +179,18 @@
 
 <section><hr class="border-line" color="#007BFF"></section>
 
-<section style="text-align: center; padding: 20px; font-size: 18px;">
+<section style="text-align: center; font-size: 18px;">
 
     <h3 style="color: #007BFF;">Limitations</h3>
 
-    <p>
+    <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
         Several limitations impacted the scope and accuracy of this study. Firstly, the computational time required was prohibitively long, even with optimal hardware, which restricted the analysis to smaller areas and confined time intervals to 20 days each. Although a comprehensive map of Greater London was attempted by stitching together numerous small rectangles, each rectangle measured 0.02 degrees in latitude and 0.02 degrees in longitude. This approach introduced significant distortions, as evidenced by clear dividing lines between the rectangles. Consequently, the large-scale map was deemed unsuitable for meaningful analysis. An example of the stitching of the rectangles can be seen in the image below.    </p>
 
-    <p>
+    <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
         Additionally, the movement data were provided in WGS84 coordinates, which necessitates conversion to a metric system to ensure uniformity in the epsilon parameter (eps1) and to facilitate undistorted cluster radii. The lack of metric conversion resulted in clusters being predominantly identified in the horizontal direction rather than vertically. Future work should prioritize transforming the coordinates to a metric system to enhance clustering accuracy, which was not feasible within the temporal constraints of this study.
     </p>
 
-    <p>
+    <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
         Furthermore, hardware limitations hindered extensive parameter testing, limiting the ability to optimize epsilon values thoroughly. As a result, the analysis was confined to smaller regions, potentially affecting the generalizability of the findings. With access to more advanced hardware, future research could expand the analysis to larger areas and employ more rigorous parameter optimization, thereby improving the robustness and comprehensiveness of the movement pattern analysis.
     </p>
     <br>
@@ -203,12 +202,12 @@
 
 <section><hr class="border-line" color="#007BFF"</section>
 
-<section id="STDBSCAN-summary" style="text-align: center; padding: 20px; font-size: 18px;">
+<section id="STDBSCAN-summary" style="text-align: center; font-size: 18px;">
     <h3 style="color: #007BFF;">Summary of Results</h3>
-    <p>
+    <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
         The ST-DBSCAN analysis identified distinct movement patterns in Westminster, Greenwich, and Regent's Park, with pre-pandemic hotspots in residential, office, and tourist areas like the London Zoo. During the first lockdown, overall movement decreased and became more scattered, resulting in numerous less meaningful hotspots. As restrictions eased, movement increased but remained below pre-pandemic levels, influenced by the Three Tier System and subsequent lockdowns.
     </p>
-    <p>
+    <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
         Specifically, Westminster showed recovery around Waterloo Station, Greenwich shifted movement to residential areas, and Regent's Park's patterns fluctuated with the London Zoo's status. Limitations included map distortions from the WGS84 system and limited computational resources. Future studies should use a metric system and improved hardware to enhance accuracy and expand the analysis.
     </p>
 </section>
@@ -221,7 +220,7 @@
     </button>
 </div>
 <section><hr class="border-line" color="#007BFF"></section>
-<footer>
+<footer id="imprint">
     <h3>Imprint</h3>
     <p>Created by <a href="https://github.com/tkrumrei">tkrumrei</a>, <a href="https://github.com/LHesse-UM">LHesse-UM</a>, <a href="https://github.com/tlehman1">tlehman1</a> | <a href="https://github.com/tkrumrei/StudyProject2024">GitHub Repository</a></p>
 </footer>
