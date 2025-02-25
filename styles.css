@@ -17,7 +17,7 @@ img {
     height: auto;
 }
 h1 {
-    color: #333,
+    color: #333;
 }
 p {
     font-size: 18px;
@@ -44,6 +44,42 @@ h2, h3, h4 {
 
 #navToC ol > li::before {
     content: counters(section, ".") " "; /* Fügt z. B. 2.1, 2.2 hinzu */
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: start; /* Aligns elements to the top */
+    width: 100%;
+}
+
+.image-box {
+    flex: 0.6; /* Image takes 60% of the space */
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-left: 5%;
+}
+
+/* Ensures caption stays right below the image */
+.figure-caption {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 5px;
+    padding-left: 5%;
+    font-size: 14px;
+    color: #333;
+}
+
+.text-box {
+    flex: 0.4; /* Text takes 40% of the space */
+    text-align: justify;
+    padding-right: 5%;
 }
 
 .map-container {
