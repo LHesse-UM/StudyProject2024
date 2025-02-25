@@ -82,7 +82,8 @@
         <h2>3.1.1 Interactive Comparison of Movement Maps</h2>
         <p>
             This section allows you to compare movement patterns in London across different intervals during 2020.
-            Select two maps to compare using the dropdown menus below.
+            Select two maps to compare using the dropdown menus below. If you compare two intervals that next to each other,
+            there is also a difference map available below the maps, to visualize the changes between these intervals.
         </p>
         <div id="map-container" style="display: flex; justify-content: space-around; gap: 20px;">
             <div class="map-panel">
@@ -246,27 +247,33 @@
         const differenceData = {
             "mean_PreCoronaI-mean_FirstLockdownI": {
                 img: "../data/London Movement/Diff_Pre_Corona_First_Lockdown.png",
-                text: "This difference map shows the change in movement from the pre-pandemic period to the first lockdown. A significant reduction in movement is observed across most areas, especially in central locations."
+                text: "This difference map shows the change in movement from the pre-pandemic period to the first lockdown. " +
+                    "A significant reduction in movement is observed across most areas, especially in central locations."
             },
             "mean_FirstLockdownI-mean_RelaxingSummerI": {
                 img: "../data/London Movement/Diff_First_Lockdown_Relaxing_Restrictions.png",
-                text: "This map highlights how movement levels increased after the first lockdown restrictions were eased. Many areas show recovery, particularly in residential and shopping districts."
+                text: "This map highlights how movement levels increased after the first lockdown restrictions were eased. " +
+                    "Many areas show recovery, particularly in residential and shopping districts."
             },
             "mean_RelaxingSummerI-mean_ThreeTierSystemI": {
                 img: "../data/London Movement/Diff_Relaxing_Tier_3.png",
-                text: "This map illustrates changes in movement as London transitioned from relaxed restrictions to the Three-Tier System, with moderate decreases in high-traffic areas."
+                text: "This map illustrates changes in movement as London transitioned from relaxed restrictions to the Three-Tier System, " +
+                    "with moderate decreases in high-traffic areas."
             },
             "mean_ThreeTierSystemI-mean_SecondLockdownUKI": {
                 img: "../data/London Movement/Diff_Tier_3_Second_Lockdown.png",
-                text: "This difference visualization indicates the movement reductions due to the second lockdown, with significant drops in mobility similar to the first lockdown."
+                text: "This difference visualization indicates the movement reductions due to the second lockdown, " +
+                    "with significant drops in mobility similar to the first lockdown."
             },
             "mean_SecondLockdownUKI-mean_EndSecondLockdownI": {
                 img: "../data/London Movement/Diff_Second_Lockdown_End_Second.png",
-                text: "This map reflects how movement picked up again after the second lockdown ended, but at a slower pace compared to post-first lockdown recovery."
+                text: "This map reflects how movement picked up again after the second lockdown ended, " +
+                    "but at a slower pace compared to post-first lockdown recovery."
             },
             "mean_EndSecondLockdownI-mean_TierFourLondonI": {
                 img: "../data/London Movement/Diff_End_Tier_4.png",
-                text: "This map shows the impact of the stricter Tier 4 restrictions, which led to renewed decreases in mobility across various regions."
+                text: "This map shows the impact of the stricter Tier 4 restrictions, " +
+                    "which led to renewed decreases in mobility across various regions."
             }
         };
 
