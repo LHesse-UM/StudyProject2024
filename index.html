@@ -214,15 +214,16 @@
         <h2>3. Analysis of Human Activity Data</h2>
         <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
             Before diving deeper into the spatial (temporal) analyses, the following figures provide an initial overview of how human mobility evolved in London during 2020.
-            They show the overall trends of the movement data in relation to the COVID-19 cases,
+            They show the overall trends of the movement data in relation to the COVID-19 cases (see <em>Fig.<a href="#MoveWithCov">1</a></em>),
             as well as a regional classification of London, to get a better overview about the average mobility trends in different regions.
-            Therefor we have divided London's boroughs into different regions, which are also shown in the map (see <em>Fig.2</em>) below.
+            Therefor we have divided London's boroughs into different regions, which are also shown in the map (see <em>Fig.<a href="#regionalClass">2</a></em>) below.
         </p>
 
         <div class="content-container">
             <div class="image-box">
                 <h3>Daily Average of Movement Data & COVID-19 Cases</h3>
                 <img src="data/London%20Movement/Daily_Average_Movement_Data_COVID_Cases.png"
+                     id="MoveWithCov"
                      alt="Movement Data and COVID-19 Cases">
                 <p class="figure-caption">
                     Figure 1: Comparison of movement data with COVID-19 cases across different lockdown phases.
@@ -247,11 +248,12 @@
         <div class="stat-section" style="text-align: center;">
             <h3>Regional Classification & Daily Average Movement Data</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                When dividing London into different regions (see <em>Fig.2</em>), we can observe distinct mobility patterns across the city.
-                In the city center, where the movement is much higher than in the outskirts (see <em>Fig.2</em>), the impact of lockdowns has the biggest impact.
-                But the city center is always higher than the outskirts and also the overall mean (see <em>Fig.1</em>).
+                When dividing London into different regions (see <em>Fig.<a href="#regionalClass">2</a></em>), we can observe distinct mobility patterns across the city.
+                In the city center, where the movement is much higher than in the outskirts (see <em>Fig.<a href="#regionalClass">2</a></em>), the impact of lockdowns has the biggest impact.
+                But the city center is always higher than the outskirts and also the overall mean (see <em>Fig.<a href="#MoveWithCov">1</a></em>).
             </p>
             <img src="data/London%20Movement/Regional_Classification_and_Daily_Average_Movement.png"
+                 id="regionalClass"
                  alt="Regional Classification and Daily Average Movement Data"
                  style="width: 80%; max-width: 1200px; display: block; margin: 0 auto;">
             <p style="text-align: center; font-size: 14px;">Figure 2: Regional classification of London alongside average mobility trends in different regions.</p>
