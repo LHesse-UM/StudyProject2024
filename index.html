@@ -31,7 +31,6 @@
                     <li><a href="#movementData">Movement Data</a></li>
                     <li><a href="#selectedPOIs">Selected Polygons of Interest (POIs)</a></li>
                     <li><a href="#temporalData">Temporal Data</a></li>
-                    <li><a href="#LimitsDataProcess">Limitations and Challenges in Data Preprocessing</a></li>
                 </ol>
             </li>
             <li><a href="#analysisHumanActitiyData">Analysis of Human Activity Data</a></li>
@@ -62,9 +61,9 @@
     <section>
         <h2 id="aboutTheProject">1. About the Project</h2>
         <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-            This project explores human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic.
-            By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, we aim to understand how the pandemic influenced urban mobility.
-            Our analysis offers insights into the reduction of activity during lockdowns, the rebound effects post-restrictions, and the shifting dynamics of human movement in response to public health measures.
+            This project examines human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic.
+            By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, this project aims to understand how the pandemic influenced urban mobility, throughout different periods of the year.
+            The analysis offers insights into the reduction of activity during lockdowns, the rebound effects post-restrictions, and the shifting dynamics of human movement in response to public health measures.
         </p>
     </section>
 
@@ -73,13 +72,14 @@
     <section>
         <h2 id="dataAquiAndProces">2. Data Acquistion and Preprocessing</h2>
         <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-            The foundation of this project is the 2020 movement data of London, which provides daily aggregated metrics of human activity.
+            The foundation of this project is the 2020 movement data of London, which provides daily aggregated metrics of anonymized human activity.
+            The data is provided by mapbox and can be retreived here: https://www.mapbox.com/movement-data
             These data points are complemented by geospatial information, including:
             Geo-coordinates linked to specific locations,
             London borough boundaries, and
-            Points of Interest (POIs) categorized by function and significance.
-            Preprocessing involved cleaning, mapping, and aggregating the data for analysis.
-            Special focus was given to temporal patterns, allowing us to identify activity trends before, during, and after key COVID-19 milestones, such as lockdown announcements or easing measures.
+            categorized Polygons of Interest (POIs).
+            Preprocessing involved cleaning, mapping, and aggregating the data.
+            Special focus was given to temporal patterns, allowing us to identify activity trends before, during, and after key COVID-19 events, such as lockdown announcements or easing measures.
         </p>
         <br>
         <section><hr class="border-line" color="#007BFF" width="60%"></section>
@@ -100,48 +100,47 @@
         <section><hr class="border-line" color="#007BFF" width="60%"></section>
         <section id="selectedPOIs">
             <h3>2.2 Selected Polygons of Interest (POIs)</h3>
-            <p>We have six different types of POIs: </p>
+            <p>Six different types of POIs were selected for this project: </p>
             <ol>
                 <li>
-                    <span class="color-box bus"></span> the biggest bus stops,
+                    <span class="color-box bus"></span> The biggest bus stops
                     <ul class="poi-list">
-                        <li> These are major transit hubs where a significant number of daily commuters converge.</li>
-                        <li> We have selected only the bus stops with ...</li>
+                        <li> These are major transit hubs where a significant number of daily commuters converge</li>
                     </ul>
                 </li>
                 <li>
-                    <span class="color-box subway"></span> the biggest subway stations,
+                    <span class="color-box subway"></span> The biggest subway stations
                     <ul class="poi-list">
-                        <li> These are the key nodes in London's underground network,</li>
-                        <li> They are connecting various boroughs and supporting urban mobility,</li>
-                        <li> We've selected the subway stations with over 10,000,000 yearly passengers.</li>
+                        <li> These are the key nodes in London's underground network</li>
+                        <li> They are connecting various boroughs</li>
+                        <li> Subway stations with over 10,000,000 yearly passengers were selected</li>
                     </ul>
                 </li>
                 <li>
-                    <span class="color-box soccer"></span> football stadiums,
+                    <span class="color-box soccer"></span> Football stadiums
                     <ul class="poi-list">
-                        <li> Large venues that host football matches and attract massive crowds, influencing movement patterns on game days.</li>
-                        <li> They all have a capacity of over 25,000 people.</li>
+                        <li> Large venues that host football matches and attract massive crowds, influencing movement patterns on game days</li>
+                        <li> They all have a capacity of over 25,000 people</li>
                     </ul>
                 </li>
                 <li>
-                    <span class="color-box event"></span> big event places,
+                    <span class="color-box event"></span> Big event places
                     <ul class="poi-list">
-                        <li> These include arenas and convention centers that host concerts, exhibitions, and other major events.</li>
-                        <li> They all have a capacity of over 7,500 people.</li>
+                        <li> These include arenas and convention centers that host concerts, exhibitions, and other major events</li>
+                        <li> They all have a capacity of over 7,500 people</li>
                     </ul>
                 </li>
                 <li>
-                    <span class="color-box sightseeing"></span> the most popular sightseeings,
+                    <span class="color-box sightseeing"></span> The most popular sightseeings
                     <ul class="poi-list">
-                        <li> Here we have iconic tourist attractions that draw visitors year-round.</li>
-                        <li> Like museums, landmarks, and historical sites.</li>
+                        <li> Iconic tourist attractions that draw visitors year-round</li>
+                        <li> Museums, landmarks, historical sites, etc.</li>
                     </ul>
                 </li>
                 <li>
-                    <span class="color-box park"></span> royal parks,
+                    <span class="color-box park"></span> Royal parks
                     <ul class="poi-list">
-                        <li> Eight historic parks in London, originally royal hunting grounds.</li>
+                        <li> Eight historic parks in London, originally royal hunting grounds</li>
                         <li> Now public spaces for relaxation and recreation.</li>
                     </ul>
                 </li>
@@ -160,14 +159,14 @@
             <h3>2.3 Temporal Data</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
                 The <b>Temporal Data</b> section highlights how mobility patterns in London evolved throughout the different phases of the COVID-19 pandemic in 2020.
-                By dividing the year into <b>distinct intervals</b> aligned with major policy changes and restrictions,
-                we analyze the short- and long-term effects of lockdowns, reopenings, and other interventions on human activity.
+                By dividing the year into <b>distinct intervals</b> aligned with policy changes and restrictions,
+                the short- and long-term effects of lockdowns, reopenings, and other interventions on human activity are analyzed.
             </p>
 
             <h3>2.3.1 Corona Intervals</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
                 To better understand mobility changes, the year 2020 has been divided into
-                <b>seven key intervals</b>, each corresponding to major COVID-19 measures or milestones.
+                <b>seven key intervals</b>, each corresponding to COVID-19 measures or milestones.
                 The time intervals are based on governmental documents that can be found
                 <a href="https://www.instituteforgovernment.org.uk/sites/default/files/timeline-lockdown-web.pdf" target="_blank">here</a>.
             </p>
@@ -193,26 +192,19 @@
             <h3>2.3.2 Events Dataset</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
                 The <b>Events Dataset</b> focuses on <b>specific dates</b> where notable events and policy decisions occurred.
-                These events include significant football matches, concerts, and public gatherings,
-                particularly in key <b>Polygons of Interest (POIs)</b> such as football stadiums and large event venues.
+                These events include football matches, concerts, and public gatherings,
+                particularly in <b>POIs</b> such as football stadiums and large event venues.
                 By examining mobility patterns during these events,
-                we gain a deeper understanding of the short-term fluctuations in movement across London.
+                a deeper understanding of the short-term fluctuations in movement across London can be retreived.
             </p>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                The table below summarizes these significant events, their corresponding dates, and their places:
+                The table below summarizes these events, their corresponding dates, and their places:
             </p>
 
             <!-- Tabelle Bild -->
             <img src="data/London Games/Dates.png"
                 alt="Events Dataset Table"
                 style="display: block; margin: 0 auto; width: 80%;">
-
-            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                By analyzing mobility patterns during these <b>events</b>, particularly at football stadiums and event venues,
-                we can identify spikes in activity that correspond to crowd movements.
-                Additionally, when combined with the <b>Corona Intervals</b>,
-                this dataset provides insights into how lockdowns and reopening phases impacted public gatherings at key POIs.
-            </p>
     </section>
 
     <br>
