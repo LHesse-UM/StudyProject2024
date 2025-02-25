@@ -251,8 +251,7 @@
         </p>
 
         <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-            Before diving into detailed spatial analyses, the following figures provide an initial overview of how human mobility evolved in London during 2020.
-            These visualizations highlight the relationship between movement trends and the COVID-19 pandemic.
+            Before diving into more detailed spatial (temporal) analyses, the following figures provide an initial overview of how human mobility evolved in London during 2020.
         </p>
 
         <div class="content-container">
@@ -269,16 +268,24 @@
                 <p>
                     This visualization highlights the correlation between movement trends and COVID-19 cases in London.
                     The sharp decline in mobility during the lockdown phases is clearly visible, followed by gradual recovery as restrictions eased.
-                    Notably, spikes in COVID-19 cases (blue line) often coincide with reductions in movement (red dots), reflecting public compliance with lockdown measures.
+                    One notable sight is the small drop (red points) in the summer months.
+                    Surprisingly the COVID-19 (blue line) cases per day were at an all-time low at that time.
+                    This could be explained by the fact that there were summer holidays and people could travel in UK.
                 </p>
                 <p>
-                    The data also indicates a shift in behavior during later phases, where movement levels remained relatively low despite an increase in cases.
-                    This suggests a long-term behavioral change in urban mobility patterns post-lockdown.
+                    Around the second lockdown there is a significant rise of COVID-19 cases and in the second lockdown the COVID-19 cases drop fast.
+                    In the Tier 4 System towards the end of the year the COVID-19 cases rise rapidly again.
+                    This also correlates with the movement data, which decreases with the beginning of the Tier 4 System.
                 </p>
             </div>
         </div>
         <div class="stat-section" style="text-align: center;">
             <h3>Regional Classification & Daily Average Movement Data</h3>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                When dividing London into different regions (see <em>Fig.2</em>), we can observe distinct mobility patterns across the city.
+                In the city center, where the movement is much higher than in the outskirts (see <em>Fig.2</em>), the impact of lockdowns has the biggest impact.
+                But the city center is always higher than the outskirts and also the overall mean (see <em>Fig.1</em>).
+            </p>
             <img src="data/London%20Movement/Regional_Classification_and_Daily_Average_Movement.png"
                  alt="Regional Classification and Daily Average Movement Data"
                  style="width: 80%; max-width: 1200px; display: block; margin: 0 auto;">
@@ -296,49 +303,57 @@
                 lockdowns and reopening policies on urban mobility.
             </p>
             <br>
-            <div align="center">
-                <!-- GIF-Element -->
-                <img
-                        src="data/London%20Movement/London_Intervals_Mean_Value.gif"
-                        alt="London Movement Data"
-                        onclick="restartGif(this)"
-                        width="40%">
-                <!-- Link -->
-                <br>
-                <div style="text-align: center; margin-top: 20px;">
-                    <a href="html/comparisonMovementData.html" class="button-link">Explore the Comparative Analysis</a>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 12%;">
+                <!-- GIF Element -->
+                <img src="data/London%20Movement/London_Intervals_Mean_Value.gif"
+                     alt="London Movement Data"
+                     onclick="restartGif(this)"
+                     style="width: 50%; max-width: 500px; height: auto;">
+                <!-- Button -->
+                <a href="html/comparisonMovementData.html"
+                   class="button-link"
+                   style="text-align: center; padding: 15px 20px; color: white; text-decoration: none; font-size: 16px; border-radius: 8px; display: inline-block;">
+                    Explore the Comparative Analysis
+                </a>
+            </div>
+        </section>
+
+        <br>
+        <section><hr class="border-line" color="#007BFF" width="60%"></section>
+
+
+        <div style="display: flex; align-items: stretch; justify-content: center; gap: 40px; margin: 40px 0;">
+            <!-- ST-DBSCAN Section -->
+            <div id="STDBSCAN" style="flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: space-between; border-right: 2px solid #007BFF;">
+                <div>
+                    <h3 style="text-align: center;">3.2 ST-DBSCAN</h3>
+                    <p style="text-align: justify;">
+                        This ST-DBSCAN was applied to the greater area of London, specifically Westminster, Greenwich, and Regent's Park in London.
+                        It examines how mobility changed before and during the COVID-19 pandemic, identifying hotspots and assessing the impact
+                        of lockdowns on urban movement. The study also discusses methodological limitations and offers recommendations for
+                        future research to enhance clustering accuracy and expand the scope of analysis.
+                    </p>
+                </div>
+                <div style="text-align: center; margin-top: auto;">
+                    <a href="html/stdbscan_analysis.html" class="button-link">Explore complete ST-DBSCAN Results</a>
                 </div>
             </div>
-        </section>
-
-        <br>
-        <section><hr class="border-line" color="#007BFF" width="60%"></section>
-
-        <section id="STDBSCAN">
-            <h3>3.2 ST-DBSCAN</h3>
-            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                This ST-DBSCAN was applied to the greater area of London, specifically Westminster, Greenwich, and Regent's Park in London. It examines how mobility changed before and during the COVID-19 pandemic, identifying hotspots and assessing the impact of lockdowns on urban movement. The study also discusses methodological limitations and offers recommendations for future research to enhance clustering accuracy and expand the scope of analysis.
-            </p>
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="html/stdbscan_analysis.html" class="button-link">Explore complete ST-DBSCAN Results</a>
+            <!-- Moran's I Section -->
+            <div id="moransI" style="flex: 1; padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div>
+                    <h3 style="text-align: center;">3.3 Moran's I</h3>
+                    <p style="text-align: justify;">
+                        The Moran's I analysis reveals dynamic spatial patterns in human activity during key COVID-19 intervals.
+                        Global Moran's I highlights the clustering of activity, with stronger patterns during the Pre-Corona and
+                        Relaxation phases, while lockdowns showed decreased clustering. Local Moran's I provides a detailed view,
+                        uncovering significant contrasts near roads and key Points of Interest (POIs), such as bus depots and subway stations.
+                    </p>
+                </div>
+                <div style="text-align: center; margin-top: auto;">
+                    <a href="html/moransIAnalysis.html" class="button-link">Explore complete Moran's I Results</a>
+                </div>
             </div>
-        </section>
-
-        <br>
-        <section><hr class="border-line" color="#007BFF" width="60%"></section>
-
-        <section id="moransI">
-            <h3>3.3 Moran's I</h3>
-            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                The Moran's I analysis reveals dynamic spatial patterns in human activity during key COVID-19 intervals.
-                Global Moran's I highlights the clustering of activity, with stronger patterns during the Pre-Corona and Relaxation phases,
-                while lockdowns showed decreased clustering. Local Moran's I provides a detailed view,
-                uncovering significant contrasts near roads and key Points of Interest (POIs), such as bus depots and subway stations.
-            </p>
-            <div style="text-align: center; margin-top: 20px;">
-                <a href="html/moransIAnalysis.html" class="button-link">Explore complete Moran's I Results</a>
-            </div>
-        </section>
+        </div>
 
         <br>
         <section><hr class="border-line" color="#007BFF" width="60%"></section>
