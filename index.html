@@ -39,7 +39,6 @@
                     <li><a href="#STDBSCAN">ST-DBSCAN</a></li>
                     <li><a href="#moransI">Moran's I</a></li>
                     <li><a href="#copmarisonPOIsCategories">Comparison Across POI Categories</a></li>
-                    <li><a href="#impactCov19">Impact of Covid-19 Lockdowns</a></li>
                 </ol>
             <li><a href="#discussion">Discussion</a></li>
                 <ol type="1">
@@ -61,9 +60,20 @@
     <section>
         <h2 id="aboutTheProject">1. About the Project</h2>
         <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-            This project examines human activity patterns in London throughout 2020, a year marked by the unprecedented global COVID-19 pandemic.
-            By analyzing daily movement data and focusing on Polygons of Interest (POIs), such as transit hubs, parks, and event venues, this project aims to understand how the pandemic influenced urban mobility, throughout different periods of the year.
-            The analysis offers insights into the reduction of activity during lockdowns, the rebound effects post-restrictions, and the shifting dynamics of human movement in response to public health measures.
+            This study seeks to answer the research question:
+            <strong>"How did movement patterns in London change during the COVID-19 pandemic, and were certain categories of locations affected differently?"</strong>
+            By analyzing human mobility trends across different Polygons of Interest (POIs),
+            such as major transport hubs, parks, and event venues,
+            and time intervals,
+            this project aims to uncover spatial and temporal variations in movement behaviors and assess the broader implications for urban planning and crisis management.
+        </p>
+        <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+            The analysis delves into the impact of lockdown phases, the relaxation of restrictions, and the subsequent recovery of movement patterns.
+            By applying spatial and temporal clustering techniques, such as ST-DBSCAN and Moran’s I,
+            the project provides insights into shifts in urban activity, the emergence of localised hotspots, and the varying effects across different location types.
+            This project not only offers a comprehensive understanding of movement trends during the pandemic
+            but also serves as a foundation for future studies in urban resilience and mobility planning.
+
         </p>
     </section>
 
@@ -73,25 +83,39 @@
         <h2 id="dataAquiAndProces">2. Data Acquistion and Preprocessing</h2>
         <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
             The foundation of this project is the 2020 movement data of London, which provides daily aggregated metrics of anonymized human activity.
-            The data is provided by mapbox and can be retreived here: https://www.mapbox.com/movement-data
-            These data points are complemented by geospatial information, including:
-            Geo-coordinates linked to specific locations,
-            London borough boundaries, and
-            categorized Polygons of Interest (POIs).
-            Preprocessing involved cleaning, mapping, and aggregating the data.
-            Special focus was given to temporal patterns, allowing us to identify activity trends before, during, and after key COVID-19 events, such as lockdown announcements or easing measures.
+            The data is provided by mapbox and can be retreived <a href="https://www.mapbox.com/movement-data">here</a>.
         </p>
+        <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+            To enhance spatial analysis, the dataset is complemented with additional geospatial information, including:
+        </p>
+        <ul style="font-size: 1em; line-height: 1.5;">
+            <li><strong>Geo-coordinates</strong> linked to specific locations,</li>
+            <li><strong>London borough boundaries</strong>, and</li>
+            <li><strong>Categorised Polygons of Interest (POIs)</strong>.</li>
+        </ul>
+        <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+            Preprocessing involved extensive data cleaning, mapping, and aggregation, with a particular emphasis on temporal trends.
+            This approach allowed for an in-depth examination of mobility changes before,
+            during, and after key COVID-19-related events, such as lockdown announcements and subsequent easing measures.
+        </p>
+        <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+            By integrating spatial clustering techniques and time-segmented analyses,
+            this project aims to provide a clear understanding of how mobility patterns evolved throughout the pandemic.
+        </p>
+
         <br>
         <section><hr class="border-line" color="#007BFF" width="60%"></section>
 
         <section id="movementData">
             <h3>2.1 Movement Data</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                The movement data of London has a column mean_column.
-                It has a values ranging from 0.000003 to 2.892247.
-                These values are to be seen in relation to the average movement in UK.
-                1.0 would mean in this case that in this 100x100 area the movement was like the average in the UK.
-                0.5 means only half as much and 2.0 means twice as much movement.
+                The movement dataset used in this study provides a numerical representation of human mobility across London during 2020.
+                The data is normalised against the UK national average, with a value of 1.0 indicating mobility equal to the national mean.
+                Values above 1.0 signify higher activity, while values below 1.0 indicate reduced movement levels.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                The dataset enables detailed analysis of fluctuations in urban activity, particularly in response to key pandemic events such as lockdowns and the easing of restrictions.
+                Visual representation of the movement data further assists in identifying areas of high and low mobility throughout different time periods.
             </p>
             <img src="data/img/movementDataVisual.png" width="50%" style="display: block; margin: 0 auto;">
             <br>
@@ -100,7 +124,7 @@
         <section><hr class="border-line" color="#007BFF" width="60%"></section>
         <section id="selectedPOIs">
             <h3>2.2 Selected Polygons of Interest (POIs)</h3>
-            <p>Six different types of POIs were selected for this project: </p>
+            <p>For this project, six categories of POIs were chosen to assess movement variations across different urban locations: </p>
             <ol>
                 <li>
                     <span class="color-box bus"></span> The biggest bus stops
@@ -145,6 +169,11 @@
                     </ul>
                 </li>
             </ol>
+
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                These POIs were selected based on their significance in urban mobility and their varying degrees of impact during the pandemic.
+                Their inclusion enables an in-depth comparison of mobility changes across different location types.
+            </p>
         </section>
 
         <section id="mapPOIs">
@@ -160,7 +189,7 @@
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
                 The <b>Temporal Data</b> section highlights how mobility patterns in London evolved throughout the different phases of the COVID-19 pandemic in 2020.
                 By dividing the year into <b>distinct intervals</b> aligned with policy changes and restrictions,
-                the short- and long-term effects of lockdowns, reopenings, and other interventions on human activity are analyzed.
+                the short- and long-term effects of lockdowns, re-openings, and other interventions on human activity are analyzed.
             </p>
 
             <h3>2.3.1 Corona Intervals</h3>
@@ -272,7 +301,7 @@
         <section id="intervalAnalysis">
             <h3>3.1 Interval Analysis</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                The "Compare London Movement Maps" page allows users to interactively analyze human activity patterns in London during the different COVID-19 intervals.
+                The "Interval analysis" page allows users to interactively analyze human activity patterns in London during the different COVID-19 intervals.
                 By selecting and comparing maps from different phases, such as Pre-Corona, First Lockdown, and Four-Tier Restriction Phase, users can visually assess the impact of
                 lockdowns and reopening policies on urban mobility.
             </p>
@@ -352,11 +381,25 @@
 
     <section id="discussion">
         <h2>4. Discussion</h2>
+        <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+            This discussion evaluates the key findings of our study, highlighting the implications of mobility shifts in London during the COVID-19 pandemic.
+            We reflect on spatial and temporal patterns, assess the impact on various POIs, and address methodological limitations.
+            Additionally, we explore possible extensions that could enhance future research on urban mobility in crisis scenarios.
+        </p>
 
         <section id="Spatio-Temporal-Patterns">
             <h3>4.1 Spatio-Temporal Patterns</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                All analytical approaches corroborate that mobility patterns in London underwent changes with the onset of the pandemic. On one hand, there was a sharp decline in mobility, particularly in the city center and around major POIs. On the other hand, the remaining mobility was slightly redistributed into residential areas and parks. The negative Moran’s I values along major traffic paths reinforce this observation: during restrictive phases, streets were utilized less compared to their surroundings, while activity levels in adjacent areas, such as residential neighborhoods, remained relatively stable.
+                The analysis confirmed that mobility patterns in London underwent significant changes during the COVID-19 pandemic. The first lockdown saw the most drastic decline in movement, particularly in central London and at major POIs such as subway stations and event venues. While some redistribution of movement occurred towards residential areas and parks, the overall decline was substantial.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                The Moran’s I analysis revealed a clear shift in spatial clustering. Pre-pandemic movement was highly concentrated in central districts, whereas lockdown periods led to a more dispersed movement pattern. The reduction in movement at transport hubs and commercial areas coincided with increased activity in residential zones and parks, reflecting behavioral adaptations to restrictions.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                During relaxation phases, the movement gradually returned to pre-pandemic clustering patterns, but full recovery was not achieved by the end of 2020. The persistence of lower activity levels in business districts and tourist locations suggests long-term behavioral changes, potentially influenced by shifts in remote work policies and continued travel restrictions.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                The analysis also highlighted variations between different boroughs. While central London saw the sharpest declines and slowest recovery, outer boroughs exhibited more stable mobility patterns. This difference underscores the varying levels of dependence on commuting and tourism across different parts of the city.
             </p>
             <br>
         </section>
@@ -366,7 +409,16 @@
         <section id="ImpactOnPois">
             <h3>4.2 Impact on POIs</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                Whether it’s subway stations, bus depots, parks, or tourist attractions, highly frequented POIs experienced declines during the initial lockdown phase. Although a partial recovery was noted during the summer months when restrictions were relaxed, activity levels generally remained below pre-pandemic norms. Repeated lockdowns in the autumn and winter prevented a return to previous activity levels. Public transportation hubs, such as the Waterloo Station, demonstrated sensitivity to restrictions, as evidenced by the development of clusters around these central stations. This indicates that public transport usage was affected by lockdown measures, impacting overall mobility patterns in central London.
+                Different POI categories experienced varying levels of impact. Public transport hubs, such as subway and bus stations, saw sharp declines in movement, with subway stations experiencing the most significant drops due to remote work policies and public transport avoidance. While bus stops also saw reductions, they recovered more quickly, likely due to their role in essential daily commuting.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                Football stadiums and event venues were among the hardest hit, suffering from prolonged inactivity due to restrictions on large gatherings. Movement data shows near-total inactivity during strict lockdowns, with only minor recovery towards the year’s end when limited-capacity events were permitted. The absence of major sporting and entertainment events significantly altered mobility patterns in their surrounding areas.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                Sightseeing locations, including museums, landmarks, and tourist hotspots, followed a similar trend. Visitor numbers plummeted during lockdowns, and while some recovery was observed during relaxation phases, overall foot traffic remained below pre-pandemic levels. The gradual return of tourism-dependent movement was hindered by continued travel restrictions and reduced international visitors.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                Parks demonstrated the highest resilience among POI categories. While movement slightly decreased during the initial lockdown due to stay-at-home orders, it recovered swiftly and even increased in some cases as residents sought outdoor recreational spaces. This trend highlights the importance of accessible green spaces in maintaining public activity levels during crisis periods.
             </p>
             <br>
         </section>
@@ -376,7 +428,19 @@
         <section id="Limitations">
             <h3>4.3 Limitations</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                Several limitations impacted the scope and accuracy of this study. The use of WGS84 coordinates introduced distortions in distance calculations, particularly affecting vertical clustering patterns. Converting the movement data to a metric coordinate system is recommended for future research to enhance clustering precision. Additionally, computational constraints limited the analysis to smaller geographic areas and shorter time intervals, preventing a more comprehensive large-scale analysis. Enhanced computational resources and refined parameter testing could address these issues to allow for more robust and detailed insights.
+                While this study provides valuable insights into mobility trends during the COVID-19 pandemic, several limitations should be acknowledged. One major limitation is the temporal scope of the dataset, which covers only the year 2020. This restricts the ability to analyze long-term behavioral changes and the full extent of post-pandemic recovery. Future studies incorporating data from subsequent years could provide a more comprehensive understanding of how mobility patterns evolved beyond the initial crisis.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                Another limitation is the spatial resolution of the movement dataset, which is aggregated into 100-meter grid cells. While this level of granularity is useful for general trends, it does not capture finer-scale variations in movement, particularly within densely populated areas or specific points of interest. A dataset with higher spatial resolution could offer more precise insights into localized mobility shifts.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                Additionally, the study does not differentiate between different user groups, such as commuters, tourists, and residents. Since movement patterns vary significantly between these groups, distinguishing them could enhance the interpretation of findings. Incorporating demographic or socioeconomic data, such as income levels or employment types, could further refine the analysis and provide deeper insights into movement motivations.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                The ST-DBSCAN clustering method used in this study also has inherent limitations. The choice of parameters, such as the search radius and minimum cluster size, significantly influences the results. Due to computational constraints, extensive parameter tuning was not feasible. Future studies could employ automated optimization techniques to refine clustering accuracy and better identify mobility patterns.
+            </p>
+            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
+                Lastly, the analysis does not account for external factors such as weather conditions, policy changes, or economic fluctuations, all of which can influence mobility. Integrating additional contextual data sources could enhance the robustness of future research by controlling for these variables and providing a more comprehensive picture of mobility dynamics.
             </p>
         </section>
     </section>
@@ -391,16 +455,17 @@
         <section id="summaryFindings">
             <h3>5.1 Summary of Findings</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                The combined methodologies provide an insightful view of mobility in London during the pandemic. Key insights include:
+                The findings of this study highlight the significant impact of COVID-19 on urban mobility patterns in London.
+                Especially the first lockdown led to drastic reductions in movement,
+                particularly in commercial and transport hubs, while parks and residential areas exhibited more resilience.
+                The recovery of movement was uneven across different POI categories,
+                with public transport hubs and event venues experiencing prolonged declines, whereas parks quickly rebounded.
             </p>
-            <ul>
-                <li><strong>Lockdown Phases:</strong> Led to a significant reduction in spatial cluster density and a more uniform distribution of mobility</li>
-                <li><strong>Relaxation Phases:</strong> Resulted in only very slight return of known hotspots, though often not to pre-pandemic intensity levels</li>
-                <li><strong>Transportation and Tourism Centers:</strong> Particularly sensitive to restrictions, while residential neighborhoods and parks temporarily gained prominence in mobility patterns</li>
-                <li><strong>Methodological Factors:</strong> The choice of coordinate system and parameter settings, along with technical resources, critically influenced the clustering outcomes</li>
-            </ul>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                These findings highlight the profound impact of the COVID-19 pandemic on urban mobility patterns and underscore the importance of employing targeted spatio-temporal analytical methods with appropriate data and computational support. Future analyses aimed at urban planning or tourism management should focus on refining the data foundation and conducting more comprehensive parameter testing to minimize inaccuracies and fully leverage the potential of spatio-temporal clustering techniques.
+                The analysis also revealed that while movement trends partially recovered during relaxation phases,
+                they did not return to pre-pandemic levels by the end of 2020.
+                This suggests long-term behavioral shifts, potentially driven by remote work policies,
+                changes in public transport usage, and evolving urban dynamics.
             </p>
 
             <br>
@@ -410,28 +475,28 @@
         <section id="futureResearch">
             <h3>5.2 Future Work</h3>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                    Several areas for improvement remain. Future research could focus on the following aspects:
-                </p>
-
+                While this study provides a fitting analysis for the research question, there are several areas for future research remain.
+                Expanding the dataset to include post-2020 mobility data would allow for an analysis of long-term recovery patterns and permanent behavioral changes resulting from the pandemic.
+            </p>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                    <strong>Refinement of Spatial Analysis:</strong>  Converting the dataset from WGS84 to a metric coordinate system (e.g., UTM) would improve clustering precision and ensure consistent distance-based analysis. This step is crucial for more accurate identification of movement hotspots.
-                </p>
-
+                Another key extension would be the integration of additional data sources, such as economic indicators, weather patterns, and demographic data, to provide a more comprehensive understanding of movement drivers. Machine learning techniques could also be applied to enhance clustering and predictive analysis.
+            </p>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                    <strong>Optimization of Clustering Parameters:</strong> The ST-DBSCAN analysis was limited by predefined parameters. Future studies could implement automated tuning techniques, such as grid search or machine learning-based optimization, to improve the detection of meaningful mobility clusters.
-                </p>
-
+                While the study successfully analyzed mobility changes in London during the COVID-19 pandemic, several extensions could improve the depth and explanation of the findings.
+                A key improvement would be the refinement of POI categorization. Instead of broad categories such as sightseeing locations or transport hubs, a more granular classification
+                could differentiate between commuter-heavy subway stations and tourist-oriented stations, museums and historical landmarks, as well as shopping centers and business districts.
+                This would allow for a more precise understanding of how different types of locations were affected.
+            </p>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                    <strong>Higher Temporal Resolution:</strong> Currently, movement patterns are analysed in fixed time intervals. Introducing rolling windows or finer time granularity (e.g., hourly data) could provide new insights into mobility shifts during the transition phases, such as lockdown announcements.
-                </p>
-
+                Another important extension involves integrating additional external data sources to better explain mobility shifts. For example, incorporating weather data could reveal how
+                conditions such as rain, temperature, and seasonal changes influenced outdoor activity. Socioeconomic indicators like income levels, employment rates, and work-from-home adoption
+                could provide deeper insights into movement variations across different demographic groups. Additionally, real-time transport network data from Transport for London (TfL)
+                would allow for a distinction between pedestrian movement and public transit usage, enhancing the interpretation of mobility dynamics. Overall, these extensions would improve
+                the study’s accuracy and usability.
+            </p>
             <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                    <strong>Integration with External Data Sources:</strong> Incorporating additional datasets, such as public transport usage, economic activity, or weather conditions, could provide a better understanding of the factors influencing movement trends.
-                </p>
-
-            <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-                   <strong>Expansion to Other Geographic Areas:</strong> Applying this methodology to other cities or regions would enable a comparative study of how different urban environments responded to mobility restrictions.
-                </p>
+                Finally, comparative studies across multiple cities could offer valuable insights into how different urban environments responded to the pandemic. Such an approach could help urban planners develop more resilient mobility strategies for future crises.
+            </p>
         </section>
 
 
