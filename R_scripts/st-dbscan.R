@@ -26,7 +26,7 @@ mergedData2_metric <- mergedData2_metric %>%
          Y = coords_metric[, "Y"])
 mergedData2 <- as.data.frame(mergedData2_metric)
 
-# Define original bounding box for Greater London (WGS84) and transform to metric
+# Define original bounding box for Greater London and transform to metric
 lat_min <- 51.29
 lat_max <- 51.71
 lon_min <- -0.51
@@ -39,11 +39,11 @@ x_max <- bbox_coords["xmax"]
 y_min <- bbox_coords["ymin"]
 y_max <- bbox_coords["ymax"]
 
-# Define grid cell sizes (approx. 2km x 2km)
-grid_size_x <- 2000  # meters
-grid_size_y <- 2000  # meters
+# Define grid cell sizes (2km x 2km)
+grid_size_x <- 2000
+grid_size_y <- 2000
 
-# Define time intervals (start and end times)
+# Define time intervals (start and end)
 timeRanges <- list(
   c(20, 40),
   c(100, 120),
@@ -53,10 +53,10 @@ timeRanges <- list(
   c(340, 360)
 )
 
-# Define eps2 values (in meters)
+# Define eps2 values
 eps2_values <- c(0.001, 0.005, 0.01)
 
-# Load boundary and line data (WGS84)
+# Load boundary and line data
 url <- "https://gis2.london.gov.uk/server/rest/services/apps/webmap_context_layer/MapServer/1/query"
 params <- list(
   where = "1=1",
@@ -116,7 +116,7 @@ for(eps2_current in eps2_values) {
         )
         data_np <- np$array(data_matrix)
         
-        # Parameters for ST-DBSCAN (in metric units)
+        # Parameters for ST-DBSCAN
         eps1 <- 66
         eps2 <- eps2_current
         min_samples <- as.integer(2)

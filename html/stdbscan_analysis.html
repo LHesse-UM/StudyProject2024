@@ -53,6 +53,16 @@
             padding: 10px;
         }
 
+        .regents {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border: 5px solid #ccc;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
         img.compressed {
             max-width: 50%;
             height: 400px;
@@ -81,7 +91,18 @@
             margin-top: 10px;
             font-weight: bold;
         }
-
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Abstand zwischen den iFrames */
+        }
+        .iframe-item {
+            text-align: center;
+        }
+        .iframe-item p {
+            font-size: 14px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -96,12 +117,13 @@
 <section id="STDBSCAN">
     <h2 style="text-align: center;">Spatio-Temporal Density-Based Spatial Clustering (ST-DBSCAN)</h2>
     <p style="text-align: justify; margin: 10px 20px; padding: 10px; font-size: 18px">
-        ST-DBSCAN, or Spatio-Temporal Density-Based Spatial Clustering of Applications with Noise, is a clustering algorithm that integrates both spatial and temporal dimensions.
-        Applied to London’s movement data with the predefined time intervals, ST-DBSCAN identified patterns across different periods.
-        To illustrate the algorithm's capabilities, three specific examples—Westminster, Greenwich, and Regent's Park—were selected to demonstrate how movement clusters manifest in distinct urban areas.
+        The Spatio-Temporal Density-Based Spatial Clustering of Applications with Noise (ST-DBSCAN), is a clustering algorithm that integrates both spatial and temporal dimensions.
+        Applied to London’s movement data with the predefined time intervals, ST-DBSCAN was used in this project to identify patterns across the different time intervals.
+        Three specific examples were selected to demonstrate how movement clusters manifest in different types of urban areas.
     </p>
     <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-        A button interface allows navigation through the time intervals, visualizing movement patterns at each station. Each interval spans 20 days to keep the analysis computationally feasible. The final interval is omitted as it is too short and falls outside the 20-day span. The analysis focuses on three study areas: Greenwich, Westminster, and Regent's Park, examining movement patterns within these regions. Two epsilon parameters were set. eps1 was set to 0.0006 degrees search radius and eps2 to approximately one week. These values are not ideal; converting movement data into a metric system would ensure more precise cluster radii. Limited hardware also restricted extensive parameter testing. Despite these constraints, several effective clusters were identified and analyzed, revealing key trends in urban movement patterns. Limitations are discussed further in their respective section.    </p>
+        A button interface enables navigation through the selected time intervals, which allows the visualisation of movement patterns in the different locations. Each interval spans 20 days, which was done to maintain computational feasibility. The analysis focused on three areas: Greenwich, Westminster, and Regent's Park with the London Zoo. A spatial search radius of 66 meters was employed to detect clusters. Despite hardware limitations that restricted extensive parameter testing, several effective clusters were identified, that will be explained in the following.
+    </p>
 
     <div class="accordion">
         <h3 onclick="toggleAccordion('content1')">
@@ -109,7 +131,7 @@
         </h3>
         <div id="content1" class="accordion-content">
             <div style="text-align: center;">
-                <img id="image-westminster" class="compressed" src="../data/img/image1_1.png" alt="Westminster">
+                <img id="image-westminster" class="compressed" src="../data/img/westminster_1.png" alt="Westminster">
                 <div id="label-westminster" class="label">Pre Corona</div>
             </div>
             <div class="button-container">
@@ -117,14 +139,11 @@
                 <button id="next-westminster" onclick="changeImage('westminster', 1)">Next →</button>
             </div>
             <div>
-                <p style="text-align: justify;">The data in this study are based on mean values, not absolute quantities, offering insight into movement patterns.</p>
+                <p style="text-align: justify;">
+                    <strong>Westminster Area:</strong> This example covers Westminster with the Thames River at its center. Movement is concentrated along the bridges, which form clusters at the entry points, where people cross the river.
 
-                <p style="text-align: justify;">In the first image, only a few hotspots are visible. In the southern part of Westminster, hotspots correspond to residential and office areas. Around bridges, hotspots are visible, but only on horizontal bridges. Vertical bridges lack clear clustering, reflecting the limitations of the Cartesian map, where horizontal clusters are more easily detected than vertical ones. This highlights the need for metric coordinates to avoid such distortions.</p>
-
-                <p style="text-align: justify;">During lockdowns, distinct hotspots emerge as movement becomes more localized and restricted, reducing the significance of these patterns. In the summer, with eased restrictions, movement increased but did not return to pre-pandemic levels. Tourism in Westminster remained below normal, although clearer hotspots appeared compared to strict lockdown periods.</p>
-
-                <p style="text-align: justify;">At the end of the second lockdown near Christmas, a prominent hotspot at Waterloo Station suggests more people traveling for work or tourism, signaling a partial recovery in activity.</p>
-
+                    Before COVID-19, clusters were spread throughout the area, especially near sightseeing spots like Big Ben and Waterloo. During the summer, with fewer restrictions, the number of clusters decreased but remained around tourist sites and Waterloo. During the strictest restrictions, there was a noticeable reduction in clusters, with only slight activity at the bridges and tourist spots, which is unusual for a busy area like Westminster.
+                </p>
             </div>
         </div>
         <section><hr class="border-line" color="#007BFF"></section>
@@ -136,17 +155,20 @@
         </h3>
         <div id="content2" class="accordion-content">
             <div style="text-align: center;">
-                <img id="image-greenwich" class="compressed" src="../data/img/image2_1.png" alt="Greenwich">
-                <div id="label-greenwich" class="label">Pre Corona</div>
+                <img id="image-greenwich" class="compressed" src="../data/img/Greenwich_3.png" alt="Greenwich">
+                <div id="label-greenwich" class="label">Return to relaxing restrictions</div>
             </div>
             <div class="button-container">
                 <button id="prev-greenwich" onclick="changeImage('greenwich', -1)" disabled>← Previous</button>
                 <button id="next-greenwich" onclick="changeImage('greenwich', 1)">Next →</button>
             </div>
             <div>
-                <p style="text-align: justify;">In Greenwich, a noticeable pattern emerges along the A200. As restrictions become more stringent, movement shifts away from the main road into other areas, such as residential neighborhoods. This indicates how people adapt their behavior to avoid busy roads during lockdown periods.</p>
+                <p style="text-align: justify;">
+                    <strong>Greenwich Area:</strong> This example covers a section of Greenwich, including the A200 main road, the Thames River, and Greenwich Park. During the summer months with relaxed restrictions, movement patterns were more consistent. In the winter months with stricter conditions, movement along the streets, especially the main roads, decreased as fewer people commuted.
 
-                <p style="text-align: justify;">Analyzing movement in Greenwich Park, however, presents challenges. The park is almost entirely vertically oriented on the map, and due to the limitations of the Cartesian map, no meaningful observations can be made. This highlights the distortion caused by horizontal bias in clustering, further emphasizing the need for future studies to adopt a metric coordinate system.</p>
+                    The Thames River also showed less activity due to the absence of tourist boats. In contrast, Greenwich Park maintained steady levels of movement across different periods, indicating its continued use as an outdoor space despite the changing restrictions.
+
+                </p>
             </div>
         </div>
         <section><hr class="border-line" color="#007BFF"></section>
@@ -154,23 +176,24 @@
 
     <div class="accordion">
         <h3 onclick="toggleAccordion('content3')">
-            <span style="margin-right: 8px;">&#x25B6;</span> Regent's Park
+            <span style="margin-right: 8px;">&#x25B6;</span> Regent's Park (London Zoo)
         </h3>
         <div id="content3" class="accordion-content">
             <div style="text-align: center;">
-                <img id="image-regents" class="compressed" src="../data/img/image3_1.png" alt="Regent's Park">
-                <div id="label-regents" class="label">Pre Corona</div>
+                <img id="image-zoo" class="compressed regents" src="../data/img/Zoo_1.png" alt="Zoo">
+                <div id="label-zoo" class="label">Pre Corona</div>
             </div>
             <div class="button-container">
-                <button id="prev-regents" onclick="changeImage('regents', -1)" disabled>← Previous</button>
-                <button id="next-regents" onclick="changeImage('regents', 1)">Next →</button>
+                <button id="prev-zoo" onclick="changeImage('zoo', -1)" disabled>← Previous</button>
+                <button id="next-zoo" onclick="changeImage('zoo', 1)">Next →</button>
             </div>
             <div>
+                <p style="text-align: justify;">
+                    <strong>London Zoo:</strong> The <em>ST-DBSCAN results for the London Zoo</em> shows changes in visitor movement patterns across different time intervals. Before the pandemic, clusters indicate normal visitor activity. During the lockdown periods, all clusters disappear, reflecting the zoo's closure. This absence of activity contrasts with the surrounding areas, which still show some movement.
 
-                <p style="text-align: justify;">Before the pandemic, clear hotspots were visible in Regent's Park, including within the London Zoo. During the lockdown, movement became more distributed and balanced, similar to previous examples. However, it is evident that the zoo was closed during this time. Although the plot may suggest a cluster inside the zoo, this cluster appears to be part of the larger adjacent cluster and not actually within the zoo, likely due to the visualization method.</p>
+                    As restrictions were eased, the zoo reopened with guidelines, leading to a return of clusters within its area.
 
-                <p style="text-align: justify;">The summer intervals show a partially open zoo (with some restrictions) and clear movement patterns within the zoo. These patterns disappear again during the second lockdown, although the visualization remains somewhat ambiguous. Toward the end of the second lockdown, people begin visiting the zoo again, with distinct hotspots forming within its boundaries.</p>
-
+                </p>
             </div>
         </div>
         <section><hr class="border-line" color="#007BFF"></section>
@@ -180,37 +203,44 @@
 <section><hr class="border-line" color="#007BFF"></section>
 
 <section style="text-align: center; font-size: 18px;">
-
     <h3 style="color: #007BFF;">Limitations</h3>
-
     <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-        Several limitations impacted the scope and accuracy of this study. Firstly, the computational time required was prohibitively long, even with optimal hardware, which restricted the analysis to smaller areas and confined time intervals to 20 days each. Although a comprehensive map of Greater London was attempted by stitching together numerous small rectangles, each rectangle measured 0.02 degrees in latitude and 0.02 degrees in longitude. This approach introduced significant distortions, as evidenced by clear dividing lines between the rectangles. Consequently, the large-scale map was deemed unsuitable for meaningful analysis. An example of the stitching of the rectangles can be seen in the image below.    </p>
-
+        The calculations required a very high computational effort. Even with powerful hardware, a single run took many hours to complete. This initially limited the ability to perfectly optimize the parameter selection. However, after extensive experimentation, the parameters have been improved to the point where clear clusters are now visible.    It is important to note that the intervals were not fully processed. Only 20 days from each interval were analysed. This was necessary due to the otherwise overwhelming computational demands.</p>
     <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-        Additionally, the movement data were provided in WGS84 coordinates, which necessitates conversion to a metric system to ensure uniformity in the epsilon parameter (eps1) and to facilitate undistorted cluster radii. The lack of metric conversion resulted in clusters being predominantly identified in the horizontal direction rather than vertically. Future work should prioritize transforming the coordinates to a metric system to enhance clustering accuracy, which was not feasible within the temporal constraints of this study.
-    </p>
+        Originally, there were significant challenges with distortions in the results. The search radius was previously specified in WGS84, which resulted in lat/lon distortions. Additionally, the high computational complexity initially prevented the calculations from being performed using metric coordinates. However, this has now been achieved, leading to improved results. Since then, the findings have been revised accordingly.
 
-    <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-        Furthermore, hardware limitations hindered extensive parameter testing, limiting the ability to optimize epsilon values thoroughly. As a result, the analysis was confined to smaller regions, potentially affecting the generalizability of the findings. With access to more advanced hardware, future research could expand the analysis to larger areas and employ more rigorous parameter optimization, thereby improving the robustness and comprehensiveness of the movement pattern analysis.
-    </p>
-    <br>
     <figure>
         <img src="../data/img/limitationsstdbscan.png" alt="Description of the image" style="width:400px; height:400px;">
         <figcaption>An excerpt of the full map where DBSCAN does not function correctly due to transition issues, and therefore is not utilized</figcaption>
     </figure>
+
+    <section><hr class="border-line" color="#007BFF" width="60%"></section>
+    <h3 style="color: #007BFF;">Greater London Area Heatmap</h3>
+    <p>        The heatmaps for the entire London area, which cover both the pre-Corona interval and the first lockdown, can now be analysed below. The clusters can be best seen at a certain zoom level, rather than when fully zoomed out.    </p>
+    </p>
+
+    <div class="iframe-container">
+        <div class="iframe-item">
+            <iframe id="map1" src="../data/STDBSCAN/Combined_Heatmap_Interval_20_40_eps2_0.001.html" width="400px" height="500px"></iframe>
+            <p>Pre Corona</p>
+        </div>
+        <div class="iframe-item">
+            <iframe id="map2" src="../data/STDBSCAN/Combined_Heatmap_Interval_100_120_eps2_0.001.html" width="400px" height="500px"></iframe>
+            <p>First Lockdown</p>
+        </div>
+    </div>
+
+
 </section>
 
-<section><hr class="border-line" color="#007BFF"</section>
+<section><hr class="border-line" color="#007BFF"></section>
 
 <section id="STDBSCAN-summary" style="text-align: center; font-size: 18px;">
     <h3 style="color: #007BFF;">Summary of Results</h3>
     <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-        The ST-DBSCAN analysis identified distinct movement patterns in Westminster, Greenwich, and Regent's Park, with pre-pandemic hotspots in residential, office, and tourist areas like the London Zoo. During the first lockdown, overall movement decreased and became more scattered, resulting in numerous less meaningful hotspots. As restrictions eased, movement increased but remained below pre-pandemic levels, influenced by the Three Tier System and subsequent lockdowns.
-    </p>
-    <p style="text-align: justify; margin: 10px 20px; padding: 10px;">
-        Specifically, Westminster showed recovery around Waterloo Station, Greenwich shifted movement to residential areas, and Regent's Park's patterns fluctuated with the London Zoo's status. Limitations included map distortions from the WGS84 system and limited computational resources. Future studies should use a metric system and improved hardware to enhance accuracy and expand the analysis.
-    </p>
+        The ST-DBSCAN analysis showed how movement patterns in specific locations in London changed with social restrictions. Regent’s Park remained active, which highlights its use as a place for leisure time activity. In contrast, the London Zoo showed no activity during closures due to the impact of tourism restrictions. In Greenwich, reduced movement along main roads and the Thames points to less commuting, while stable activity in the park implies consistent leisure activity. In Westminster, there was a noticeable decline in tourism and public gatherings.    </p>
 </section>
+
 <section><hr class="border-line" color="#007BFF"></section>
 
 <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
@@ -219,92 +249,86 @@
         Back to Analysis
     </button>
 </div>
+
 <section><hr class="border-line" color="#007BFF"></section>
+
 <footer id="imprint">
     <h3>Imprint</h3>
-    <p>Created by <a href="https://github.com/tkrumrei">tkrumrei</a>, <a href="https://github.com/LHesse-UM">LHesse-UM</a>, <a href="https://github.com/tlehman1">tlehman1</a> | <a href="https://github.com/tkrumrei/StudyProject2024">GitHub Repository</a></p>
+    <p>
+        Created by <a href="https://github.com/tkrumrei">tkrumrei</a>,
+        <a href="https://github.com/LHesse-UM">LHesse-UM</a>,
+        <a href="https://github.com/tlehman1">tlehman1</a> |
+        <a href="https://github.com/tkrumrei/StudyProject2024">GitHub Repository</a>
+    </p>
 </footer>
 
 <script>
     const imageSets = {
         westminster: {
-            base: '../data/img/image1_',
-            count: 6,
+            images: [
+                '../data/img/westminster_1.png',
+                '../data/img/westminster_3.png',
+                '../data/img/westminster_6.png'
+            ],
             intervals: [
                 "Pre Corona",
-                "First Lockdown UK",
                 "Return to relaxing restrictions",
-                "Three Tier System",
-                "Second Lockdown UK",
-                "End Second Lockdown"
+                "Four Tier System"
             ]
         },
         greenwich: {
-            base: '../data/img/image2_',
-            count: 6,
+            images: [
+                '../data/img/Greenwich_3.png',
+                '../data/img/Greenwich_6.png'
+            ],
             intervals: [
-                "Pre Corona",
-                "First Lockdown UK",
                 "Return to relaxing restrictions",
-                "Three Tier System",
-                "Second Lockdown UK",
-                "End Second Lockdown"
+                "Four Tier System"
             ]
         },
-        regents: {
-            base: '../data/img/image3_',
-            count: 6,
+        zoo: {
+            images: [
+                '../data/img/Zoo_1.png',
+                '../data/img/Zoo_2.png',
+                '../data/img/Zoo_3.png'
+            ],
             intervals: [
                 "Pre Corona",
-                "First Lockdown UK",
-                "Return to relaxing restrictions",
-                "Three Tier System",
-                "Second Lockdown UK",
-                "End Second Lockdown"
+                "First Lockdown",
+                "Return to relaxing restrictions"
             ]
         }
     };
 
     const currentIndexes = {
-        westminster: 1,
-        greenwich: 1,
-        regents: 1
+        westminster: 0,
+        greenwich: 0,
+        zoo: 0
     };
 
     function changeImage(section, step) {
-        const { base, count, intervals } = imageSets[section];
+        const set = imageSets[section];
         const currentIndex = currentIndexes[section];
-        const newIndex = currentIndex + step;
-
-        if (newIndex >= 1 && newIndex <= count) {
+        let newIndex = currentIndex + step;
+        if (newIndex >= 0 && newIndex < set.images.length) {
             currentIndexes[section] = newIndex;
-            document.getElementById(`image-${section}`).src = `${base}${newIndex}.png`;
-            document.getElementById(`label-${section}`).textContent = intervals[newIndex - 1];
-
-            document.getElementById(`prev-${section}`).disabled = newIndex === 1;
-            document.getElementById(`next-${section}`).disabled = newIndex === count;
+            document.getElementById(`image-${section}`).src = set.images[newIndex];
+            document.getElementById(`label-${section}`).textContent = set.intervals[newIndex];
+            document.getElementById(`prev-${section}`).disabled = (newIndex === 0);
+            document.getElementById(`next-${section}`).disabled = (newIndex === set.images.length - 1);
         }
     }
 
     function toggleAccordion(contentId) {
         const allContents = document.querySelectorAll('.accordion-content');
         const allIcons = document.querySelectorAll('.accordion h3 span');
-
-        allContents.forEach(content => {
-            content.style.display = 'none'; // Collapse all
-        });
-
-        allIcons.forEach(icon => {
-            icon.textContent = '\u25B6'; // Reset all icons to right-facing triangle
-        });
-
+        allContents.forEach(content => content.style.display = 'none');
+        allIcons.forEach(icon => icon.textContent = '\u25B6');
         const content = document.getElementById(contentId);
-        const header = content.previousElementSibling;
-        const icon = header.querySelector('span');
-
+        const icon = content.previousElementSibling.querySelector('span');
         if (content.style.display === 'none') {
-            content.style.display = 'block'; // Expand the clicked section
-            icon.textContent = '\u25BC'; // Change icon to down-facing triangle
+            content.style.display = 'block';
+            icon.textContent = '\u25BC';
         }
     }
 
